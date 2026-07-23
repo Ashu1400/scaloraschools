@@ -1,0 +1,153 @@
+/* Problem.css - Stark Editorial Brutalism with Animations */
+.problem-brutalist-section {
+  background-color: #ffffff;
+  color: #111111;
+  padding: 10rem 0;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background Marquee */
+.problem-marquee-container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%) rotate(-5deg) scale(1.2);
+  white-space: nowrap;
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.problem-marquee {
+  display: flex;
+  width: max-content;
+}
+
+.problem-marquee span {
+  font-size: clamp(8rem, 15vw, 15rem);
+  font-weight: 900;
+  padding-right: 2rem;
+  font-family: sans-serif;
+  letter-spacing: -0.05em;
+}
+
+.problem-brutalist-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .problem-brutalist-container {
+    padding: 0 2rem;
+  }
+}
+
+/* Header */
+.problem-brutalist-header {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 8rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .problem-brutalist-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.problem-brutalist-main-headline {
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  line-height: 1.05;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.problem-brutalist-lead-wrapper {
+  max-width: 400px;
+}
+
+.problem-brutalist-lead {
+  font-size: 1.5rem;
+  color: var(--primary-blue, #175dd3);
+  line-height: 1.4;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* List Layout */
+.problem-brutalist-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.problem-brutalist-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.problem-brutalist-block:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 768px) {
+  .problem-brutalist-block {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+}
+
+.problem-brutalist-number {
+  font-size: clamp(4rem, 8vw, 8rem);
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.15);
+  line-height: 0.8;
+  font-family: serif;
+  flex-shrink: 0;
+  width: 150px;
+  will-change: transform, opacity;
+}
+
+.problem-brutalist-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+}
+
+.problem-brutalist-title {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin: 0;
+  line-height: 1.1;
+  will-change: transform, opacity;
+}
+
+.problem-brutalist-desc {
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  color: #555555;
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 400;
+}

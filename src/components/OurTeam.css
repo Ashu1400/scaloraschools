@@ -1,0 +1,247 @@
+/* OurTeam.css - Horizontal Scroll & Hover Reveal */
+.our-team-section-wrapper {
+  background-color: var(--bg-color, #000000);
+  height: 300vh; /* Provides the scrolling real estate */
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.our-team-sticky-container {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  /* padding-left removed; applied to intro column so track spans full width naturally */
+}
+
+@media (max-width: 768px) {
+  .our-team-sticky-container {
+    /* removed */
+  }
+}
+
+.team-scroll-track-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* Intro Column */
+.team-intro-column {
+  box-sizing: content-box;
+  min-width: 300px;
+  max-width: 400px;
+  flex-shrink: 0;
+  margin-right: 4rem;
+  padding-left: max(4rem, calc((100vw - 1200px) / 2));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .team-intro-column {
+    padding-left: 2rem;
+  }
+}
+
+.team-main-title {
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin: 0 0 1rem 0;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.team-subtitle {
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  color: #a1a1aa;
+  margin-bottom: 3rem;
+}
+
+.scroll-indicator-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #666;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.scroll-line {
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.scroll-line::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 30%;
+  background: var(--primary-blue, #175dd3);
+  animation: scrollLine 2s ease-in-out infinite;
+}
+
+@keyframes scrollLine {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(400%); }
+}
+
+/* Horizontal Track */
+.team-horizontal-track {
+  display: flex;
+  gap: 2rem; /* Minimal gaps matching screenshot */
+  align-items: center;
+  height: 100%;
+  padding-right: max(4rem, calc((100vw - 1200px) / 2));
+}
+
+@media (max-width: 768px) {
+  .team-horizontal-track {
+    padding-right: 2rem;
+  }
+}
+
+.team-end-spacer {
+  min-width: 20vw;
+}
+
+/* Cards */
+.team-card {
+  width: 350px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .team-card {
+    width: 280px;
+  }
+}
+
+.team-image-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3/4;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #ffffff;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.team-image-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.team-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.6s ease;
+  filter: grayscale(20%) contrast(1.1);
+}
+
+.team-image-container:hover .team-image {
+  filter: grayscale(0%) contrast(1.1);
+}
+
+/* Hover Overlay */
+.team-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(12px);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  text-align: left;
+}
+
+.team-image-container:hover .team-hover-overlay {
+  opacity: 1;
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transform: translateY(20px);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.team-image-container:hover .overlay-content {
+  transform: translateY(0);
+}
+
+.overlay-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1.5rem;
+  width: 100%;
+}
+
+.team-name {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.02em;
+}
+
+.team-role {
+  color: var(--primary-blue, #175dd3);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.team-bio {
+  color: #cccccc;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Socials */
+.team-socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: background 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+

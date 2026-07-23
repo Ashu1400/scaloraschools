@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary-blue: #175dd3;
+  --accent-blue: #0070F3;
+  --text-color: #FFFFFF;
+  --bg-color: #000000;
+  --bg-color-secondary: #0A0A0A;
+  --bg-card: rgba(255, 255, 255, 0.03);
+  --grey-text: #888888;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --glass-bg: rgba(0, 0, 0, 0.7);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  line-height: 1.5;
+  font-weight: 400;
+  overflow-x: clip; /* Using clip instead of hidden allows position: sticky to work */
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+
+/* Utilities */
+.text-blue { color: var(--primary-blue); }
+.bg-blue { background-color: var(--primary-blue); }
+.text-light { color: var(--text-color); }
+
+/* Hide Google Translate Top Banner */
+.goog-te-banner-frame {
+  display: none !important;
+}
+body {
+  top: 0px !important;
+}
+
+/* Style the translate widget slightly to match our theme */
+#google_translate_element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.goog-te-gadget-simple {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 8px !important;
+  padding: 0.4rem 0.8rem !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 0.9rem !important;
+  display: flex !important;
+  align-items: center !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+.goog-te-gadget-simple:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Hide the Google logo and extra text */
+.goog-te-gadget-icon {
+  display: none !important;
+}
+
+.goog-te-menu-value {
+  color: #ffffff !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+/* Hide the little separator pipe */
+.goog-te-menu-value span:nth-child(3) {
+  display: none !important;
+}
+
+/* Override the ugly dropdown iframe */
+.goog-te-menu-frame {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5) !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+}

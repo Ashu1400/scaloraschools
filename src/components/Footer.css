@@ -1,0 +1,152 @@
+.footer {
+  background-color: #ffffff;
+  color: #111111;
+  padding: 5rem 0 2rem;
+  margin-top: 5rem;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.footer-brand {
+  max-width: 300px;
+}
+
+.footer-logo-img {
+  width: 320px;
+  height: auto;
+  margin-bottom: -2rem;
+  margin-top: -1rem;
+  border-radius: 8px;
+  filter: brightness(0);
+}
+
+.footer-desc {
+  color: #555555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-links {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.link-group h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #111111;
+}
+
+.link-group ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.link-group a {
+  color: #555555;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.link-group a:hover {
+  color: #000000;
+}
+
+.footer-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-blue) !important;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.footer-email:hover {
+  color: #C01210 !important;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #111111;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: var(--primary-blue);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 3rem 0 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+  .footer-brand {
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-logo-img {
+    margin: 1rem auto -1.5rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .link-group {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .link-group ul {
+    align-items: center;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

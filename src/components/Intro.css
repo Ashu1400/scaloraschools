@@ -1,0 +1,48 @@
+.intro-section {
+  background-color: transparent; /* Allows the fixed hero background to show through */
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1; 
+}
+
+.intro-container {
+  text-align: center;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro-label {
+  font-size: 1rem;
+  color: var(--grey-text);
+  margin-bottom: 2rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.intro-label .blue-dot {
+  color: var(--primary-blue);
+  font-size: 1.5rem;
+  line-height: 0;
+}
+
+.intro-text {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--text-color);
+  max-width: 900px;
+}
+
+@media (max-width: 768px) {
+  .intro-text {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+}

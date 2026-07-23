@@ -1,0 +1,62 @@
+.investment {
+  padding: 8rem 0;
+  background-color: #080808;
+}
+
+.investment-header {
+  max-width: 800px;
+  margin-bottom: 5rem;
+}
+
+.investment-subtitle {
+  font-size: 1.25rem;
+  color: var(--grey-text);
+  line-height: 1.6;
+  margin-top: 1.5rem;
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+.pillar-card {
+  background-color: #111111;
+  border: 1px solid var(--border-color);
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.pillar-card:hover {
+  background-color: #1a1a1a;
+  border-color: rgba(228, 22, 19, 0.3);
+  transform: translateY(-5px);
+}
+
+.pillar-icon {
+  margin-bottom: 1.5rem;
+}
+
+.pillar-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.pillar-desc {
+  font-size: 1rem;
+  color: var(--grey-text);
+  line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+  .investment {
+    padding: 4rem 1.5rem;
+  }
+  .investment-header {
+    margin-bottom: 3rem;
+  }
+}

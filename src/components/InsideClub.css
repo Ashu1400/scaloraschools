@@ -1,0 +1,201 @@
+/* InsideClub.css - Clean White Aesthetic */
+.inside-club-section {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 8rem 0 10rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  position: relative;
+}
+
+.inside-club-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.inside-club-header {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.inside-club-title {
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  margin: 0 0 1rem 0;
+  color: #000000;
+}
+
+.inside-club-subtitle {
+  font-size: 1.25rem;
+  color: #555555;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Timeline Architecture */
+.timeline-wrapper {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* The vertical line down the center */
+.timeline-line-background {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background-color: #e5e5e5;
+  z-index: 1;
+}
+
+/* The animated red progress line */
+.timeline-line-progress {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  background-color: #175dd3; /* Signature red */
+  z-index: 2;
+  border-radius: 4px;
+}
+
+.timeline-nodes {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; /* Space between steps */
+}
+
+/* Individual node positioning */
+.timeline-node {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.node-left {
+  flex-direction: row-reverse;
+}
+
+.node-right {
+  flex-direction: row;
+}
+
+/* The center dot */
+.timeline-dot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: 4px solid #175dd3;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(228, 22, 19, 0.1);
+  z-index: 4;
+}
+
+/* The content card */
+.timeline-content-card {
+  width: 45%; /* Slightly less than 50% to leave gap for line */
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  border-color: rgba(228, 22, 19, 0.3); /* Subtle red border on hover */
+}
+
+.node-left .timeline-content-card {
+  text-align: right;
+}
+
+.node-right .timeline-content-card {
+  text-align: left;
+}
+
+/* Typography inside card */
+.timeline-step-num {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #175dd3;
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-step-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0 0 1rem 0;
+  color: #000000;
+}
+
+.timeline-step-desc {
+  font-size: 1.1rem;
+  color: #666666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsive Constraints */
+@media (max-width: 768px) {
+  .timeline-line-background,
+  .timeline-line-progress {
+    left: 20px; /* Move line to left edge */
+  }
+
+  .timeline-dot {
+    left: 20px;
+  }
+
+  .node-left, .node-right {
+    flex-direction: row; /* Everything aligns left */
+    justify-content: flex-end;
+  }
+
+  .timeline-content-card {
+    width: calc(100% - 60px); /* Fill remaining space */
+    padding: 1.5rem;
+  }
+
+  .node-left .timeline-content-card {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .inside-club-title {
+    font-size: 2.5rem;
+  }
+  .timeline-content-card {
+    width: calc(100% - 40px);
+    padding: 1.25rem;
+  }
+  .timeline-line-background, 
+  .timeline-line-progress {
+    left: 10px;
+  }
+  .timeline-dot {
+    left: 10px;
+  }
+}

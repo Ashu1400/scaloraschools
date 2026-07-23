@@ -1,0 +1,151 @@
+/* ScaloraClub.css - Zig-Zag Editorial Layout */
+
+.zigzag-section {
+  background-color: #050505;
+  color: #ffffff;
+  padding: 10rem 0;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.zigzag-header {
+  text-align: center;
+  margin-bottom: 8rem;
+  padding: 0 2rem;
+}
+
+.zigzag-main-title {
+  font-size: clamp(3.5rem, 6vw, 5.5rem);
+  font-weight: 900;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.04em;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.5) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.zigzag-subtitle {
+  font-size: 1.5rem;
+  color: #a0a0a0;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.zigzag-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.zigzag-row {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  min-height: 60vh;
+}
+
+.zigzag-row.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.zigzag-image-container {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.zigzag-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.zigzag-image-container:hover .zigzag-image {
+  transform: scale(1.05);
+}
+
+/* Subtle gradient overlay to merge image with the dark background */
+.zigzag-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(5,5,5,0.2) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.zigzag-text-container {
+  width: 50%;
+  padding: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.zigzag-num {
+  font-size: clamp(5rem, 8vw, 10rem);
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(228, 22, 19, 0.4);
+  margin-bottom: -1.5rem; /* Pull title up into the number */
+  line-height: 1;
+  letter-spacing: -0.05em;
+  font-family: 'Inter', sans-serif;
+}
+
+.zigzag-title {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-weight: 900;
+  margin: 0 0 1.5rem 0;
+  color: #ffffff;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  position: relative;
+  z-index: 2;
+}
+
+.zigzag-desc {
+  font-size: 1.35rem;
+  color: #a0a0a0;
+  line-height: 1.7;
+  max-width: 550px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .zigzag-row, .zigzag-row.row-reverse {
+    flex-direction: column;
+    min-height: auto;
+  }
+  
+  .zigzag-image-container {
+    width: 100%;
+    height: 50vh;
+  }
+  
+  .zigzag-text-container {
+    width: 100%;
+    padding: 6rem 3rem;
+  }
+  
+  .zigzag-num {
+    -webkit-text-stroke: 1px rgba(228, 22, 19, 0.4);
+    margin-bottom: -1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .zigzag-text-container {
+    padding: 4rem 1.5rem;
+  }
+  .zigzag-title {
+    font-size: 2.2rem;
+  }
+  .zigzag-desc {
+    font-size: 1.15rem;
+  }
+}

@@ -1,0 +1,255 @@
+/* OurProjectsStyles.css */
+
+.our-projects-section {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 8rem 0; 
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+}
+
+.projects-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  /* Removed right padding so the carousel bleeds off the edge */
+  padding: 0 0 0 2rem; 
+}
+
+@media (max-width: 1400px) {
+  .projects-container {
+    padding-left: 2rem;
+  }
+}
+
+.projects-header {
+  text-align: left;
+  margin-bottom: 3rem;
+  max-width: 800px;
+}
+
+.projects-main-title {
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: 900;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.04em;
+}
+
+.projects-subtitle {
+  font-size: 1.35rem;
+  color: #a0a0a0;
+  line-height: 1.6;
+  margin: 0 0 1.5rem 0;
+}
+
+.projects-subtitle strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.swipe-instruction {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #175dd3;
+  font-weight: 700;
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* Native Scroll Carousel */
+.native-carousel-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  /* Hide scrollbar */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  scroll-behavior: auto; /* Managed by JS for smooth auto-scroll */
+  -webkit-overflow-scrolling: touch; /* Smooth iOS scrolling */
+  padding: 1rem 0 3rem 0;
+  
+  /* Fade edges */
+  mask-image: linear-gradient(to right, transparent, black 2%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 2%, black 95%, transparent);
+}
+
+.native-carousel-container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.carousel-inner-native {
+  display: flex;
+  width: max-content;
+}
+
+/* Individual Card */
+.carousel-card {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-right: 2rem; 
+  flex-shrink: 0;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+  pointer-events: auto;
+}
+
+.project-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.carousel-card:hover .project-bg-img {
+  transform: scale(1.08);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0.1) 100%);
+  z-index: 1;
+}
+
+/* Default State (Visible before hover) */
+.project-content-default {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2.5rem;
+  z-index: 2;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.project-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.project-short-desc {
+  font-size: 1.1rem;
+  color: #d0d0d0;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Hover State Panel */
+.project-details-panel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.85); /* Dark Glassmorphism */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 3;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  
+  /* Initial hidden state */
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+}
+
+/* When hovered, slide the panel up and fade out the default text */
+.carousel-card:hover .project-details-panel {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.carousel-card:hover .project-content-default {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.details-header {
+  margin-bottom: 1.5rem;
+}
+
+.project-title-small {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+.project-long-desc {
+  font-size: 1.05rem;
+  color: #cccccc;
+  line-height: 1.6;
+  margin: 0 0 2rem 0;
+}
+
+.project-authors {
+  margin-top: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.author-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #175dd3;
+  font-weight: 800;
+  margin-bottom: 0.25rem;
+}
+
+.author-names {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Responsive constraints */
+@media (max-width: 768px) {
+  .projects-header {
+    text-align: left;
+  }
+  .carousel-card {
+    width: 320px;
+    height: 420px;
+  }
+  .project-title {
+    font-size: 1.8rem;
+  }
+  .project-long-desc {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-card {
+    width: 280px;
+    height: 400px;
+    margin-right: 1rem;
+  }
+  .project-title {
+    font-size: 1.6rem;
+  }
+  .project-details-panel {
+    padding: 2rem;
+  }
+  .project-title-small {
+    font-size: 1.5rem;
+  }
+}
