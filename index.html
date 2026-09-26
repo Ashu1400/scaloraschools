@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<!--
+  ____   ____    _    _     ___  ____      _    
+ / ___| / ___|  / \  | |   / _ \|  _ \    / \   
+ \___ \| |     / _ \ | |  | | | | |_) |  / _ \  
+  ___) | |___ / ___ \| |__| |_| |  _ <  / ___ \ 
+ |____/ \____/_/   \_\_____\___/|_| \_\/_/   \_\
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scalora — Education Beyond the Classroom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Melius font pairing: Editorial Serif + Ultra-clean Modern Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/ascii-hero.css">
+    <link rel="stylesheet" href="/src/reference-hero.css">
+  </head>
+  <body class="reference-home">
+    <!-- ICREON GRID-DIVIDED TOP NAVBAR -->
+    <style>
+      .icreon-header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+      }
+      .ascii-home .icreon-header.header-scrolled {
+        background: #ffffff !important;
+        border-bottom: 1px solid #e2e2e6 !important;
+      }
+      .ascii-home .icreon-header.header-scrolled :is(.brand-name,.icreon-nav-cell,.icreon-search-cell) {
+        color: #1a1a1e !important;
+      }
+      .ascii-home .icreon-header.header-scrolled .btn-icreon-contact {
+        color: #1a1a1e !important;
+        border-color: #e2e2e6 !important;
+        background: transparent !important;
+      }
+      .ascii-home .icreon-header.header-scrolled :is(.icreon-nav-grid,.icreon-logo-cell,.icreon-nav-cell,.icreon-search-cell,.icreon-mobile-menu-cell) {
+        border-color: #e2e2e6 !important;
+      }
+      .ascii-home .icreon-header.header-scrolled :is(.icreon-logo-cell,.icreon-nav-cell,.icreon-search-cell):hover {
+        background-color: #f8f8fa !important;
+        color: #1a1a1e !important;
+      }
+      .ascii-home .icreon-header.header-scrolled .icreon-mobile-menu-cell span {
+        background: #1a1a1e !important;
+      }
+    </style>
+    <script>
+      window.addEventListener('scroll', () => {
+        const header = document.querySelector('.icreon-header');
+        if (window.scrollY > 50) {
+          header.classList.add('header-scrolled');
+        } else {
+          header.classList.remove('header-scrolled');
+        }
+      });
+    </script>
+    <header class="icreon-header">
+      <div class="icreon-nav-grid">
+        <!-- Logo Cell -->
+        <a href="index.html" class="icreon-logo-cell">
+          <div class="brand-name">
+            <span>SCALORA</span>
+            <span>SCHOOLS</span>
+          </div>
+        </a>
+
+        <!-- Middle Nav Cells with Thin Dividers -->
+        <div class="icreon-nav-links">
+          <a href="services.html" class="icreon-nav-cell">Programmes</a>
+          <a href="schools.html" class="icreon-nav-cell">For Schools</a>
+          <a href="industry.html" class="icreon-nav-cell">For Industry</a>
+                    <div class="icreon-nav-dropdown-wrapper">
+            <a href="about.html" class="icreon-nav-cell">About</a>
+            <div class="icreon-dropdown-menu">
+              <a href="about.html#about">Our Story</a>
+              <a href="about.html#insights">Insights</a>
+              <a href="about.html#leadership">Leadership</a>
+              <a href="about.html#careers">Careers</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Action Cells -->
+        <div class="icreon-nav-right">
+          <!-- Search Icon Cell -->
+          <button class="icreon-search-cell" id="icreonSearchBtn" aria-label="Search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+
+          <!-- Contact Us Pill Cell -->
+          <div class="icreon-cta-cell">
+            <a href="contact.html" class="btn-icreon-contact">Contact Us</a>
+          </div>
+
+          <!-- Mobile Hamburger Trigger Cell -->
+          
+        </div>
+      </div>
+    </header>
+
+    <!-- Full-screen / Slide Drawer Menu with Complete Navigation -->
+    
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="smooth-wrapper">
+
+
+      <div id="smooth-content">
+
+        <!-- Global Dynamic Connection Overlay -->
+        <svg id="global-connection-overlay" class="global-connection-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 15;">
+          <defs>
+            <mask id="draw-mask">
+              <path id="mask-path" fill="none" stroke="white" stroke-width="20" stroke-linecap="round" />
+            </mask>
+          </defs>
+          <!-- The actual visible dashed line, hidden by mask initially -->
+          <path id="dynamic-trail" fill="none" stroke="#175DD3" stroke-width="4" stroke-dasharray="10 10" stroke-linecap="round" mask="url(#draw-mask)" />
+        </svg>
+
+        <main>
+          <!-- Reference-matched introduction; no loading overlay. -->
+          <section id="home" class="neobrutalist-hero">
+  <style>
+    .neobrutalist-hero {
+      position: relative;
+      width: 100%;
+      min-height: calc(100vh - 73px);
+      background-color: #fcfbf9;
+      background-image: 
+        linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
+      background-size: 40px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 5%;
+      font-family: var(--font-sans, 'Inter', sans-serif);
+      color: #000;
+      overflow: hidden;
+    }
+
+    .neo-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      max-width: 1300px;
+      width: 100%;
+      align-items: center;
+      z-index: 2;
+    }
+
+    /* Left Side Content */
+    .neo-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .neo-badge {
+      background: #000;
+      color: #fff;
+      font-family: 'Courier New', monospace;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 8px 16px;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+    }
+
+    .neo-headline {
+      font-size: clamp(45px, 6vw, 85px);
+      font-weight: 900;
+      line-height: 0.95;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      margin: 0 0 30px 0;
+    }
+
+    .neo-headline-box {
+      display: inline-block;
+      background: #1a56db;
+      color: #fff;
+      padding: 5px 20px;
+      border: 4px solid #000;
+      box-shadow: 6px 6px 0px #000;
+      transform: rotate(-2deg);
+      margin: 10px 0;
+      white-space: nowrap;
+    }
+
+    .neo-paragraph {
+      font-size: clamp(16px, 1.5vw, 20px);
+      line-height: 1.5;
+      color: #333;
+      border-left: 4px solid #ff1493;
+      padding-left: 20px;
+      max-width: 500px;
+      font-weight: 500;
+    }
+
+    /* Right Side Graphics */
+    .neo-graphics {
+      position: relative;
+      height: 500px;
+      width: 100%;
+    }
+
+    .neo-window {
+      position: absolute;
+      background: #fff;
+      border: 4px solid #000;
+      box-shadow: 12px 12px 0px #000;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .neo-window-header {
+      background: #000;
+      color: #fff;
+      padding: 8px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .neo-window-dots {
+      display: flex;
+      gap: 6px;
+    }
+
+    .neo-window-dots span {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+    .neo-window-dots span:nth-child(1) { background: #00d2ff; }
+    .neo-window-dots span:nth-child(2) { background: #ff00ff; }
+    .neo-window-dots span:nth-child(3) { background: #00ffff; }
+
+    /* Main Window */
+    .neo-main-window {
+      top: 50px;
+      left: 10%;
+      width: 80%;
+      z-index: 2;
+    }
+
+    .neo-main-content {
+      padding: 30px;
+      text-align: left;
+    }
+
+    .neo-main-content h3 {
+      font-size: 24px;
+      font-weight: 800;
+      margin: 0 0 15px 0;
+    }
+
+    .neo-main-content p {
+      font-size: 14px;
+      font-weight: 500;
+      margin: 0 0 25px 0;
+    }
+
+    .neo-input {
+      width: 100%;
+      padding: 15px;
+      border: 2px solid #000;
+      background: #f4f4f4;
+      font-family: inherit;
+      font-size: 14px;
+      margin-bottom: 15px;
+      font-weight: 500;
+      outline: none;
+    }
+
+    .neo-btn {
+      width: 100%;
+      padding: 15px;
+      border: 3px solid #000;
+      background: #00ffff;
+      color: #000;
+      font-weight: 800;
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.2s;
+    }
+    
+    .neo-btn:hover {
+      background: #00e6e6;
+      box-shadow: 4px 4px 0px #000;
+      transform: translate(-2px, -2px);
+    }
+
+    /* Back Window */
+    .neo-back-window {
+      top: 0;
+      right: 0;
+      width: 60%;
+      z-index: 1;
+      transform: rotate(5deg);
+    }
+
+    .neo-back-window .neo-window-header {
+      background: #1a56db;
+    }
+
+    .neo-back-content {
+      padding: 20px;
+      display: flex;
+      align-items: flex-end;
+      gap: 15px;
+      height: 150px;
+    }
+
+    .neo-bar {
+      width: 30px;
+      border: 3px solid #000;
+      border-bottom: none;
+    }
+    .neo-bar-1 { height: 60%; background: #00ffff; }
+    .neo-bar-2 { height: 100%; background: #ff1493; }
+    .neo-bar-3 { height: 40%; background: #fff; }
+
+    /* Sticky Note */
+    .neo-sticky {
+      position: absolute;
+      bottom: -30px;
+      left: -20px;
+      background: #1a56db;
+      border: 3px solid #000;
+      padding: 15px;
+      color: #fff;
+      font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
+      font-size: 15px;
+      transform: rotate(-6deg);
+      z-index: 3;
+      box-shadow: 6px 6px 0px #000;
+      width: 200px;
+    }
+
+    .neo-pin {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 15px;
+      height: 15px;
+      background: #ff1493;
+      border: 2px solid #000;
+      border-radius: 50%;
+    }
+
+    @media (max-width: 900px) {
+      .neo-container {
+        grid-template-columns: 1fr;
+      }
+      .neo-graphics {
+        height: 400px;
+        margin-top: 40px;
+      }
+    }
+  </style>
+
+  <div class="neo-container">
+    <div class="neo-content">
+      <div class="neo-badge">SCALORA SCHOOLS BY SCALORACADEMY</div>
+      <h1 class="neo-headline">
+        THE <br>
+        <span class="neo-headline-box">OPERATING<br>SYSTEM</span> <br>
+        FOR STUDENT <br>
+        INNOVATION.
+      </h1>
+      <p class="neo-paragraph">
+        No more boring classrooms. Research, build, and launch real startups in a structured, high-energy environment.
+      </p>
+    </div>
+
+    <div class="neo-graphics">
+      <!-- Back Window -->
+      <div class="neo-window neo-back-window">
+        <div class="neo-window-header">
+          <span>research_data.sys</span>
+        </div>
+        <div class="neo-back-content">
+          <div class="neo-bar neo-bar-1"></div>
+          <div class="neo-bar neo-bar-2"></div>
+          <div class="neo-bar neo-bar-3"></div>
+        </div>
+      </div>
+
+      <!-- Main Window -->
+      <div class="neo-window neo-main-window">
+        <div class="neo-window-header">
+          <span>C:\SCALORA\dashboard.exe</span>
+          <div class="neo-window-dots">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="neo-main-content">
+          <h3>ACCESS GATEWAY</h3>
+          <p>Enter your institutional credentials to initialize the IRDME framework.</p>
+          <input type="text" class="neo-input" placeholder="student@school.edu">
+          <button class="neo-btn">SYSTEM <span>→</span></button>
+        </div>
+
+        <!-- Sticky Note -->
+        <div class="neo-sticky">
+          <div class="neo-pin"></div>
+          REMINDER:<br>
+          Project pitches are due on Friday! 🔥
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+          <!-- SECTION: 02 / THE GAP (Problem) -->
+          <section id="the-gap" class="gap-section" style="background-color: #0b132b; color: #fff; padding-top: 80px; padding-bottom: 80px;">
+            <div class="gap-container">
+              <div class="gap-label" style="color: #ccc; border-bottom: 1px solid #1c274a;">02 / THE PROBLEM</div>
+              <div class="gap-content">
+                <div class="gap-left">
+                  <h2 class="gap-headline" style="color: #fff;">
+                    Education teaches students what to know.<br/>
+                    The real world asks what they can do with it.
+                  </h2>
+                </div>
+                <div class="gap-right">
+                  <div class="gap-accent-line" style="background: #333;"></div>
+                  <p class="gap-body" style="color: #ccc;">
+                    Today's academic system gives students a strong foundation in subjects and concepts. But real-world problem solving doesn't stop at knowing the answer.
+                  </p>
+                  <p class="gap-body" style="color: #ccc;">
+                    Students need opportunities to explore, research, build, manage, communicate and create — connecting what they learn in the classroom with problems beyond it.
+                  </p>
+                  <p class="gap-body highlight-body" style="color: #fff;">
+                    The missing layer isn't another subject. It's an ecosystem.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION: 03 / INDUSTRY & MARKET -->
+          <section id="industry-market" class="industry-market-section" style="background-color: #fff; color: #000; padding: 80px 5%; border-top: 1px solid #eaeaea;">
+            <div class="market-container" style="max-width: 1300px; margin: 0 auto;">
+              <div class="market-label" style="font-family: 'Courier New', monospace; font-weight: bold; font-size: 14px; letter-spacing: 2px; color: #666; margin-bottom: 40px; border-bottom: 1px solid #eaeaea; padding-bottom: 10px;">03 / THE MARKET GAP</div>
+              <div class="market-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px;">
+                <div class="market-left">
+                  <h2 class="market-headline" style="font-size: clamp(35px, 4vw, 55px); font-weight: 900; line-height: 1.1; text-transform: uppercase; margin-bottom: 30px;">
+                    THE INDUSTRY FACES A <br><span style="background: #000; color: #fff; padding: 5px 15px; display: inline-block; transform: rotate(-1deg); margin-top: 10px;">MASSIVE SKILL SHORTAGE.</span>
+                  </h2>
+                  <p class="market-body" style="font-size: 18px; line-height: 1.6; color: #333; margin-bottom: 20px;">
+                    Every year, millions of students graduate with theoretical knowledge, but industries report a widening gap in practical, deployable skills. The problem isn't intelligence; it's exposure.
+                  </p>
+                  <p class="market-body" style="font-size: 18px; line-height: 1.6; color: #333;">
+                    Companies spend months retraining fresh graduates on basics like problem-solving, project management, and cross-functional collaboration. The affected factor isn't just time—it's global innovation.
+                  </p>
+                </div>
+                <div class="market-right" style="display: flex; flex-direction: column; gap: 30px;">
+                  <!-- Stat Card 1 -->
+                  <div class="market-stat-card" style="border: 3px solid #000; padding: 30px; box-shadow: 6px 6px 0px #000; background: #f8f8f8;">
+                    <div style="font-size: 14px; font-weight: bold; text-transform: uppercase; margin-bottom: 5px; color: #666;">Indian Market Size</div>
+                    <h3 style="font-size: 48px; font-weight: 900; margin: 0; color: #1a56db;">₹15 Lakh Cr</h3>
+                    <p style="font-weight: 600; margin-top: 10px; font-size: 16px;">The scale of the Indian education sector—massive potential, but constrained by traditional, theoretical curriculums.</p>
+                  </div>
+                  <!-- Stat Card 2 -->
+                  <div class="market-stat-card" style="border: 3px solid #000; padding: 30px; box-shadow: 6px 6px 0px #000; background: #fff;">
+                    <div style="font-size: 14px; font-weight: bold; text-transform: uppercase; margin-bottom: 5px; color: #666;">Global Market Size</div>
+                    <h3 style="font-size: 48px; font-weight: 900; margin: 0; color: #ff1493;">₹580 Lakh Cr</h3>
+                    <p style="font-weight: 600; margin-top: 10px; font-size: 16px;">The worldwide education and skilling opportunity waiting for students who graduate with practical, real-world capabilities.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Partner Logos Marquee Section -->
+          <section class="logo-marquee-section" id="school-connections">
+            <div class="marquee-label">04 / WE CONNECT TO THESE SCHOOLS</div>
+            <div class="marquee-container">
+              <!-- Row 1: Scrolling Left -->
+              <div class="marquee-track track-left">
+                <!-- Group 1 -->
+                <div class="marquee-content">
+                  <div class="logo-card"><img src="/src/Hero_Pics/image.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy 2.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy 3.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy 4.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy 2.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy 3.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy 4.png" alt="School" /></div>
+                </div>
+                <!-- Group 2 (Clone for infinite scroll) -->
+                <div class="marquee-content" aria-hidden="true">
+                  <div class="logo-card"><img src="/src/Hero_Pics/image.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy 2.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy 3.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy 4.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy 2.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy 3.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy 4.png" alt="School" /></div>
+                </div>
+              </div>
+
+              <!-- Row 2: Scrolling Right -->
+              <div class="marquee-track track-right">
+                <div class="marquee-content">
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy 3.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy 4.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy 2.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy 3.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy 4.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy 2.png" alt="School" /></div>
+                </div>
+                <div class="marquee-content" aria-hidden="true">
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy 3.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy 4.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy 2.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy 3.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy 4.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy.png" alt="School" /></div>
+                  <div class="logo-card"><img src="/src/Hero_Pics/image copy 2.png" alt="School" /></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Who We Are Section -->
+          <section class="who-we-are-section">
+            <div class="who-container">
+              <!-- Left Column: Label -->
+              <div class="who-left">
+                <div class="who-label">05 WHO WE ARE</div>
+              </div>
+              <!-- Right Column: Content -->
+              <div class="who-right">
+                <div class="who-main-content">
+                  <div class="who-accent-line" id="trail-end-anchor"></div>
+                  <div class="who-text-wrapper">
+                    <h2 class="who-headline">
+                      WE'RE BUILDING THE SPACE BETWEEN THE CLASSROOM AND THE REAL WORLD.
+                    </h2>
+                    <p class="who-body">
+                      Scalora Schools by Scaloracademy is an experiential learning ecosystem for students in Classes 9–12 — built around <span class="who-highlight">Innovation, Research, Development, Management and Entrepreneurship</span>.
+                    </p>
+                    <p class="who-body">
+                      We work with schools to create an environment where students don't just learn concepts, but question problems, conduct research, build projects, work in teams, take responsibility and experience how the real world works.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="who-stats-grid">
+                  <div class="stat-card">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Students Trained</span>
+                  </div>
+                  <div class="stat-card">
+                    <span class="stat-number">03+</span>
+                    <span class="stat-label">Schools Connected</span>
+                  </div>
+                  <div class="stat-card">
+                    <span class="stat-number">05</span>
+                    <span class="stat-label">Pillars</span>
+                  </div>
+                  <div class="stat-card">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Practical Learning</span>
+                  </div>
+                </div>
+
+                <div class="who-conclusion">
+                  That's the Scalora Schools ecosystem.
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Motion Grid Scroll Animation Section (3rd Page) -->
+          <section class="grid-scroll-section">
+            <div class="content">
+              <div class="grid">
+                <!-- Layer 1: Outer edges (6 images) -->
+                <div class="layer">
+                  <div><img src="/hero_pics/scalora-gallery-2.jpg" alt="" /></div>
+                  <div><img src="/hero_pics/scalora-gallery-3.jpg" alt="" /></div>
+                  <div><img src="/hero_pics/scalora-gallery-4.jpg" alt="" /></div>
+                  <div><img src="/hero_pics/scalora-gallery-5.jpg" alt="" /></div>
+                  <div><img src="/hero_pics/scalora-gallery-6.jpg" alt="" /></div>
+                  <div><img src="/hero_pics/scalora-gallery-7.jpg" alt="" /></div>
+                </div>
+                <!-- Layer 2: Inner columns (6 images) -->
+                <div class="layer">
+                  <div><img src="/hero_pics/scalora-gallery-8.jpg" alt="" /></div>
+                  <div><img src="/hero_pics/scalora-gallery-9.jpg" alt="" /></div>
+                  <div><img src="/hero_pics/scalora-gallery-10.jpg" alt="" /></div>
+                  <div><img src="/hero_pics/scalora-gallery-11.jpg" alt="" /></div>
+                  <div><img src="/hero_pics/scalora-gallery-12.jpg" alt="" /></div>
+                  <div><img src="/hero_pics/scalora-gallery-13.jpg" alt="" /></div>
+                </div>
+                <!-- Layer 3: Center column top and bottom (2 images) -->
+                <div class="layer">
+                  <div><img src="/hero_pics/scalora-gallery-14.jpg" alt="" /></div>
+                  <div><img src="/hero_pics/scalora-gallery-15.jpg" alt="" /></div>
+                </div>
+                <!-- Center scaler container -->
+                <div class="scaler">
+                  <img class="start-img" src="/hero_pics/scalora-gallery-1.jpg" alt="" />
+                  <img class="end-img" src="/src/Hero_Pics/20260901_120720~2.jpg.jpeg" alt="" style="opacity: 0;" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+          <!-- SECTION: 06 / OUR RESPONSE -->
+          <section id="response" class="response-section">
+            <div class="response-container">
+              <!-- Left Column: Copy -->
+              <div class="response-left">
+                <div class="response-label">06 / OUR RESPONSE</div>
+                <h2 class="response-headline">
+                  The missing subject isn't another subject.<br />
+                  It's an <span class="highlight-yellow">Ecosystem.</span>
+                </h2>
+                <h3 class="response-subhead">Introduce Scalora Schools.</h3>
+                <p class="response-body">
+                  Scalora doesn't replace classroom education. It extends it.
+                </p>
+                <p class="response-body">
+                  Students take what they learn and use it to investigate problems, develop projects, work with teams and take increasing responsibility.
+                </p>
+              </div>
+
+              <!-- Right Column: Bento Ecosystem -->
+              <div class="response-right">
+                <div class="bento-ecosystem">
+                  <!-- Bento Item 1: Investigate -->
+                  <div class="bento-card fill-blue">
+                    <div class="bento-icon-wrapper">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </div>
+                    <h4>Investigate</h4>
+                    <p>Frame questions from raw observations.</p>
+                  </div>
+
+                  <!-- Bento Item 2: Projects -->
+                  <div class="bento-card fill-green">
+                    <div class="bento-icon-wrapper">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    </div>
+                    <h4>Projects</h4>
+                    <p>Build hands-on, deployable value.</p>
+                  </div>
+
+                  <!-- Bento Item 3: Teams -->
+                  <div class="bento-card fill-orange">
+                    <div class="bento-icon-wrapper">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <h4>Teams</h4>
+                    <p>Collaborate across disciplines.</p>
+                  </div>
+
+                  <!-- Bento Item 4: Responsibility -->
+                  <div class="bento-card fill-red">
+                    <div class="bento-icon-wrapper">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    </div>
+                    <h4>Responsibility</h4>
+                    <p>Take ownership of real outcomes.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- SECTION: IRDME INTRO -->
+          <section id="irdme-intro" class="irdme-intro-section">
+            <div class="irdme-intro-container">
+              <div class="irdme-intro-label">INTRODUCTION TO IRDME</div>
+              <h2 class="irdme-intro-headline">
+                A structured cycle to turn <span class="highlight-yellow">curiosity into competence.</span>
+              </h2>
+              <p class="irdme-intro-body">
+                IRDME is our proprietary 5-step experiential learning framework: Innovation, Research, Development, Management, and Entrepreneurship. It ensures that students don't just learn concepts in isolation, but take a project from an initial idea all the way to a real-world execution.
+              </p>
+            </div>
+          </section>
+
+          <!-- SECTION: 06 / IRDME THE FRAMEWORK -->
+          <section class="irdme-section">
+            <!-- Card I -->
+            <div class="irdme-card card-i">
+              <div class="irdme-left">
+                <div class="irdme-label">07 / THE FRAMEWORK<br>I R D M E</div>
+                <h2 class="irdme-title">I — INNOVATION</h2>
+                <h3 class="irdme-sub">Identify possibilities.</h3>
+                <p class="irdme-tags">Ideas &middot; Problems &middot; Creativity &middot; Alternatives</p>
+              </div>
+              <div class="irdme-right">
+                <div class="huge-letter">I</div>
+              </div>
+            </div>
+
+            <!-- Card R -->
+            <div class="irdme-card card-r">
+              <div class="irdme-left">
+                <div class="irdme-label">07 / THE FRAMEWORK<br>I R D M E</div>
+                <h2 class="irdme-title">R — RESEARCH</h2>
+                <h3 class="irdme-sub">Understand before you build.</h3>
+                <p class="irdme-tags">Observation &middot; Evidence &middot; Analysis</p>
+              </div>
+              <div class="irdme-right">
+                <div class="huge-letter">R</div>
+              </div>
+            </div>
+
+            <!-- Card D -->
+            <div class="irdme-card card-d">
+              <div class="irdme-left">
+                <div class="irdme-label">07 / THE FRAMEWORK<br>I R D M E</div>
+                <h2 class="irdme-title">D — DEVELOPMENT</h2>
+                <h3 class="irdme-sub">Turn thinking into something real.</h3>
+                <p class="irdme-tags">Prototyping &middot; Testing &middot; Implementation</p>
+              </div>
+              <div class="irdme-right">
+                <div class="huge-letter">D</div>
+              </div>
+            </div>
+
+            <!-- Card M -->
+            <div class="irdme-card card-m">
+              <div class="irdme-left">
+                <div class="irdme-label">07 / THE FRAMEWORK<br>I R D M E</div>
+                <h2 class="irdme-title">M — MANAGEMENT</h2>
+                <h3 class="irdme-sub">Learn to execute with others.</h3>
+                <p class="irdme-tags">Planning &middot; Organisation &middot; Teams &middot; Resources</p>
+              </div>
+              <div class="irdme-right">
+                <div class="huge-letter">M</div>
+              </div>
+            </div>
+
+            <!-- Card E -->
+            <div class="irdme-card card-e">
+              <div class="irdme-left">
+                <div class="irdme-label">07 / THE FRAMEWORK<br>I R D M E</div>
+                <h2 class="irdme-title">E — ENTREPRENEURSHIP</h2>
+                <h3 class="irdme-sub">Understand value and opportunity.</h3>
+                <p class="irdme-tags">Users &middot; Opportunity &middot; Feasibility</p>
+              </div>
+              <div class="irdme-right">
+                <div class="huge-letter">E</div>
+              </div>
+            </div>
+          </section>
+
+
+
+          <!-- SECTION: 08 / PROOF -->
+          <section class="proof-section">
+            <div class="proof-container">
+              <div class="proof-label">08 / PROOF</div>
+              <h2 class="proof-title">What people are saying</h2>
+              <div class="proof-list">
+                <!-- Card 1 -->
+                <div class="proof-card card-student">
+                  <h3 class="proof-quote">"I came in to participate. I left knowing how to build something."</h3>
+                  <div class="proof-author">
+                    <strong>CLASS 10 STUDENT</strong><br>
+                    <span>SCALORA CLUB</span>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="proof-card card-principal">
+                  <h3 class="proof-quote">"Scalora gave our students a structured way to take ideas beyond the classroom."</h3>
+                  <div class="proof-author">
+                    <strong>PRINCIPAL</strong><br>
+                    <span>PARTNER SCHOOL</span>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="proof-card card-industry">
+                  <h3 class="proof-quote">"Students should experience how the world outside school actually works."</h3>
+                  <div class="proof-author">
+                    <strong>INDUSTRY PARTNER</strong><br>
+                    <span>INDUSTRY EXPOSURE</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+          <!-- SITE FOOTER -->
+          <!-- SITE FOOTER -->
+          <footer class="giant-footer">
+            <div class="giant-footer-top">
+              <div class="gf-col gf-brand-col">
+                <div class="scalora-logo-lockup footer-size">
+                  <span class="logo-text-line">SCALORA</span>
+                  <span class="logo-text-line">SCHOOLS</span>
+                </div>
+                <p>Creating structured experiential-learning ecosystems where students move from problems to solutions.</p>
+              </div>
+              <div class="gf-col">
+                <div class="gf-heading">NAVIGATION</div>
+                <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About Scalora</a></li>
+                  <li><a href="#model">The Scalora Model</a></li>
+                  <li><a href="#irdme">IRDME Framework</a></li>
+                </ul>
+              </div>
+                            <div class="gf-col">
+                <div class="gf-heading">COMPANY</div>
+                <ul>
+                  <li><a href="terms.html">Terms of Service</a></li>
+                  <li><a href="privacy.html">Privacy Policy</a></li>
+                  <li><a href="cookies.html">Cookie Policy</a></li>
+                  <li><a href="security.html">Security & Safety</a></li>
+                </ul>
+              </div>
+              <div class="gf-col">
+                <div class="gf-heading">CONTACT</div>
+                <ul>
+                  <li><a href="mailto:scaloraschools@gmail.com" class="gf-mail-link" style="text-transform:none;">scaloraschools@gmail.com</a></li>
+                  <li class="gf-address">Scalora Academy Pvt Limited<br>D2-0401, Smart City Kingswood, Plot No. GH02,<br>Sector-4, Noida, Gautam Buddha Nagar,<br>Uttar Pradesh, India, 201301</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="giant-footer-middle">
+              <div class="giant-brand-text">#NoMoreOrdinary</div>
+            </div>
+
+            <div class="giant-footer-bottom">
+              <div class="gf-copyright">Copyright © 2026 Scalora Schools</div>
+              <button class="gf-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">BACK TO TOP &uarr;</button>
+            </div>
+          </footer>
+        </main>
+      </div>
+    </div>
+
+    <!-- Floating Blue Chat / Contact Trigger (Matching bottom-right of screenshot) -->
+    <a href="contact.html" class="icreon-floating-chat" aria-label="Connect with Scalora Advisor">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/>
+      </svg>
+    </a>
+
+    <!-- MAIN SCRIPT -->
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/reference-hero.js"></script>
+  
+    <!-- COOKIE CONSENT BANNER -->
+    <div id="cookieBanner" class="cookie-banner" style="display: none;">
+      <div class="cookie-banner-content">
+        <div class="cookie-banner-text">
+          <h3>We use cookies</h3>
+          <p>We use necessary cookies to help our website function properly and securely. We may also use optional cookies to remember preferences and improve your experience.</p>
+          <p>By selecting "Accept All", you agree to the use of optional cookies. You can manage your preferences at any time. <a href="cookies.html" class="cookie-policy-link">Cookie Policy</a></p>
+        </div>
+        <div class="cookie-banner-actions">
+          <button id="btnAcceptAll" class="cookie-btn cookie-btn-primary">Accept All</button>
+          <button id="btnRejectOptional" class="cookie-btn cookie-btn-secondary">Reject Optional</button>
+          <button id="btnManagePreferences" class="cookie-btn cookie-btn-text">Manage Preferences</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- COOKIE PREFERENCES MODAL -->
+    <div id="cookieModal" class="cookie-modal-overlay" style="display: none;">
+      <div class="cookie-modal">
+        <div class="cookie-modal-header">
+          <h2>Cookie Preferences</h2>
+          <button id="cookieModalClose" class="cookie-close-btn">&times;</button>
+        </div>
+        <div class="cookie-modal-body">
+          <p class="cookie-modal-intro">You can choose which types of cookies you allow.</p>
+          
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Necessary Cookies</h3>
+                <span class="cookie-badge cookie-badge-required">Always Active</span>
+              </div>
+            </div>
+            <p class="cookie-category-desc">These cookies are required for the basic operation, security and functionality of the website.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Functional Cookies</h3>
+                <span class="cookie-badge cookie-badge-optional">Optional</span>
+              </div>
+              <label class="cookie-switch">
+                <input type="checkbox" id="chkFunctional">
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">These cookies may help remember your preferences and improve your browsing experience.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Analytics Cookies</h3>
+                <span class="cookie-badge cookie-badge-disabled">Currently Not Used</span>
+              </div>
+              <label class="cookie-switch cookie-switch-disabled">
+                <input type="checkbox" disabled>
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">Scalora Schools does not currently use Google Analytics, Google Tag Manager, Vercel Analytics or Vercel Speed Insights.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Marketing Cookies</h3>
+                <span class="cookie-badge cookie-badge-optional">Optional</span>
+              </div>
+              <label class="cookie-switch">
+                <input type="checkbox" id="chkMarketing">
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">These cookies may be used for advertising or marketing purposes if such technologies are introduced in the future.</p>
+          </div>
+        </div>
+        <div class="cookie-modal-footer">
+          <button id="btnSavePreferences" class="cookie-btn cookie-btn-primary cookie-btn-full">Save Preferences</button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
+
+
+

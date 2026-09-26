@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scalora — Education Beyond the Classroom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Melius font pairing: Editorial Serif + Ultra-clean Modern Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <!-- ICREON GRID-DIVIDED TOP NAVBAR -->
+    <header class="icreon-header">
+      <div class="icreon-nav-grid">
+        <!-- Logo Cell -->
+        <a href="index.html" class="icreon-logo-cell">
+          <div class="brand-name">
+            <span>SCALORA</span>
+            <span>SCHOOLS</span>
+          </div>
+        </a>
+
+        <!-- Middle Nav Cells with Thin Dividers -->
+        <div class="icreon-nav-links">
+          <a href="services.html" class="icreon-nav-cell">Programmes</a>
+          <a href="schools.html" class="icreon-nav-cell">For Schools</a>
+          <a href="industry.html" class="icreon-nav-cell">For Industry</a>
+                    <div class="icreon-nav-dropdown-wrapper">
+            <a href="about.html" class="icreon-nav-cell">About</a>
+            <div class="icreon-dropdown-menu">
+              <a href="about.html#about">Our Story</a>
+              <a href="about.html#insights">Insights</a>
+              <a href="about.html#leadership">Leadership</a>
+              <a href="about.html#careers">Careers</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Action Cells -->
+        <div class="icreon-nav-right">
+          <!-- Search Icon Cell -->
+          <button class="icreon-search-cell" id="icreonSearchBtn" aria-label="Search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+
+          <!-- Contact Us Pill Cell -->
+          <div class="icreon-cta-cell">
+            <a href="#partner" class="btn-icreon-contact">Contact Us</a>
+          </div>
+
+          <!-- Mobile Hamburger Trigger Cell -->
+          
+        </div>
+      </div>
+    </header>
+
+    <!-- Full-screen / Slide Drawer Menu with Complete Navigation -->
+    
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <!-- Global Dynamic Connection Overlay -->
+        <svg id="global-connection-overlay" class="global-connection-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 15;">
+          <defs>
+            <mask id="draw-mask">
+              <path id="mask-path" fill="none" stroke="white" stroke-width="20" stroke-linecap="round" />
+            </mask>
+          </defs>
+          <!-- The actual visible dashed line, hidden by mask initially -->
+          <path id="dynamic-trail" fill="none" stroke="#175DD3" stroke-width="4" stroke-dasharray="10 10" stroke-linecap="round" mask="url(#draw-mask)" />
+        </svg>
+
+        <main>
+<!-- SECTION: 08 / ABOUT -->
+          <section id="about" class="about-section-minimal">
+            <div class="about-minimal-container">
+              <div class="about-minimal-label">01 / ABOUT</div>
+              <h2 class="about-minimal-headline">
+                We're building the ecosystem<br>
+                we wished schools had.
+              </h2>
+            </div>
+          </section>
+
+
+          <!-- SECTION: 02 / WHAT WE FOUND -->
+          <section id="what-we-found" class="how-we-think-section">
+            <div class="hwt-container">
+              <div class="hwt-label">02 / WHAT WE FOUND</div>
+              <div class="hwt-content">
+                <div class="hwt-left">
+                  <h2 class="hwt-headline">
+                    We found that entrepreneurship<br>
+                    doesn't start with a business.
+                  </h2>
+                </div>
+                <div class="hwt-right">
+                  <div class="hwt-accent"></div>
+                  <p class="hwt-body">
+                    <strong>It starts much earlier.</strong><br><br>
+                    Students need to learn how to identify problems, think differently, research possibilities, build solutions, manage their work and only then take those solutions into the real world. That discovery became the foundation of IRDME.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          <!-- SECTION: 03 / INSIGHTS -->
+          <section id="insights" class="insights-section">
+            <div class="insights-container">
+              <div class="insights-header">
+                <div class="insights-label">03 / INSIGHTS</div>
+                <h2 class="insights-title">What we’ve learned from building with students.</h2>
+              </div>
+
+              <div class="insights-list">
+                <!-- Card 01 -->
+                <div class="insight-card">
+                  <div class="ic-left">
+                    <div class="ic-number">01</div>
+                    <h3 class="ic-headline">EXPERIENCE MATTERS</h3>
+                  </div>
+                  <div class="ic-right">
+                    <p class="ic-body">Students understand concepts differently when they have the opportunity to apply them to real problems.</p>
+                  </div>
+                </div>
+
+                <!-- Card 02 -->
+                <div class="insight-card">
+                  <div class="ic-left">
+                    <div class="ic-number">02</div>
+                    <h3 class="ic-headline">ENTREPRENEURSHIP COMES LATER</h3>
+                  </div>
+                  <div class="ic-right">
+                    <p class="ic-body">Before students can build ventures, they need to learn how to identify problems, innovate, research, develop and manage.</p>
+                  </div>
+                </div>
+
+                <!-- Card 03 -->
+                <div class="insight-card">
+                  <div class="ic-left">
+                    <div class="ic-number">03</div>
+                    <h3 class="ic-headline">ECOSYSTEMS BEAT ONE-OFF ACTIVITIES</h3>
+                  </div>
+                  <div class="ic-right">
+                    <p class="ic-body">A single workshop can create excitement. A structured, continuous environment can create sustained student engagement and development.</p>
+                  </div>
+                </div>
+
+                <!-- Card 04 -->
+                <div class="insight-card">
+                  <div class="ic-left">
+                    <div class="ic-number">04</div>
+                    <h3 class="ic-headline">STUDENTS NEED OWNERSHIP</h3>
+                  </div>
+                  <div class="ic-right">
+                    <p class="ic-body">When students move from simply participating to taking responsibility, leadership and accountability become part of the learning experience.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION: 04 / FOUNDERS' MESSAGE -->
+          <section id="founders" class="founders-message-section">
+            <div class="founders-container">
+              <div class="founders-label">04 / FOUNDERS' MESSAGE</div>
+              <!-- FOUNDER 1 -->
+              <div class="founder-row">
+                <div class="founder-card">
+                  <img src="/src/Hero_Pics/founder-1.png" alt="Founder 1">
+                </div>
+                <div class="founders-text">
+                  <h2 class="founders-headline">
+                    "We built Scalora because we saw a gap between what students learn and what the real world demands."
+                  </h2>
+                  <p class="founders-body">
+                    Our journey started with a simple observation: schools provide excellent academic foundations, but students lack the environment to apply that knowledge to solve real problems.
+                  </p>
+                  <div class="founders-signatures">
+                    <a href="https://www.linkedin.com/in/pushpendra-singh-ratmani-30b36628b/" target="_blank" rel="noopener noreferrer" class="founder-name" style="text-decoration: none;">Pushpendra Singh Ratmani</a>
+                    <span class="founder-title">Co-Founder, Scalora Schools</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FOUNDER 2 -->
+              <div class="founder-row reverse">
+                <div class="founders-text">
+                  <h2 class="founders-headline">
+                    "We envisioned an ecosystem where innovation, research, and entrepreneurship are a structured process."
+                  </h2>
+                  <p class="founders-body">
+                    Scalora Schools is that ecosystem—a place where curiosity turns into competence, and students evolve into leaders before they even graduate. We believe in building the future today.
+                  </p>
+                  <div class="founders-signatures">
+                    <a href="https://www.linkedin.com/in/bs-ashwath-babu-2238a52a5/" target="_blank" rel="noopener noreferrer" class="founder-name" style="text-decoration: none;">B S Ashwath Babu</a>
+                    <span class="founder-title">Co-Founder, Scalora Schools</span>
+                  </div>
+                </div>
+                <div class="founder-card">
+                  <img src="/src/Hero_Pics/founder-2.png" alt="Founder 2">
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- SECTION: 05 / CAREERS -->
+          <section id="careers" class="careers-section">
+            <div class="careers-container">
+              <div class="careers-label">05 / CAREERS</div>
+              <div class="careers-header">
+                <h2 class="careers-title">Build the future of education with us.</h2>
+                <p class="careers-desc">We're looking for passionate, curious minds to join our mission. If you're ready to create ecosystems that transform how students learn and build, we want you on our team.</p>
+              </div>
+              <div class="careers-grid">
+                <!-- Card 1 -->
+                <div class="career-card">
+                  <div class="cc-top">
+                    <span class="cc-tag">Creative</span>
+                    <h3 class="cc-role">Video Editor</h3>
+                    <p class="cc-type">Full-time / Part-time</p>
+                  </div>
+                  <div class="cc-bottom">
+                    <button class="cc-apply-btn open-modal-btn" data-role="Video Editor">Apply Now <span>&rarr;</span></button>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="career-card">
+                  <div class="cc-top">
+                    <span class="cc-tag">Engineering</span>
+                    <h3 class="cc-role">Tech Intern</h3>
+                    <p class="cc-type">Internship</p>
+                  </div>
+                  <div class="cc-bottom">
+                    <button class="cc-apply-btn open-modal-btn" data-role="Tech Intern">Apply Now <span>&rarr;</span></button>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="career-card">
+                  <div class="cc-top">
+                    <span class="cc-tag">Research</span>
+                    <h3 class="cc-role">Tech Research Intern</h3>
+                    <p class="cc-type">Internship</p>
+                  </div>
+                  <div class="cc-bottom">
+                    <button class="cc-apply-btn open-modal-btn" data-role="Tech Research Intern">Apply Now <span>&rarr;</span></button>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="career-card">
+                  <div class="cc-top">
+                    <span class="cc-tag">Design</span>
+                    <h3 class="cc-role">Design Intern</h3>
+                    <p class="cc-type">Internship</p>
+                  </div>
+                  <div class="cc-bottom">
+                    <button class="cc-apply-btn open-modal-btn" data-role="Design Intern">Apply Now <span>&rarr;</span></button>
+                  </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="career-card">
+                  <div class="cc-top">
+                    <span class="cc-tag">Creative</span>
+                    <h3 class="cc-role">Photography Intern</h3>
+                    <p class="cc-type">Internship</p>
+                  </div>
+                  <div class="cc-bottom">
+                    <button class="cc-apply-btn open-modal-btn" data-role="Photography Intern">Apply Now <span>&rarr;</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SITE FOOTER -->
+
+          <!-- SITE FOOTER -->
+          <footer class="giant-footer">
+            <div class="giant-footer-top">
+              <div class="gf-col gf-brand-col">
+                <div class="scalora-logo-lockup footer-size">
+                  <span class="logo-text-line">SCALORA</span>
+                  <span class="logo-text-line">SCHOOLS</span>
+                </div>
+                <p>Creating structured experiential-learning ecosystems where students move from problems to solutions.</p>
+              </div>
+              <div class="gf-col">
+                <div class="gf-heading">NAVIGATION</div>
+                <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About Scalora</a></li>
+                  <li><a href="#model">The Scalora Model</a></li>
+                  <li><a href="#irdme">IRDME Framework</a></li>
+                </ul>
+              </div>
+                            <div class="gf-col">
+                <div class="gf-heading">COMPANY</div>
+                <ul>
+                  <li><a href="terms.html">Terms of Service</a></li>
+                  <li><a href="privacy.html">Privacy Policy</a></li>
+                  <li><a href="cookies.html">Cookie Policy</a></li>
+                  <li><a href="security.html">Security & Safety</a></li>
+                </ul>
+              </div>
+              <div class="gf-col">
+                <div class="gf-heading">CONTACT</div>
+                <ul>
+                  <li><a href="mailto:scaloraschools@gmail.com" class="gf-mail-link" style="text-transform:none;">scaloraschools@gmail.com</a></li>
+                  <li class="gf-address">Scalora Academy Pvt Limited<br>D2-0401, Smart City Kingswood, Plot No. GH02,<br>Sector-4, Noida, Gautam Buddha Nagar,<br>Uttar Pradesh, India, 201301</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="giant-footer-middle">
+              <div class="giant-brand-text">#NoMoreOrdinary</div>
+            </div>
+
+            <div class="giant-footer-bottom">
+              <div class="gf-copyright">Copyright © 2026 Scalora Schools</div>
+              <button class="gf-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">BACK TO TOP &uarr;</button>
+            </div>
+          </footer>
+        </main>
+      </div>
+    </div>
+
+    <!-- Floating Blue Chat / Contact Trigger (Matching bottom-right of screenshot) -->
+    <a href="#partner" class="icreon-floating-chat" aria-label="Connect with Scalora Advisor">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/>
+      </svg>
+    </a>
+
+    <!-- MAIN SCRIPT -->
+    <script type="module" src="/src/main.js"></script>
+    <!-- APPLICATION MODAL -->
+    <div id="application-modal" class="modal-overlay">
+      <div class="modal-content">
+        <button id="close-modal" class="modal-close">&times;</button>
+        <h2 class="modal-title">Apply for <span id="modal-role-name">Role</span></h2>
+        <p class="modal-subtitle">Join the mission at Scalora Schools.</p>
+        <form id="application-form" class="modal-form" enctype="multipart/form-data">
+          <input type="hidden" id="role-input" name="role" value="">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="portfolio">Portfolio / LinkedIn</label>
+            <input type="url" id="portfolio" name="portfolio">
+          </div>
+          <div class="form-group">
+            <label for="resume">Upload Resume (PDF)</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+          </div>
+          <button type="submit" class="submit-btn" id="submit-btn">Submit Application</button>
+          <div id="form-status" class="form-status"></div>
+        </form>
+      </div>
+    </div>
+  
+    <!-- COOKIE CONSENT BANNER -->
+    <div id="cookieBanner" class="cookie-banner" style="display: none;">
+      <div class="cookie-banner-content">
+        <div class="cookie-banner-text">
+          <h3>We use cookies</h3>
+          <p>We use necessary cookies to help our website function properly and securely. We may also use optional cookies to remember preferences and improve your experience.</p>
+          <p>By selecting "Accept All", you agree to the use of optional cookies. You can manage your preferences at any time. <a href="cookies.html" class="cookie-policy-link">Cookie Policy</a></p>
+        </div>
+        <div class="cookie-banner-actions">
+          <button id="btnAcceptAll" class="cookie-btn cookie-btn-primary">Accept All</button>
+          <button id="btnRejectOptional" class="cookie-btn cookie-btn-secondary">Reject Optional</button>
+          <button id="btnManagePreferences" class="cookie-btn cookie-btn-text">Manage Preferences</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- COOKIE PREFERENCES MODAL -->
+    <div id="cookieModal" class="cookie-modal-overlay" style="display: none;">
+      <div class="cookie-modal">
+        <div class="cookie-modal-header">
+          <h2>Cookie Preferences</h2>
+          <button id="cookieModalClose" class="cookie-close-btn">&times;</button>
+        </div>
+        <div class="cookie-modal-body">
+          <p class="cookie-modal-intro">You can choose which types of cookies you allow.</p>
+          
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Necessary Cookies</h3>
+                <span class="cookie-badge cookie-badge-required">Always Active</span>
+              </div>
+            </div>
+            <p class="cookie-category-desc">These cookies are required for the basic operation, security and functionality of the website.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Functional Cookies</h3>
+                <span class="cookie-badge cookie-badge-optional">Optional</span>
+              </div>
+              <label class="cookie-switch">
+                <input type="checkbox" id="chkFunctional">
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">These cookies may help remember your preferences and improve your browsing experience.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Analytics Cookies</h3>
+                <span class="cookie-badge cookie-badge-disabled">Currently Not Used</span>
+              </div>
+              <label class="cookie-switch cookie-switch-disabled">
+                <input type="checkbox" disabled>
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">Scalora Schools does not currently use Google Analytics, Google Tag Manager, Vercel Analytics or Vercel Speed Insights.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Marketing Cookies</h3>
+                <span class="cookie-badge cookie-badge-optional">Optional</span>
+              </div>
+              <label class="cookie-switch">
+                <input type="checkbox" id="chkMarketing">
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">These cookies may be used for advertising or marketing purposes if such technologies are introduced in the future.</p>
+          </div>
+        </div>
+        <div class="cookie-modal-footer">
+          <button id="btnSavePreferences" class="cookie-btn cookie-btn-primary cookie-btn-full">Save Preferences</button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
+
+
+
+

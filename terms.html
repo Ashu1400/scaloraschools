@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<!--
+  ____   ____    _    _     ___  ____      _    
+ / ___| / ___|  / \  | |   / _ \|  _ \    / \   
+ \___ \| |     / _ \ | |  | | | | |_) |  / _ \  
+  ___) | |___ / ___ \| |__| |_| |  _ <  / ___ \ 
+ |____/ \____/_/   \_\_____\___/|_| \_\/_/   \_\
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms & Conditions - Scalora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Melius font pairing: Editorial Serif + Ultra-clean Modern Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/ascii-hero.css">
+    <link rel="stylesheet" href="/src/reference-hero.css">
+  
+    <style>
+      .legal-page {
+        background-color: #fafafa;
+        color: #111827;
+        font-family: 'Inter', sans-serif;
+        padding: 180px 5% 100px 5%;
+        min-height: 100vh;
+      }
+      .legal-container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 80px;
+        border-radius: 24px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.03);
+        border: 1px solid #eaeaea;
+      }
+      .legal-container h1 {
+        font-family: 'Instrument Serif', serif;
+        font-size: clamp(3rem, 5vw, 4.5rem);
+        line-height: 1.1;
+        margin-bottom: 24px;
+        color: #0b132b;
+      }
+      .legal-container > p:first-of-type,
+      .legal-container > p:nth-of-type(2) {
+        font-size: 1.1rem;
+        color: #64748b;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #f1f5f9;
+        padding-bottom: 24px;
+      }
+      .legal-container h2 {
+        font-family: 'Outfit', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        color: #0f172a;
+        letter-spacing: -0.01em;
+      }
+      .legal-container h3 {
+        font-family: 'Outfit', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-top: 40px;
+        margin-bottom: 16px;
+        color: #334155;
+      }
+      .legal-container p {
+        font-size: 1.125rem;
+        line-height: 1.8;
+        color: #475569;
+        margin-bottom: 24px;
+      }
+      .legal-container ul, .legal-container ol {
+        margin-bottom: 24px;
+        padding-left: 24px;
+      }
+      .legal-container li {
+        font-size: 1.125rem;
+        line-height: 1.8;
+        color: #475569;
+        margin-bottom: 12px;
+      }
+      .legal-container strong {
+        color: #0f172a;
+        font-weight: 600;
+      }
+      .legal-badge {
+        display: inline-block;
+        padding: 6px 14px;
+        background: #e0e7ff;
+        color: #4338ca;
+        border-radius: 100px;
+        font-family: 'Outfit', sans-serif;
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      @media (max-width: 768px) {
+        .legal-page { padding: 140px 5% 60px 5%; }
+        .legal-container { padding: 40px 24px; border-radius: 16px; }
+      }
+    </style>
+</head>
+  <body class="reference-home">
+    <!-- ICREON GRID-DIVIDED TOP NAVBAR -->
+    <style>
+      .icreon-header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+      }
+      .ascii-home .icreon-header.header-scrolled {
+        background: #ffffff !important;
+        border-bottom: 1px solid #e2e2e6 !important;
+      }
+      .ascii-home .icreon-header.header-scrolled :is(.brand-name,.icreon-nav-cell,.icreon-search-cell) {
+        color: #1a1a1e !important;
+      }
+      .ascii-home .icreon-header.header-scrolled .btn-icreon-contact {
+        color: #1a1a1e !important;
+        border-color: #e2e2e6 !important;
+        background: transparent !important;
+      }
+      .ascii-home .icreon-header.header-scrolled :is(.icreon-nav-grid,.icreon-logo-cell,.icreon-nav-cell,.icreon-search-cell,.icreon-mobile-menu-cell) {
+        border-color: #e2e2e6 !important;
+      }
+      .ascii-home .icreon-header.header-scrolled :is(.icreon-logo-cell,.icreon-nav-cell,.icreon-search-cell):hover {
+        background-color: #f8f8fa !important;
+        color: #1a1a1e !important;
+      }
+      .ascii-home .icreon-header.header-scrolled .icreon-mobile-menu-cell span {
+        background: #1a1a1e !important;
+      }
+    </style>
+    <script>
+      window.addEventListener('scroll', () => {
+        const header = document.querySelector('.icreon-header');
+        if (window.scrollY > 50) {
+          header.classList.add('header-scrolled');
+        } else {
+          header.classList.remove('header-scrolled');
+        }
+      });
+    </script>
+    <header class="icreon-header">
+      <div class="icreon-nav-grid">
+        <!-- Logo Cell -->
+        <a href="index.html" class="icreon-logo-cell">
+          <div class="brand-name">
+            <span>SCALORA</span>
+            <span>SCHOOLS</span>
+          </div>
+        </a>
+
+        <!-- Middle Nav Cells with Thin Dividers -->
+        <div class="icreon-nav-links">
+          <a href="services.html" class="icreon-nav-cell">Programmes</a>
+          <a href="schools.html" class="icreon-nav-cell">For Schools</a>
+          <a href="industry.html" class="icreon-nav-cell">For Industry</a>
+                    <div class="icreon-nav-dropdown-wrapper">
+            <a href="about.html" class="icreon-nav-cell">About</a>
+            <div class="icreon-dropdown-menu">
+              <a href="about.html#about">Our Story</a>
+              <a href="about.html#insights">Insights</a>
+              <a href="about.html#leadership">Leadership</a>
+              <a href="about.html#careers">Careers</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Action Cells -->
+        <div class="icreon-nav-right">
+          <!-- Search Icon Cell -->
+          <button class="icreon-search-cell" id="icreonSearchBtn" aria-label="Search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+
+          <!-- Contact Us Pill Cell -->
+          <div class="icreon-cta-cell">
+            <a href="contact.html" class="btn-icreon-contact">Contact Us</a>
+          </div>
+
+          <!-- Mobile Hamburger Trigger Cell -->
+          
+        </div>
+      </div>
+    </header>
+
+    <!-- Full-screen / Slide Drawer Menu with Complete Navigation -->
+    
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="smooth-wrapper">
+
+
+      <div id="smooth-content">
+
+        <!-- Global Dynamic Connection Overlay -->
+        <svg id="global-connection-overlay" class="global-connection-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 15;">
+          <defs>
+            <mask id="draw-mask">
+              <path id="mask-path" fill="none" stroke="white" stroke-width="20" stroke-linecap="round" />
+            </mask>
+          </defs>
+          <!-- The actual visible dashed line, hidden by mask initially -->
+          <path id="dynamic-trail" fill="none" stroke="#175DD3" stroke-width="4" stroke-dasharray="10 10" stroke-linecap="round" mask="url(#draw-mask)" />
+        </svg>
+
+        <main>
+<section class="legal-page">
+<div class="legal-container">
+<div class="legal-badge">Terms & Conditions</div>
+
+
+<h1>TERMS AND CONDITIONS OF USE</h1>
+<p><strong>SCALORA ACADEMY PVT LIMITED</strong><br>Last Updated: September 26, 2026<br>Effective Date: September 26, 2026</p>
+
+<h2>1. Introduction and Legal Assent</h2>
+<p>These Terms and Conditions of Use ("Agreement" or "Terms") constitute a legally binding contract between <strong>Scalora Academy Pvt Limited</strong>, a company incorporated under the laws of India, having its registered corporate office at D2-0401, Smart City Kingswood, Plot No. GH02, Sector-4, Noida, Gautam Buddha Nagar, Uttar Pradesh, India, 201301 ("Company," "Scalora Academy," "we," "us," or "our"), and any person or entity ("User," "Student," "you," or "your") accessing or using our website, educational platforms, mobile applications, interactive learning portals, APIs, and associated digital services (collectively, the "Platform").</p>
+<p><strong>BY ACCESSING, BROWSING, CREATING AN ACCOUNT, ENROLLING IN A COURSE, OR SUBMITTING PAYMENT ON THE PLATFORM, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTOOD, AND UNCONDITIONALLY AGREE TO BE BOUND BY THESE TERMS IN FULL. IF YOU DO NOT AGREE TO THESE TERMS, YOU ARE PROHIBITED FROM USING THE PLATFORM AND MUST CEASE ALL USAGE IMMEDIATELY.</strong></p>
+
+<h2>2. User Eligibility and Minor Learners</h2>
+<ul>
+  <li><strong>Age Requirement:</strong> By registering for an account, you represent and warrant that you are at least 18 years of age and possess full legal capacity to enter into a binding agreement under the Indian Contract Act, 1872, and applicable local laws.</li>
+  <li><strong>Minors (Ages 13 to 17):</strong> Individuals between the ages of 13 and 18 may only use the Platform under the direct supervision and with the express verifiable consent of a parent or legal guardian who agrees to be bound by these Terms.</li>
+  <li><strong>Under 13 Restriction:</strong> The Platform is not intended for unsupervised children under the age of 13. Scalora Academy does not knowingly collect personal data from or offer direct contractual services to children under 13 without verified parental authorization.</li>
+</ul>
+
+<h2>3. Account Registration, Security, and Liability</h2>
+<p>To access courses, learning modules, assignments, and mentorship forums, you must establish a registered student account. You agree to:</p>
+<ol>
+  <li>Provide accurate, current, and complete registration details and maintain updated account information.</li>
+  <li>Maintain the absolute confidentiality of your account login credentials, passwords, and two-factor authentication codes.</li>
+  <li>Accept full responsibility and legal liability for all actions, communications, and transactions performed through your account.</li>
+</ol>
+<p>You agree to notify Scalora Academy immediately at <strong>scaloraschools@gmail.com</strong> if you suspect any unauthorized access, security incident, or breach of your credentials. Account access is strictly personal and non-transferable; credential sharing, multi-user pooling, or renting of accounts is strictly prohibited and constitutes grounds for immediate termination without notice or refund.</p>
+
+<h2>4. Intellectual Property and Limited Educational License</h2>
+<p>All digital assets available on or through the Platform—including course syllabi, recorded video lectures, live-streamed sessions, coding exercises, assessment question banks, solution keys, slide decks, graphics, software, source code, UI/UX designs, trademarks, and logos (collectively, "Company IP")—are the proprietary intellectual property of Scalora Academy Pvt Limited or its authorized licensors.</p>
+<p>Subject to your strict adherence to these Terms and timely payment of applicable fees, Scalora Academy grants you a personal, limited, non-exclusive, non-transferable, non-sublicensable, and revocable license to access and view the Company IP solely for your individual, non-commercial education.</p>
+<p><strong>Restrictions:</strong> You shall not under any circumstances:</p>
+<ul>
+  <li>Record, download, copy, screen-capture, reproduce, broadcast, syndicate, resell, or distribute any video lectures, course notes, or assessment materials.</li>
+  <li>Modify, decompile, reverse engineer, or extract source code from the Platform or underlying software applications.</li>
+  <li>Remove, conceal, or modify any digital rights management (DRM) mechanisms, proprietary copyright notices, or dynamic digital watermarks applied by Scalora Academy.</li>
+</ul>
+
+<h2>5. Acceptable Use and Platform Conduct</h2>
+<p>You covenant that you will use the Platform strictly for lawful educational purposes. You agree not to host, upload, post, transmit, or share any information or content that:</p>
+<ul>
+  <li>Belongs to another individual and to which you have no lawful right or authorization.</li>
+  <li>Is defamatory, obscene, pornographic, pedophilic, invasive of another's privacy, racially or ethnically objectionable, or encouraging illegal conduct.</li>
+  <li>Harms or exploits minors in any way.</li>
+  <li>Infringes any patent, trademark, copyright, trade secret, or other proprietary rights.</li>
+  <li>Deploys automated scrapers, web spiders, data-crawling bots, or automated extraction software to harvest Platform directories, course media, or student details.</li>
+  <li>Transmits software viruses, worms, trojans, or any code designed to disrupt, compromise, or limit the operation of computer hardware or network infrastructure.</li>
+  <li>Bypasses or tampers with technological security measures, proctoring engines, or access restrictions implemented by the Company.</li>
+</ul>
+
+<h2>6. Academic Integrity, Dynamic Watermarking, and Honor Code</h2>
+<p>Maintaining academic rigor and ethical conduct is a mandatory condition of enrollment at Scalora Academy. You agree to abide by the following standards:</p>
+<ul>
+  <li><strong>Authenticity of Submissions:</strong> All submitted assignments, code repositories, capstone projects, and examination responses must represent your own original, independent work.</li>
+  <li><strong>Prohibition of Solution Leaking:</strong> You are strictly barred from sharing, publishing, uploading, or distributing Scalora Academy examination questions, code assignments, project solutions, or grading rubrics to third-party academic clearinghouses, messaging groups, or public repositories.</li>
+  <li><strong>Dynamic Media Watermarking:</strong> You acknowledge and agree that Scalora Academy reserves the right to embed invisible, cryptographic, and dynamic visible watermarks directly into streaming video players and downloadable resources.</li>
+  <li><strong>Enforcement & Disciplinary Remedies:</strong> If Scalora Academy determines that you have committed academic misconduct or violated this Honor Code, the Company reserves the unilateral right to invalidate test scores, revoke certificates, or terminate your access without refund.</li>
+</ul>
+
+<h2>7. Disclaimer of Formal Accreditation and Outcome Guarantees</h2>
+<ul>
+  <li><strong>Accreditation Disclaimer:</strong> Unless expressly stated in a separate, written program agreement, programs and certificates offered by Scalora Academy Pvt Limited are professional skill-building credentials and do not constitute formal university degrees.</li>
+  <li><strong>Employment & Outcome Disclaimer:</strong> Scalora Academy makes no guarantees, representations, or warranties regarding specific career results, including guaranteed job offers, corporate hiring, salary increases, or professional promotions.</li>
+</ul>
+
+<h2>8. Commercial Billing, Payments, and Taxes</h2>
+<ul>
+  <li><strong>Tuition & Program Pricing:</strong> Fees for individual courses, masterclasses, and subscription plans are detailed at the point of checkout.</li>
+  <li><strong>Taxes:</strong> All purchases are subject to applicable statutory taxes, including Goods and Services Tax (GST) in India.</li>
+  <li><strong>Payment Processing:</strong> You agree to provide valid, authorized payment instruments.</li>
+  <li><strong>Subscription Auto-Renewal & Cancellation:</strong> If you enroll in an automatically recurring subscription, your designated payment method will be charged at the start of each billing period until cancelled.</li>
+</ul>
+
+<h2>9. Cancellation and Refund Policy</h2>
+<p>Scalora Academy enforces transparent refund rules designed to balance student satisfaction with anti-piracy controls:</p>
+<ul>
+  <li><strong>Refund Eligibility Window:</strong> You may request a full refund within fourteen (14) calendar days from the date of initial course purchase by submitting a written request to <strong>scaloraschools@gmail.com</strong>.</li>
+  <li><strong>Consumption-Based Disqualifications:</strong> Refund requests will be strictly denied if you have accessed more than 20% of the video content, downloaded resources, submitted exams, received a certificate, or previously received a refund.</li>
+  <li><strong>Discretionary Processing:</strong> Approved refunds will be processed back to the original payment source within seven (7) to ten (10) business days.</li>
+</ul>
+
+<h2>10. User-Generated Content</h2>
+<p>If you submit project work, code snippets, discussion posts, or testimonials to the Platform, you retain your ownership rights. However, by posting such content, you grant Scalora Academy Pvt Limited a worldwide, royalty-free, perpetual, transferable, and sublicensable license to host, display, reproduce, and use such content.</p>
+
+<h2>11. Disclaimer of Warranties</h2>
+<p>TO THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE LAW, THE PLATFORM, COURSES, MENTORSHIP SERVICES, AND ALL DIGITAL CONTENT ARE PROVIDED STRICTLY ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED.</p>
+
+<h2>12. Limitation of Liability</h2>
+<p>TO THE FULLEST EXTENT PERMITTED BY LAW, IN NO EVENT SHALL SCALORA ACADEMY PVT LIMITED BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOSS OF REVENUE, PROFITS, BUSINESS REPUTATION, ACADEMIC STANDING, OR DATA LOSS. TOTAL AGGREGATE LIABILITY SHALL NOT EXCEED THE GREATER OF THE FEES PAID IN THE 12 MONTHS PRECEDING THE EVENT OR FIVE THOUSAND INDIAN RUPEES (INR 5,000).</p>
+
+<h2>13. Indemnification</h2>
+<p>You agree to indemnify, defend, and hold harmless Scalora Academy Pvt Limited from and against all third-party claims, liabilities, losses, damages, costs, and legal expenses resulting from your misuse of the Platform, infringement of IP rights, or breach of academic integrity.</p>
+
+<h2>14. Dispute Resolution, Binding Arbitration, and Governing Law</h2>
+<ul>
+  <li><strong>Informal Good-Faith Negotiation:</strong> Before initiating formal legal proceedings, you agree to attempt to resolve any dispute informally for 60 days via <strong>scaloraschools@gmail.com</strong>.</li>
+  <li><strong>Binding Individual Arbitration:</strong> Any dispute that cannot be settled will be referred to binding individual arbitration under the Arbitration and Conciliation Act, 1996.</li>
+  <li><strong>Arbitration Seat & Venue:</strong> Noida / Gautam Buddha Nagar, Uttar Pradesh, India.</li>
+  <li><strong>Class Action Waiver:</strong> All claims must be resolved on an individual basis.</li>
+  <li><strong>Governing Law:</strong> Republic of India.</li>
+</ul>
+
+<h2>15. Miscellaneous Boilerplate Provisions</h2>
+<ul>
+  <li><strong>Severability:</strong> If any provision is deemed unlawful or void, it shall not affect the validity of remaining provisions.</li>
+  <li><strong>Entire Agreement:</strong> These Terms constitute the entire legal understanding.</li>
+  <li><strong>No Waiver:</strong> Failure to exercise a right shall not operate as a waiver.</li>
+  <li><strong>Contact Inquiries:</strong><br>Entity: Scalora Academy Pvt Limited<br>Address: D2-0401, Smart City Kingswood, Plot No. GH02, Sector-4, Noida, Gautam Buddha Nagar, Uttar Pradesh, India, 201301<br>Email: scaloraschools@gmail.com</li>
+</ul>
+
+
+</div>
+</section>
+<footer class="giant-footer">
+            <div class="giant-footer-top">
+              <div class="gf-col gf-brand-col">
+                <div class="scalora-logo-lockup footer-size">
+                  <span class="logo-text-line">SCALORA</span>
+                  <span class="logo-text-line">SCHOOLS</span>
+                </div>
+                <p>Creating structured experiential-learning ecosystems where students move from problems to solutions.</p>
+              </div>
+              <div class="gf-col">
+                <div class="gf-heading">NAVIGATION</div>
+                <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About Scalora</a></li>
+                  <li><a href="#model">The Scalora Model</a></li>
+                  <li><a href="#irdme">IRDME Framework</a></li>
+                </ul>
+              </div>
+                            <div class="gf-col">
+                <div class="gf-heading">COMPANY</div>
+                <ul>
+                  <li><a href="terms.html">Terms of Service</a></li>
+                  <li><a href="privacy.html">Privacy Policy</a></li>
+                  <li><a href="cookies.html">Cookie Policy</a></li>
+                  <li><a href="security.html">Security & Safety</a></li>
+                </ul>
+              </div>
+              <div class="gf-col">
+                <div class="gf-heading">CONTACT</div>
+                <ul>
+                  <li><a href="mailto:scaloraschools@gmail.com" class="gf-mail-link" style="text-transform:none;">scaloraschools@gmail.com</a></li>
+                  <li class="gf-address">Scalora Academy Pvt Limited<br>D2-0401, Smart City Kingswood, Plot No. GH02,<br>Sector-4, Noida, Gautam Buddha Nagar,<br>Uttar Pradesh, India, 201301</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="giant-footer-middle">
+              <div class="giant-brand-text">#NoMoreOrdinary</div>
+            </div>
+
+            <div class="giant-footer-bottom">
+              <div class="gf-copyright">Copyright © 2026 Scalora Schools</div>
+              <button class="gf-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">BACK TO TOP &uarr;</button>
+            </div>
+          </footer>
+        </main>
+      </div>
+    </div>
+
+    <!-- Floating Blue Chat / Contact Trigger (Matching bottom-right of screenshot) -->
+    <a href="contact.html" class="icreon-floating-chat" aria-label="Connect with Scalora Advisor">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/>
+      </svg>
+    </a>
+
+    <!-- MAIN SCRIPT -->
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/reference-hero.js"></script>
+  
+    <!-- COOKIE CONSENT BANNER -->
+    <div id="cookieBanner" class="cookie-banner" style="display: none;">
+      <div class="cookie-banner-content">
+        <div class="cookie-banner-text">
+          <h3>We use cookies</h3>
+          <p>We use necessary cookies to help our website function properly and securely. We may also use optional cookies to remember preferences and improve your experience.</p>
+          <p>By selecting "Accept All", you agree to the use of optional cookies. You can manage your preferences at any time. <a href="cookies.html" class="cookie-policy-link">Cookie Policy</a></p>
+        </div>
+        <div class="cookie-banner-actions">
+          <button id="btnAcceptAll" class="cookie-btn cookie-btn-primary">Accept All</button>
+          <button id="btnRejectOptional" class="cookie-btn cookie-btn-secondary">Reject Optional</button>
+          <button id="btnManagePreferences" class="cookie-btn cookie-btn-text">Manage Preferences</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- COOKIE PREFERENCES MODAL -->
+    <div id="cookieModal" class="cookie-modal-overlay" style="display: none;">
+      <div class="cookie-modal">
+        <div class="cookie-modal-header">
+          <h2>Cookie Preferences</h2>
+          <button id="cookieModalClose" class="cookie-close-btn">&times;</button>
+        </div>
+        <div class="cookie-modal-body">
+          <p class="cookie-modal-intro">You can choose which types of cookies you allow.</p>
+          
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Necessary Cookies</h3>
+                <span class="cookie-badge cookie-badge-required">Always Active</span>
+              </div>
+            </div>
+            <p class="cookie-category-desc">These cookies are required for the basic operation, security and functionality of the website.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Functional Cookies</h3>
+                <span class="cookie-badge cookie-badge-optional">Optional</span>
+              </div>
+              <label class="cookie-switch">
+                <input type="checkbox" id="chkFunctional">
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">These cookies may help remember your preferences and improve your browsing experience.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Analytics Cookies</h3>
+                <span class="cookie-badge cookie-badge-disabled">Currently Not Used</span>
+              </div>
+              <label class="cookie-switch cookie-switch-disabled">
+                <input type="checkbox" disabled>
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">Scalora Schools does not currently use Google Analytics, Google Tag Manager, Vercel Analytics or Vercel Speed Insights.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Marketing Cookies</h3>
+                <span class="cookie-badge cookie-badge-optional">Optional</span>
+              </div>
+              <label class="cookie-switch">
+                <input type="checkbox" id="chkMarketing">
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">These cookies may be used for advertising or marketing purposes if such technologies are introduced in the future.</p>
+          </div>
+        </div>
+        <div class="cookie-modal-footer">
+          <button id="btnSavePreferences" class="cookie-btn cookie-btn-primary cookie-btn-full">Save Preferences</button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
+
+
+

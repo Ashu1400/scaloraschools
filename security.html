@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<!--
+  ____   ____    _    _     ___  ____      _    
+ / ___| / ___|  / \  | |   / _ \|  _ \    / \   
+ \___ \| |     / _ \ | |  | | | | |_) |  / _ \  
+  ___) | |___ / ___ \| |__| |_| |  _ <  / ___ \ 
+ |____/ \____/_/   \_\_____\___/|_| \_\/_/   \_\
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Security & Safety - Scalora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Melius font pairing: Editorial Serif + Ultra-clean Modern Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/ascii-hero.css">
+    <link rel="stylesheet" href="/src/reference-hero.css">
+  
+    <style>
+      .legal-page {
+        background-color: #fafafa;
+        color: #111827;
+        font-family: 'Inter', sans-serif;
+        padding: 180px 5% 100px 5%;
+        min-height: 100vh;
+      }
+      .legal-container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 80px;
+        border-radius: 24px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.03);
+        border: 1px solid #eaeaea;
+      }
+      .legal-container h1 {
+        font-family: 'Instrument Serif', serif;
+        font-size: clamp(3rem, 5vw, 4.5rem);
+        line-height: 1.1;
+        margin-bottom: 24px;
+        color: #0b132b;
+      }
+      .legal-container > p:first-of-type,
+      .legal-container > p:nth-of-type(2) {
+        font-size: 1.1rem;
+        color: #64748b;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #f1f5f9;
+        padding-bottom: 24px;
+      }
+      .legal-container h2 {
+        font-family: 'Outfit', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        color: #0f172a;
+        letter-spacing: -0.01em;
+      }
+      .legal-container h3 {
+        font-family: 'Outfit', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-top: 40px;
+        margin-bottom: 16px;
+        color: #334155;
+      }
+      .legal-container p {
+        font-size: 1.125rem;
+        line-height: 1.8;
+        color: #475569;
+        margin-bottom: 24px;
+      }
+      .legal-container ul, .legal-container ol {
+        margin-bottom: 24px;
+        padding-left: 24px;
+      }
+      .legal-container li {
+        font-size: 1.125rem;
+        line-height: 1.8;
+        color: #475569;
+        margin-bottom: 12px;
+      }
+      .legal-container strong {
+        color: #0f172a;
+        font-weight: 600;
+      }
+      .legal-badge {
+        display: inline-block;
+        padding: 6px 14px;
+        background: #e0e7ff;
+        color: #4338ca;
+        border-radius: 100px;
+        font-family: 'Outfit', sans-serif;
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      @media (max-width: 768px) {
+        .legal-page { padding: 140px 5% 60px 5%; }
+        .legal-container { padding: 40px 24px; border-radius: 16px; }
+      }
+    </style>
+</head>
+  <body class="reference-home">
+    <!-- ICREON GRID-DIVIDED TOP NAVBAR -->
+    <style>
+      .icreon-header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+      }
+      .ascii-home .icreon-header.header-scrolled {
+        background: #ffffff !important;
+        border-bottom: 1px solid #e2e2e6 !important;
+      }
+      .ascii-home .icreon-header.header-scrolled :is(.brand-name,.icreon-nav-cell,.icreon-search-cell) {
+        color: #1a1a1e !important;
+      }
+      .ascii-home .icreon-header.header-scrolled .btn-icreon-contact {
+        color: #1a1a1e !important;
+        border-color: #e2e2e6 !important;
+        background: transparent !important;
+      }
+      .ascii-home .icreon-header.header-scrolled :is(.icreon-nav-grid,.icreon-logo-cell,.icreon-nav-cell,.icreon-search-cell,.icreon-mobile-menu-cell) {
+        border-color: #e2e2e6 !important;
+      }
+      .ascii-home .icreon-header.header-scrolled :is(.icreon-logo-cell,.icreon-nav-cell,.icreon-search-cell):hover {
+        background-color: #f8f8fa !important;
+        color: #1a1a1e !important;
+      }
+      .ascii-home .icreon-header.header-scrolled .icreon-mobile-menu-cell span {
+        background: #1a1a1e !important;
+      }
+    </style>
+    <script>
+      window.addEventListener('scroll', () => {
+        const header = document.querySelector('.icreon-header');
+        if (window.scrollY > 50) {
+          header.classList.add('header-scrolled');
+        } else {
+          header.classList.remove('header-scrolled');
+        }
+      });
+    </script>
+    <header class="icreon-header">
+      <div class="icreon-nav-grid">
+        <!-- Logo Cell -->
+        <a href="index.html" class="icreon-logo-cell">
+          <div class="brand-name">
+            <span>SCALORA</span>
+            <span>SCHOOLS</span>
+          </div>
+        </a>
+
+        <!-- Middle Nav Cells with Thin Dividers -->
+        <div class="icreon-nav-links">
+          <a href="services.html" class="icreon-nav-cell">Programmes</a>
+          <a href="schools.html" class="icreon-nav-cell">For Schools</a>
+          <a href="industry.html" class="icreon-nav-cell">For Industry</a>
+                    <div class="icreon-nav-dropdown-wrapper">
+            <a href="about.html" class="icreon-nav-cell">About</a>
+            <div class="icreon-dropdown-menu">
+              <a href="about.html#about">Our Story</a>
+              <a href="about.html#insights">Insights</a>
+              <a href="about.html#leadership">Leadership</a>
+              <a href="about.html#careers">Careers</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Action Cells -->
+        <div class="icreon-nav-right">
+          <!-- Search Icon Cell -->
+          <button class="icreon-search-cell" id="icreonSearchBtn" aria-label="Search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+
+          <!-- Contact Us Pill Cell -->
+          <div class="icreon-cta-cell">
+            <a href="contact.html" class="btn-icreon-contact">Contact Us</a>
+          </div>
+
+          <!-- Mobile Hamburger Trigger Cell -->
+          
+        </div>
+      </div>
+    </header>
+
+    <!-- Full-screen / Slide Drawer Menu with Complete Navigation -->
+    
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="smooth-wrapper">
+
+
+      <div id="smooth-content">
+
+        <!-- Global Dynamic Connection Overlay -->
+        <svg id="global-connection-overlay" class="global-connection-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 15;">
+          <defs>
+            <mask id="draw-mask">
+              <path id="mask-path" fill="none" stroke="white" stroke-width="20" stroke-linecap="round" />
+            </mask>
+          </defs>
+          <!-- The actual visible dashed line, hidden by mask initially -->
+          <path id="dynamic-trail" fill="none" stroke="#175DD3" stroke-width="4" stroke-dasharray="10 10" stroke-linecap="round" mask="url(#draw-mask)" />
+        </svg>
+
+        <main>
+<section class="legal-page">
+<div class="legal-container">
+<div class="legal-badge">Security & Safety</div>
+
+
+<h1>SECURITY & SAFETY</h1>
+<p><strong>Learning begins with feeling safe.</strong></p>
+<p>At Scalora Schools, safety is not treated as a separate feature of education. It is part of how learning experiences, digital interactions, communication, and student participation are designed.</p>
+
+<h3>Our commitment</h3>
+<p>To create learning environments where students can explore, question, collaborate and grow while being supported by clear expectations, responsible technology practices and accessible channels for concerns.</p>
+<p><em>Scalora Schools — Learning through experience, guided by responsibility.</em></p>
+
+<h2>1. Student Safety</h2>
+<p>Every student should be able to participate in learning without feeling threatened, excluded or pressured. Scalora aims to establish clear expectations for respectful behaviour across classrooms, activities, events and digital spaces.</p>
+<ul>
+  <li><strong>Respectful Learning Environments:</strong> Students are encouraged to listen to different viewpoints, communicate respectfully, and work collaboratively. Disrespectful, intimidating or harmful behaviour should be addressed through an appropriate support process.</li>
+  <li><strong>Age-Appropriate Experiences:</strong> Learning activities, projects and experiential tasks should be appropriate to the student's age, context and level of responsibility. Instructions and supervision should be provided whenever an activity presents additional practical considerations.</li>
+  <li><strong>Inclusive Participation:</strong> Students should have reasonable opportunities to participate and ask for help. Learning environments should aim to reduce unnecessary barriers and encourage students to communicate when they need support.</li>
+</ul>
+
+<h2>2. Privacy & Data Protection</h2>
+<p>Trust depends on responsible handling of student and parent information. Scalora should communicate clearly about what information is collected, why it is needed, how it is used, and how users can raise concerns.</p>
+<ul>
+  <li><strong>Data minimization:</strong> Collect information that is relevant and necessary for the intended service or learning process.</li>
+  <li><strong>Purpose & transparency:</strong> Explain the purpose of collecting information in clear, understandable language.</li>
+  <li><strong>Incident response:</strong> Maintain a process for identifying, documenting and responding to suspected data or security incidents.</li>
+  <li><strong>Access control:</strong> Limit access to student and parent information to people or systems that require it for legitimate purposes.</li>
+  <li><strong>Account security:</strong> Encourage strong passwords, secure authentication and responsible account use.</li>
+  <li><strong>Retention:</strong> Keep information only for as long as it is needed for the stated purpose or applicable requirements.</li>
+</ul>
+
+<h2>3. Digital Safety & Responsible Technology</h2>
+<p>Digital learning can expand access to information and collaboration, but students also need practical guidance about privacy, communication and online behaviour.</p>
+<ul>
+  <li><strong>Protect Personal Information:</strong> Students should avoid sharing passwords, authentication codes, private contact details or other sensitive information in public or untrusted spaces.</li>
+  <li><strong>Account & Device Security:</strong> Students and families should use secure passwords, keep devices and software updated, and avoid logging into accounts through suspicious links or untrusted services.</li>
+  <li><strong>Healthy Digital Behaviour:</strong> Scalora can encourage thoughtful communication, respectful online collaboration and awareness of harmful or inappropriate digital content.</li>
+  <li><strong>Responsible Use of AI:</strong> When AI tools are used for learning, students should understand that generated information may require verification. AI should support learning rather than replace independent thinking.</li>
+</ul>
+
+<h2>4. Safe Experiential Learning</h2>
+<p>Experiential learning can involve projects, field activities, teamwork, demonstrations and real-world problem solving. Safety should be considered before, during and after each activity.</p>
+<ul>
+  <li><strong>Before the activity:</strong> Identify foreseeable risks, define instructions, confirm supervision and communicate relevant requirements.</li>
+  <li><strong>During the activity:</strong> Follow instructions, use equipment appropriately, maintain supervision and provide a clear route for immediate help.</li>
+  <li><strong>After the activity:</strong> Record relevant incidents or concerns, review what happened and improve future procedures where appropriate.</li>
+</ul>
+
+<h2>5. Safeguarding & Student Well-Being</h2>
+<p>A safe school environment also depends on noticing concerns early and giving students trusted ways to ask for support. Staff and responsible adults should know how to escalate serious concerns according to the school's applicable safeguarding procedures.</p>
+<ul>
+  <li><strong>Recognising Concerns:</strong> Concerns may relate to bullying, harassment, unsafe behaviour, inappropriate contact, online abuse or another situation that makes a student feel unsafe.</li>
+  <li><strong>Trusted Communication:</strong> Students should have an understandable route for communicating a concern to an appropriate adult or support contact.</li>
+  <li><strong>Confidentiality with Appropriate Limits:</strong> Information about a concern should be handled sensitively and shared only with people who need it to respond appropriately, subject to applicable safeguarding and legal requirements.</li>
+</ul>
+
+<h2>6. Reporting & Support</h2>
+<p>Scalora should make reporting simple, visible and approachable for both students and parents. A reporting process should explain where to raise a concern, what information may be useful, and what happens after a report is received.</p>
+<ol>
+  <li><strong>SPEAK UP:</strong> Contact the designated Scalora support channel or responsible adult.</li>
+  <li><strong>SHARE DETAILS:</strong> Provide the relevant facts, dates, context and supporting information where safe to do so.</li>
+  <li><strong>REVIEW:</strong> The appropriate team reviews the concern and determines the next steps.</li>
+  <li><strong>SUPPORT:</strong> Where appropriate, the student or family is directed to available support and follow-up.</li>
+</ol>
+
+<h2>7. Parent & Student Partnership</h2>
+<p>Safety works best as a shared responsibility. Parents and students can help by keeping contact information current, following activity guidance, using digital services responsibly, and reporting concerns early. Parents can also help students build safe habits by discussing privacy, online communication, password security, respectful behaviour and what to do when something feels wrong.</p>
+
+<h2>8. Security & Safety Principles</h2>
+<ul>
+  <li><strong>Safety by design:</strong> Consider safety when designing learning activities, digital features and communication processes.</li>
+  <li><strong>Privacy by responsibility:</strong> Handle student and family information carefully and transparently.</li>
+  <li><strong>Prevention first:</strong> Identify foreseeable risks and provide practical guidance before problems occur.</li>
+  <li><strong>Speak-up culture:</strong> Make it easier for students and parents to raise concerns without unnecessary barriers.</li>
+  <li><strong>Continuous improvement:</strong> Use incidents, feedback and review processes to improve future safety practices.</li>
+</ul>
+
+<h2>9. Security & Safety At A Glance</h2>
+<p>At Scalora, safety isn't a separate layer added to education. It is part of how we design the learning experience.</p>
+<ul>
+  <li><strong>01 — STUDENT SAFETY:</strong> Creating respectful spaces where students can learn, question and express themselves confidently.</li>
+  <li><strong>02 — PRIVACY:</strong> Protecting student and parent information through responsible data practices.</li>
+  <li><strong>03 — DIGITAL WELL-BEING:</strong> Helping students navigate technology with awareness, responsibility and confidence.</li>
+  <li><strong>04 — SAFE EXPERIENCES:</strong> Designing experiential activities with age-appropriate guidance and safety considerations.</li>
+  <li><strong>05 — SPEAK UP:</strong> Making it easy for students and parents to raise concerns and seek support.</li>
+</ul>
+
+<br>
+<h3>Safe enough to explore.<br>Free enough to question.<br>Supported enough to grow.</h3>
+
+
+</div>
+</section>
+<footer class="giant-footer">
+            <div class="giant-footer-top">
+              <div class="gf-col gf-brand-col">
+                <div class="scalora-logo-lockup footer-size">
+                  <span class="logo-text-line">SCALORA</span>
+                  <span class="logo-text-line">SCHOOLS</span>
+                </div>
+                <p>Creating structured experiential-learning ecosystems where students move from problems to solutions.</p>
+              </div>
+              <div class="gf-col">
+                <div class="gf-heading">NAVIGATION</div>
+                <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About Scalora</a></li>
+                  <li><a href="#model">The Scalora Model</a></li>
+                  <li><a href="#irdme">IRDME Framework</a></li>
+                </ul>
+              </div>
+                            <div class="gf-col">
+                <div class="gf-heading">COMPANY</div>
+                <ul>
+                  <li><a href="terms.html">Terms of Service</a></li>
+                  <li><a href="privacy.html">Privacy Policy</a></li>
+                  <li><a href="cookies.html">Cookie Policy</a></li>
+                  <li><a href="security.html">Security & Safety</a></li>
+                </ul>
+              </div>
+              <div class="gf-col">
+                <div class="gf-heading">CONTACT</div>
+                <ul>
+                  <li><a href="mailto:scaloraschools@gmail.com" class="gf-mail-link" style="text-transform:none;">scaloraschools@gmail.com</a></li>
+                  <li class="gf-address">Scalora Academy Pvt Limited<br>D2-0401, Smart City Kingswood, Plot No. GH02,<br>Sector-4, Noida, Gautam Buddha Nagar,<br>Uttar Pradesh, India, 201301</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="giant-footer-middle">
+              <div class="giant-brand-text">#NoMoreOrdinary</div>
+            </div>
+
+            <div class="giant-footer-bottom">
+              <div class="gf-copyright">Copyright © 2026 Scalora Schools</div>
+              <button class="gf-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">BACK TO TOP &uarr;</button>
+            </div>
+          </footer>
+        </main>
+      </div>
+    </div>
+
+    <!-- Floating Blue Chat / Contact Trigger (Matching bottom-right of screenshot) -->
+    <a href="contact.html" class="icreon-floating-chat" aria-label="Connect with Scalora Advisor">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/>
+      </svg>
+    </a>
+
+    <!-- MAIN SCRIPT -->
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/reference-hero.js"></script>
+  
+    <!-- COOKIE CONSENT BANNER -->
+    <div id="cookieBanner" class="cookie-banner" style="display: none;">
+      <div class="cookie-banner-content">
+        <div class="cookie-banner-text">
+          <h3>We use cookies</h3>
+          <p>We use necessary cookies to help our website function properly and securely. We may also use optional cookies to remember preferences and improve your experience.</p>
+          <p>By selecting "Accept All", you agree to the use of optional cookies. You can manage your preferences at any time. <a href="cookies.html" class="cookie-policy-link">Cookie Policy</a></p>
+        </div>
+        <div class="cookie-banner-actions">
+          <button id="btnAcceptAll" class="cookie-btn cookie-btn-primary">Accept All</button>
+          <button id="btnRejectOptional" class="cookie-btn cookie-btn-secondary">Reject Optional</button>
+          <button id="btnManagePreferences" class="cookie-btn cookie-btn-text">Manage Preferences</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- COOKIE PREFERENCES MODAL -->
+    <div id="cookieModal" class="cookie-modal-overlay" style="display: none;">
+      <div class="cookie-modal">
+        <div class="cookie-modal-header">
+          <h2>Cookie Preferences</h2>
+          <button id="cookieModalClose" class="cookie-close-btn">&times;</button>
+        </div>
+        <div class="cookie-modal-body">
+          <p class="cookie-modal-intro">You can choose which types of cookies you allow.</p>
+          
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Necessary Cookies</h3>
+                <span class="cookie-badge cookie-badge-required">Always Active</span>
+              </div>
+            </div>
+            <p class="cookie-category-desc">These cookies are required for the basic operation, security and functionality of the website.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Functional Cookies</h3>
+                <span class="cookie-badge cookie-badge-optional">Optional</span>
+              </div>
+              <label class="cookie-switch">
+                <input type="checkbox" id="chkFunctional">
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">These cookies may help remember your preferences and improve your browsing experience.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Analytics Cookies</h3>
+                <span class="cookie-badge cookie-badge-disabled">Currently Not Used</span>
+              </div>
+              <label class="cookie-switch cookie-switch-disabled">
+                <input type="checkbox" disabled>
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">Scalora Schools does not currently use Google Analytics, Google Tag Manager, Vercel Analytics or Vercel Speed Insights.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Marketing Cookies</h3>
+                <span class="cookie-badge cookie-badge-optional">Optional</span>
+              </div>
+              <label class="cookie-switch">
+                <input type="checkbox" id="chkMarketing">
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">These cookies may be used for advertising or marketing purposes if such technologies are introduced in the future.</p>
+          </div>
+        </div>
+        <div class="cookie-modal-footer">
+          <button id="btnSavePreferences" class="cookie-btn cookie-btn-primary cookie-btn-full">Save Preferences</button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
+
+
+

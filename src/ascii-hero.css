@@ -1,0 +1,68 @@
+/* Blue-and-white home introduction and contact styles. */
+.ascii-home .icreon-header{background:#175dd3;border-color:rgba(255,255,255,.22);color:#fff}
+.ascii-hero{background:#175dd3;color:#fff;padding:0 6%;overflow:hidden;font-family:var(--font-sans,'Inter',sans-serif);isolation:isolate;min-height:100vh;display:flex;align-items:center;}
+.ascii-composition{max-width:1400px;margin:auto;display:grid;grid-template-columns:.95fr 1.15fr;align-items:center;gap:50px;padding:65px 0;min-height:calc(100svh - 76px)}
+.ascii-copy h1{font-family:var(--font-heading,'Outfit',sans-serif);font-size:clamp(56px,6.5vw,100px);font-weight:600;line-height:1.03;letter-spacing:-.045em;margin:0;color:#fff}
+.ascii-copy h1>span{white-space:nowrap}
+.ascii-description{font-size:17px;line-height:1.8;color:#fff;margin:30px 0;max-width:430px}
+.ascii-primary{display:inline-flex;align-items:center;gap:12px;padding:16px 36px;border:none;border-radius:50px;background:#ffffff;color:#175dd3;font-size:15px;font-weight:700;letter-spacing:0.5px;box-shadow:0 8px 20px rgba(0,0,0,0.15), 0 0 0 4px rgba(255,255,255,0.15);transition:all 0.4s cubic-bezier(0.16, 1, 0.3, 1);text-decoration:none}
+.ascii-primary:hover{background:#f8f9fa;transform:translateY(-4px) scale(1.02);box-shadow:0 12px 25px rgba(0,0,0,0.2), 0 0 0 8px rgba(255,255,255,0.2);color:#0f3f96}
+.ascii-flight{position:relative;min-width:0;margin:0}
+#ascii-aircraft{display:block;font-family:'Courier New',monospace;font-size:clamp(5px,.66vw,10px);line-height:1.05;font-weight:400;letter-spacing:0;white-space:pre;color:#fff;user-select:none;overflow:hidden;text-align:center;margin:0;padding:0;cursor:default}
+.ascii-flight-controls{display:flex;align-items:center;justify-content:center;gap:24px;margin-top:20px;color:#fff;font-size:13px}
+.ascii-flight-controls button{font-family:inherit;font-size:11px;color:#fff;padding:8px;opacity:.8}
+.ascii-flight-controls button:disabled{opacity:.5;cursor:default}
+.ascii-hero a:focus-visible,.ascii-hero button:focus-visible{outline:2px solid #fff;outline-offset:5px}
+@media(max-width:1000px){.ascii-composition{gap:25px;min-height:670px}.ascii-copy h1{font-size:7vw}.ascii-description{font-size:14px}#ascii-aircraft{font-size:.60vw}.ascii-primary{font-size:12px}}
+@media(max-width:650px){.ascii-composition{grid-template-columns:1fr;padding:50px 0 35px;gap:30px;min-height:0}.ascii-copy h1{font-size:13vw}.ascii-description{font-size:14px;margin:24px 0}.ascii-primary{font-size:13px;padding:14px 22px}#ascii-aircraft{font-size:1.06vw}.ascii-flight-controls{font-size:12px;margin-top:10px}}
+@media(prefers-reduced-motion:reduce){.ascii-primary{transition:none}}
+
+/* Match the home navigation to the blue-and-white hero. */
+.ascii-home .icreon-header :is(.brand-name,.icreon-nav-cell,.icreon-search-cell,.btn-icreon-contact){color:#fff}
+.ascii-home .icreon-header :is(.icreon-nav-grid,.icreon-logo-cell,.icreon-nav-cell,.icreon-search-cell,.icreon-mobile-menu-cell){border-color:rgba(255,255,255,.22)}
+.ascii-home .btn-icreon-contact{border-color:rgba(255,255,255,.75)}
+.ascii-home .icreon-header :is(.icreon-logo-cell,.icreon-nav-cell,.icreon-search-cell,.btn-icreon-contact):hover{background:rgba(255,255,255,.12);color:#fff}
+.ascii-home .icreon-mobile-menu-cell span{background:#fff}
+.ascii-home .icreon-dropdown-menu{background:#175dd3;border-color:rgba(255,255,255,.25)}
+.ascii-home .icreon-dropdown-menu a{color:#fff}
+.ascii-home .icreon-dropdown-menu a:hover{background:rgba(255,255,255,.12);color:#fff}
+.ascii-home .icreon-header :is(a,button):focus-visible{outline:2px solid #fff;outline-offset:-4px}
+/* Brand attribution and the two contact routes. */
+.ascii-brand-credit{margin:0 0 27px;color:#fff}
+.ascii-brand-credit strong{display:block;font-family:var(--font-heading,'Outfit',sans-serif);font-size:23px;font-weight:600;letter-spacing:-.4px}
+.ascii-brand-credit>span{display:block;font-family:var(--font-sans,'Inter',sans-serif);font-size:12px;margin-top:5px;line-height:1.5}
+.contact-section{scroll-margin-top:90px;background:#175dd3;color:#fff;padding:85px 0;min-height:0}
+.contact-section .cta-label{color:#fff;margin-bottom:23px}
+.contact-section .cta-headline{font-family:var(--font-heading,'Outfit',sans-serif);font-size:clamp(36px,5vw,68px);font-weight:600;color:#fff;margin-bottom:18px}
+.contact-intro{font-size:16px;line-height:1.7;margin:0 0 30px;color:#fff}
+.contact-options{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.contact-option{display:flex;flex-direction:column;padding:30px;border:1px solid rgba(255,255,255,.45);border-radius:12px;color:#fff;background:rgba(255,255,255,.04);transition:background .2s,transform .2s}
+.contact-option:hover{background:rgba(255,255,255,.12);transform:translateY(-3px)}
+.contact-option-label{font-size:11px;letter-spacing:1.4px;margin-bottom:20px}
+.contact-option h3{display:flex;justify-content:space-between;align-items:baseline;gap:15px;font-family:var(--font-heading,'Outfit',sans-serif);font-size:clamp(21px,2.2vw,30px);font-weight:500;line-height:1.2;margin:0 0 15px}
+.contact-option p{font-size:14px;line-height:1.8;margin:0 0 25px;max-width:430px}
+.contact-option-action{margin-top:auto;font-size:12px;text-decoration:underline;text-underline-offset:5px;line-height:1.7}
+.contact-direct{margin-top:25px;font-size:13px;line-height:1.8}.contact-direct a{text-decoration:underline;text-underline-offset:4px}
+.contact-section a:focus-visible{outline:2px solid #fff;outline-offset:5px}
+@media(max-width:650px){.ascii-brand-credit{margin-bottom:23px}.ascii-brand-credit strong{font-size:21px}.ascii-brand-credit>span{font-size:11px}.contact-section{padding:55px 0}.contact-options{grid-template-columns:1fr}.contact-option{padding:24px}.contact-intro{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.contact-option{transition:none}}
+
+/* The home introduction has no artwork column or loading dependency. */
+.ascii-composition{display:flex;justify-content:center;text-align:center;min-height:calc(100svh - 76px);padding:65px 0}
+.ascii-copy{width:100%;max-width:900px;opacity:1;visibility:visible}
+.ascii-description{max-width:600px;margin:30px auto}
+@media(max-width:650px){.ascii-composition{min-height:calc(100svh - 76px);padding:45px 0}.ascii-description{margin:24px auto}}
+/* Source-image ASCII gallery: first artwork is server-independent HTML. */
+.ascii-composition{display:grid;grid-template-columns:.85fr 1.2fr;gap:45px;text-align:left}
+.ascii-copy{min-width:0}.ascii-description{margin:30px 0;max-width:430px}
+.source-ascii-gallery{margin:0;min-width:0;container-type:inline-size;color:#fff}
+#source-ascii-frame{font-family:'Courier New',monospace;font-size:clamp(3px,.57vw,9px);font-size:calc(100cqw / 87);font-weight:400;line-height:1;letter-spacing:0;white-space:pre;overflow:hidden;margin:0;padding:0;color:#fff;text-align:left;user-select:none}
+.source-ascii-gallery figcaption{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:22px;font-size:14px;font-weight:500;min-height:35px}
+#source-ascii-pause{font:inherit;font-size:11px;font-weight:400;color:#fff;padding:8px;border:1px solid rgba(255,255,255,.4);border-radius:5px}
+.source-ascii-choices:not([hidden]){display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.source-ascii-choices button{font:inherit;font-size:11px;padding:8px 10px;border:1px solid rgba(255,255,255,.3);border-radius:5px;color:#fff;background:transparent}
+.source-ascii-choices button[aria-pressed=true]{background:rgba(255,255,255,.18);border-color:#fff}
+.source-ascii-choices button:hover,#source-ascii-pause:hover{background:rgba(255,255,255,.1)}
+#source-ascii-pause:disabled{opacity:.65;cursor:default}
+@media(max-width:1000px){.ascii-composition{gap:25px;grid-template-columns:.9fr 1.1fr}.ascii-copy h1{font-size:6.7vw}.source-ascii-choices button{font-size:10px}}
+@media(max-width:700px){.ascii-composition{grid-template-columns:1fr;gap:35px;padding:45px 0}.ascii-copy h1{font-size:13vw}.ascii-description{margin:24px 0}.source-ascii-gallery figcaption{margin-top:18px;font-size:13px}.source-ascii-choices button{font-size:10px;padding:8px}}

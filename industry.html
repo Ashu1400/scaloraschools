@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scalora — Education Beyond the Classroom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Melius font pairing: Editorial Serif + Ultra-clean Modern Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+  
+    </head>
+  <body>
+    <!-- ICREON GRID-DIVIDED TOP NAVBAR -->
+    <header class="icreon-header">
+      <div class="icreon-nav-grid">
+        <!-- Logo Cell -->
+        <a href="index.html" class="icreon-logo-cell">
+          <div class="brand-name">
+            <span>SCALORA</span>
+            <span>SCHOOLS</span>
+          </div>
+        </a>
+
+        <!-- Middle Nav Cells with Thin Dividers -->
+        <div class="icreon-nav-links">
+          <a href="services.html" class="icreon-nav-cell">Programmes</a>
+          <a href="schools.html" class="icreon-nav-cell">For Schools</a>
+          <a href="industry.html" class="icreon-nav-cell">For Industry</a>
+                    <div class="icreon-nav-dropdown-wrapper">
+            <a href="about.html" class="icreon-nav-cell">About</a>
+            <div class="icreon-dropdown-menu">
+              <a href="about.html#about">Our Story</a>
+              <a href="about.html#insights">Insights</a>
+              <a href="about.html#leadership">Leadership</a>
+              <a href="about.html#careers">Careers</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Action Cells -->
+        <div class="icreon-nav-right">
+          <!-- Search Icon Cell -->
+          <button class="icreon-search-cell" id="icreonSearchBtn" aria-label="Search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+
+          <!-- Contact Us Pill Cell -->
+          <div class="icreon-cta-cell">
+            <a href="#partner" class="btn-icreon-contact">Contact Us</a>
+          </div>
+
+          <!-- Mobile Hamburger Trigger Cell -->
+          
+        </div>
+      </div>
+    </header>
+
+    <!-- Full-screen / Slide Drawer Menu with Complete Navigation -->
+    
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <!-- Global Dynamic Connection Overlay -->
+        <svg id="global-connection-overlay" class="global-connection-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 15;">
+          <defs>
+            <mask id="draw-mask">
+              <path id="mask-path" fill="none" stroke="white" stroke-width="20" stroke-linecap="round" />
+            </mask>
+          </defs>
+          <!-- The actual visible dashed line, hidden by mask initially -->
+          <path id="dynamic-trail" fill="none" stroke="#175DD3" stroke-width="4" stroke-dasharray="10 10" stroke-linecap="round" mask="url(#draw-mask)" />
+        </svg>
+
+        
+    <main>
+<style>
+  .industry-page {
+    background-color: #fcfbf9;
+    color: #000;
+    font-family: var(--font-sans, 'Inter', sans-serif);
+    padding-bottom: 100px;
+  }
+
+  /* Hero Section */
+  .ind-hero {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    background-color: #fcfbf9;
+    background-image: 
+      linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    display: flex;
+    align-items: center;
+    padding: 100px 5% 60px;
+    overflow: hidden;
+  }
+
+  .ind-hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .ind-badge {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 16px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+  }
+
+  .ind-title {
+    font-size: clamp(45px, 6vw, 90px);
+    font-weight: 900;
+    line-height: 0.95;
+    text-transform: uppercase;
+    letter-spacing: -0.03em;
+    margin: 0 0 30px 0;
+  }
+
+  .ind-title-highlight {
+    display: inline-block;
+    background: #175dd3;
+    color: #fff;
+    padding: 5px 25px;
+    border: 4px solid #000;
+    box-shadow: 8px 8px 0px #000;
+    transform: rotate(-1deg);
+    margin: 15px 0;
+  }
+
+  .ind-subtitle {
+    font-size: clamp(18px, 2vw, 24px);
+    line-height: 1.5;
+    color: #333;
+    max-width: 700px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    border-left: 5px solid #0f3f96;
+    padding-left: 25px;
+  }
+
+  /* Section Styles */
+  .ind-section {
+    padding: 100px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .ind-section-title {
+    font-size: clamp(35px, 4vw, 55px);
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .ind-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: #93b6eb;
+    z-index: -1;
+    transform: skew(-20deg);
+  }
+
+  /* Grid Layouts */
+  .ind-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+
+  .ind-card {
+    background: #fff;
+    border: 3px solid #000;
+    padding: 30px;
+    box-shadow: 8px 8px 0px #000;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+  }
+
+  .ind-card:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 12px 12px 0px #000;
+  }
+
+  .ind-card-number {
+    font-family: 'Courier New', monospace;
+    font-size: 40px;
+    font-weight: 900;
+    color: #175dd3;
+    margin-bottom: 15px;
+    line-height: 1;
+  }
+
+  .ind-card h3 {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  .ind-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #444;
+    font-weight: 500;
+  }
+
+  /* Banner */
+  .ind-banner {
+    background: #fff;
+    color: #000;
+    padding: 40px;
+    margin: 60px 0;
+    border: 4px solid #000;
+    box-shadow: 10px 10px 0px #0f3f96;
+    text-align: center;
+    transform: rotate(1deg);
+  }
+
+  .ind-banner h2 {
+    font-size: clamp(24px, 3vw, 40px);
+    font-weight: 800;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .ind-banner span {
+    color: #0f3f96;
+  }
+
+  /* Engaging ways */
+  .ind-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 40px;
+  }
+
+  .ind-tag {
+    background: #fff;
+    border: 2px solid #000;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 0px #000;
+    border-radius: 30px;
+  }
+
+  .ind-tag:nth-child(even) {
+    background: #175dd3;
+    color: #fff;
+  }
+  
+  .ind-tag:nth-child(3n) {
+    background: #93b6eb;
+    color: #000;
+  }
+
+  /* Process Steps */
+  .ind-process {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  @media (min-width: 900px) {
+    .ind-process {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  .ind-step {
+    flex: 1;
+    position: relative;
+    padding: 20px;
+    background: #fff;
+    border: 3px solid #000;
+    box-shadow: 6px 6px 0px #000;
+    text-align: center;
+  }
+
+  .ind-step-arrow {
+    display: none;
+    font-size: 40px;
+    font-weight: 900;
+    color: #0f3f96;
+    align-self: center;
+  }
+  
+  @media (min-width: 900px) {
+    .ind-step-arrow { display: block; }
+  }
+
+  .ind-step h3 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .ind-step p {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  /* Contact CTA */
+  .ind-cta {
+    background: #175dd3;
+    padding: 80px 5%;
+    color: #fff;
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ind-cta h2 {
+    font-size: clamp(40px, 5vw, 70px);
+    font-weight: 900;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+  }
+
+  .ind-cta-details {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+
+  .ind-cta-btn {
+    display: inline-block;
+    background: #93b6eb;
+    color: #000;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    border: 4px solid #000;
+    box-shadow: 6px 6px 0px #000;
+    transition: transform 0.2s;
+  }
+
+  .ind-cta-btn:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 8px 8px 0px #000;
+  }
+</style>
+<div class="industry-page">
+  <section class="ind-hero">
+    <div class="ind-hero-content">
+      <div class="ind-badge">EDUCATION X INDUSTRY</div>
+      <h1 class="ind-title">
+        CONNECT WITH<br>
+        <span class="ind-title-highlight">THE TALENT OF</span><br>
+        TOMORROW.
+      </h1>
+      <p class="ind-subtitle">
+        Build early connections with students through practical learning, industry exposure, workshops, and real-world projects.
+      </p>
+    </div>
+  </section>
+
+  <section class="ind-section">
+    <h2 class="ind-section-title">What Your Company Gets</h2>
+    <div class="ind-grid-4">
+      <div class="ind-card">
+        <div class="ind-card-number">01</div>
+        <h3>Direct Student Connect</h3>
+        <p>Interact directly with students through workshops, projects, industry sessions, and other learning activities.</p>
+      </div>
+      <div class="ind-card">
+        <div class="ind-card-number">02</div>
+        <h3>Early Talent Access</h3>
+        <p>Identify promising students and start building relationships with future talent early.</p>
+      </div>
+      <div class="ind-card">
+        <div class="ind-card-number">03</div>
+        <h3>Brand Visibility</h3>
+        <p>Introduce your company, industry, career opportunities, and work culture to the next generation.</p>
+      </div>
+      <div class="ind-card">
+        <div class="ind-card-number">04</div>
+        <h3>Future Talent Pipeline</h3>
+        <p>Build meaningful connections with students who may become future interns, employees, or collaborators.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="ind-section">
+    <div class="ind-banner">
+      <h2>YOUR COMPANY DOESN\'T JUST REACH STUDENTS. <br> <span>IT BECOMES PART OF THEIR LEARNING JOURNEY.</span></h2>
+    </div>
+  </div>
+
+  <section class="ind-section">
+    <h2 class="ind-section-title">More Than Just A Connection</h2>
+    <p style="font-size: 20px; font-weight: 500; max-width: 800px; margin-bottom: 30px;">
+      Give your company multiple ways to engage with students, share industry knowledge and discover future talent.
+    </p>
+    
+    <div class="ind-tags">
+      <div class="ind-tag">Industry Speaker</div>
+      <div class="ind-tag">Competition Judge</div>
+      <div class="ind-tag">Mentor</div>
+      <div class="ind-tag">Challenge Partner</div>
+      <div class="ind-tag">Industry Visit / Exposure</div>
+      <div class="ind-tag">Project / Case Study Partner</div>
+      <div class="ind-tag">Career & Expert Session</div>
+      <div class="ind-tag">Future Talent Connect</div>
+    </div>
+  </section>
+
+  <section class="ind-section">
+    <h2 class="ind-section-title">Turn Connection Into Collaboration</h2>
+    <p style="font-size: 20px; font-weight: 500; max-width: 800px; margin-bottom: 50px;">
+      Choose how your company wants to engage. We coordinate the right opportunity with the right school and students.
+    </p>
+    
+    <div class="ind-process">
+      <div class="ind-step">
+        <div class="ind-card-number" style="font-size: 24px;">01</div>
+        <h3>Connect</h3>
+        <p>Tell us what your company wants to offer.</p>
+      </div>
+      <div class="ind-step-arrow">→</div>
+      <div class="ind-step">
+        <div class="ind-card-number" style="font-size: 24px;">02</div>
+        <h3>Match</h3>
+        <p>We identify the right opportunity.</p>
+      </div>
+      <div class="ind-step-arrow">→</div>
+      <div class="ind-step">
+        <div class="ind-card-number" style="font-size: 24px;">03</div>
+        <h3>Engage</h3>
+        <p>Your team interacts with students.</p>
+      </div>
+      <div class="ind-step-arrow">→</div>
+      <div class="ind-step">
+        <div class="ind-card-number" style="font-size: 24px;">04</div>
+        <h3>Build</h3>
+        <p>Continue the relationship.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="ind-section">
+    <h2 class="ind-section-title">Ways To Start</h2>
+    <div class="ind-grid-4">
+      <div class="ind-card" style="box-shadow: 8px 8px 0px #93b6eb;">
+        <h3>Start Small</h3>
+        <p>One expert session or career interaction.</p>
+      </div>
+      <div class="ind-card" style="box-shadow: 8px 8px 0px #0f3f96;">
+        <h3>Bring a Challenge</h3>
+        <p>Give students a real industry problem to solve.</p>
+      </div>
+      <div class="ind-card" style="box-shadow: 8px 8px 0px #175dd3;">
+        <h3>Build an Experience</h3>
+        <p>Host a visit, workshop or practical activity.</p>
+      </div>
+      <div class="ind-card" style="box-shadow: 8px 8px 0px #000;">
+        <h3>Build a Pipeline</h3>
+        <p>Develop long-term student and talent engagement.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="ind-cta">
+    <div class="ind-badge" style="background: #fff; color: #000;">READY TO BUILD THE CONNECTION?</div>
+    <h2>ONE COMPANY.<br>MANY WAYS TO MAKE<br><span style="color: #0f3f96;">AN IMPACT.</span></h2>
+    <p style="font-size: 22px; font-weight: 500; margin-top: 20px;">Let's create meaningful opportunities for the next generation of talent.</p>
+    
+    <div class="ind-cta-details">
+      <a href="mailto:scaloraacademy@gmail.com" class="ind-cta-btn">scaloraacademy@gmail.com</a>
+      <a href="tel:+919625196435" class="ind-cta-btn" style="background: #0f3f96; color: #fff;">+91 96251 96435</a>
+    </div>
+  </section>
+</div>
+</main>
+
+<footer class="giant-footer">
+            <div class="giant-footer-top">
+              <div class="gf-col gf-brand-col">
+                <div class="scalora-logo-lockup footer-size">
+                  <span class="logo-text-line">SCALORA</span>
+                  <span class="logo-text-line">SCHOOLS</span>
+                </div>
+                <p>Creating structured experiential-learning ecosystems where students move from problems to solutions.</p>
+              </div>
+              <div class="gf-col">
+                <div class="gf-heading">NAVIGATION</div>
+                <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About Scalora</a></li>
+                  <li><a href="#model">The Scalora Model</a></li>
+                  <li><a href="#irdme">IRDME Framework</a></li>
+                </ul>
+              </div>
+                            <div class="gf-col">
+                <div class="gf-heading">COMPANY</div>
+                <ul>
+                  <li><a href="terms.html">Terms of Service</a></li>
+                  <li><a href="privacy.html">Privacy Policy</a></li>
+                  <li><a href="cookies.html">Cookie Policy</a></li>
+                  <li><a href="security.html">Security & Safety</a></li>
+                </ul>
+              </div>
+              <div class="gf-col">
+                <div class="gf-heading">CONTACT</div>
+                <ul>
+                  <li><a href="mailto:scaloraschools@gmail.com" class="gf-mail-link" style="text-transform:none;">scaloraschools@gmail.com</a></li>
+                  <li class="gf-address">Scalora Academy Pvt Limited<br>D2-0401, Smart City Kingswood, Plot No. GH02,<br>Sector-4, Noida, Gautam Buddha Nagar,<br>Uttar Pradesh, India, 201301</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="giant-footer-middle">
+              <div class="giant-brand-text">#NoMoreOrdinary</div>
+            </div>
+
+            <div class="giant-footer-bottom">
+              <div class="gf-copyright">Copyright © 2026 Scalora Schools</div>
+              <button class="gf-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">BACK TO TOP &uarr;</button>
+            </div>
+          </footer>
+
+</main>
+      </div>
+    </div>
+
+    <!-- Floating Blue Chat / Contact Trigger (Matching bottom-right of screenshot) -->
+    <a href="#partner" class="icreon-floating-chat" aria-label="Connect with Scalora Advisor">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/>
+      </svg>
+    </a>
+
+    <!-- MAIN SCRIPT -->
+    <script type="module" src="/src/main.js"></script>
+  
+    <!-- COOKIE CONSENT BANNER -->
+    <div id="cookieBanner" class="cookie-banner" style="display: none;">
+      <div class="cookie-banner-content">
+        <div class="cookie-banner-text">
+          <h3>We use cookies</h3>
+          <p>We use necessary cookies to help our website function properly and securely. We may also use optional cookies to remember preferences and improve your experience.</p>
+          <p>By selecting "Accept All", you agree to the use of optional cookies. You can manage your preferences at any time. <a href="cookies.html" class="cookie-policy-link">Cookie Policy</a></p>
+        </div>
+        <div class="cookie-banner-actions">
+          <button id="btnAcceptAll" class="cookie-btn cookie-btn-primary">Accept All</button>
+          <button id="btnRejectOptional" class="cookie-btn cookie-btn-secondary">Reject Optional</button>
+          <button id="btnManagePreferences" class="cookie-btn cookie-btn-text">Manage Preferences</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- COOKIE PREFERENCES MODAL -->
+    <div id="cookieModal" class="cookie-modal-overlay" style="display: none;">
+      <div class="cookie-modal">
+        <div class="cookie-modal-header">
+          <h2>Cookie Preferences</h2>
+          <button id="cookieModalClose" class="cookie-close-btn">&times;</button>
+        </div>
+        <div class="cookie-modal-body">
+          <p class="cookie-modal-intro">You can choose which types of cookies you allow.</p>
+          
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Necessary Cookies</h3>
+                <span class="cookie-badge cookie-badge-required">Always Active</span>
+              </div>
+            </div>
+            <p class="cookie-category-desc">These cookies are required for the basic operation, security and functionality of the website.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Functional Cookies</h3>
+                <span class="cookie-badge cookie-badge-optional">Optional</span>
+              </div>
+              <label class="cookie-switch">
+                <input type="checkbox" id="chkFunctional">
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">These cookies may help remember your preferences and improve your browsing experience.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Analytics Cookies</h3>
+                <span class="cookie-badge cookie-badge-disabled">Currently Not Used</span>
+              </div>
+              <label class="cookie-switch cookie-switch-disabled">
+                <input type="checkbox" disabled>
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">Scalora Schools does not currently use Google Analytics, Google Tag Manager, Vercel Analytics or Vercel Speed Insights.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Marketing Cookies</h3>
+                <span class="cookie-badge cookie-badge-optional">Optional</span>
+              </div>
+              <label class="cookie-switch">
+                <input type="checkbox" id="chkMarketing">
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">These cookies may be used for advertising or marketing purposes if such technologies are introduced in the future.</p>
+          </div>
+        </div>
+        <div class="cookie-modal-footer">
+          <button id="btnSavePreferences" class="cookie-btn cookie-btn-primary cookie-btn-full">Save Preferences</button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
+

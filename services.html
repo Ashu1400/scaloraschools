@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scalora — Education Beyond the Classroom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Melius font pairing: Editorial Serif + Ultra-clean Modern Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <!-- ICREON GRID-DIVIDED TOP NAVBAR -->
+    <header class="icreon-header">
+      <div class="icreon-nav-grid">
+        <!-- Logo Cell -->
+        <a href="index.html" class="icreon-logo-cell">
+          <div class="brand-name">
+            <span>SCALORA</span>
+            <span>SCHOOLS</span>
+          </div>
+        </a>
+
+        <!-- Middle Nav Cells with Thin Dividers -->
+        <div class="icreon-nav-links">
+          <a href="services.html" class="icreon-nav-cell">Programmes</a>
+          <a href="schools.html" class="icreon-nav-cell">For Schools</a>
+          <a href="industry.html" class="icreon-nav-cell">For Industry</a>
+                    <div class="icreon-nav-dropdown-wrapper">
+            <a href="about.html" class="icreon-nav-cell">About</a>
+            <div class="icreon-dropdown-menu">
+              <a href="about.html#about">Our Story</a>
+              <a href="about.html#insights">Insights</a>
+              <a href="about.html#leadership">Leadership</a>
+              <a href="about.html#careers">Careers</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Action Cells -->
+        <div class="icreon-nav-right">
+          <!-- Search Icon Cell -->
+          <button class="icreon-search-cell" id="icreonSearchBtn" aria-label="Search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+
+          <!-- Contact Us Pill Cell -->
+          <div class="icreon-cta-cell">
+            <a href="#partner" class="btn-icreon-contact">Contact Us</a>
+          </div>
+
+          <!-- Mobile Hamburger Trigger Cell -->
+          
+        </div>
+      </div>
+    </header>
+
+    <!-- Full-screen / Slide Drawer Menu with Complete Navigation -->
+    
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <!-- Global Dynamic Connection Overlay -->
+        <svg id="global-connection-overlay" class="global-connection-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 15;">
+          <defs>
+            <mask id="draw-mask">
+              <path id="mask-path" fill="none" stroke="white" stroke-width="20" stroke-linecap="round" />
+            </mask>
+          </defs>
+          <!-- The actual visible dashed line, hidden by mask initially -->
+          <path id="dynamic-trail" fill="none" stroke="#175DD3" stroke-width="4" stroke-dasharray="10 10" stroke-linecap="round" mask="url(#draw-mask)" />
+        </svg>
+
+        <main class="services-main">
+          <!-- HERO -->
+          <section class="services-hero">
+            <div class="services-hero-content">
+              <div class="hero-label">WHAT WE PROVIDE</div>
+              <h1 class="hero-title">More than a programme.<br/><span class="hero-highlight">A complete ecosystem.</span></h1>
+            </div>
+          </div>
+
+
+          <!-- CONCEPT STICKY SCROLL -->
+          <section class="concept-scroll-section">
+            <div class="concept-container">
+              <!-- Left Sticky Visuals -->
+              <div class="concept-left">
+                <div class="concept-sticky-visual">
+                  <div class="cv-item cv-active" id="cv-1">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                  </div>
+                  <div class="cv-item" id="cv-2">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                  </div>
+                  <div class="cv-item" id="cv-3">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Scrolling Accordion -->
+              <div class="concept-right">
+                <div class="concept-step cs-active" id="cs-1">
+                  <div class="cs-header">
+                    <h3>The Ecosystem Structure</h3>
+                  </div>
+                  <div class="cs-content">
+                    <p>Moving beyond disconnected activities, we build a permanent, structured environment inside the school. We integrate real-world problem solving directly into the student experience.</p>
+                  </div>
+                </div>
+
+                <div class="concept-step" id="cs-2">
+                  <div class="cs-header">
+                    <h3>The IRDME Journey</h3>
+                  </div>
+                  <div class="cs-content">
+                    <p>Students don't just "make projects." They are guided through a rigorous cycle of Innovation, Research, Development, Management, and Entrepreneurship.</p>
+                  </div>
+                </div>
+
+                <div class="concept-step" id="cs-3">
+                  <div class="cs-header">
+                    <h3>The Real-World Outcome</h3>
+                  </div>
+                  <div class="cs-content">
+                    <p>Through industrial visits, mentorship, and showcases, students graduate with genuine professional exposure and readiness, not just a certificate.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          <!-- STORYTELLING MODE (GSAP Horizontal Scroll) -->
+          <div class="gsap-story-wrapper">
+            <div class="gsap-story-container">
+              <!-- Card 01 -->
+              <div class="story-panel gc-card color-blue">
+                <div class="gc-top">
+                  <div class="gc-dot"></div>
+                  <div class="gc-massive-text">01</div>
+                </div>
+                <div class="gc-bottom">
+                  <h3 class="gc-title">STUDENT DEVELOPMENT</h3>
+                  <ul class="sc-list mt-4">
+                    <li><span class="text-black font-semibold">IRDME</span></li>
+                    <li><span class="text-black font-semibold">Project-Based Learning</span></li>
+                    <li><span class="text-black font-semibold">Leadership</span></li>
+                    <li><span class="text-black font-semibold">Research & Innovation</span></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Card 02 -->
+              <div class="story-panel gc-card color-purple">
+                <div class="gc-top">
+                  <div class="gc-dot"></div>
+                  <div class="gc-massive-text">02</div>
+                </div>
+                <div class="gc-bottom">
+                  <h3 class="gc-title">SCHOOL PROGRAMMES</h3>
+                  <ul class="sc-list mt-4">
+                    <li><span class="text-black font-semibold">Scalora Clubs</span></li>
+                    <li><span class="text-black font-semibold">Workshops</span></li>
+                    <li><span class="text-black font-semibold">Bootcamps</span></li>
+                    <li><span class="text-black font-semibold">Programme-Based Interventions</span></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Card 03 -->
+              <div class="story-panel gc-card color-orange">
+                <div class="gc-top">
+                  <div class="gc-dot"></div>
+                  <div class="gc-massive-text">03</div>
+                </div>
+                <div class="gc-bottom">
+                  <h3 class="gc-title">REAL-WORLD EXPOSURE</h3>
+                  <ul class="sc-list mt-4">
+                    <li><span class="text-black font-semibold">Industrial Visits</span></li>
+                    <li><span class="text-black font-semibold">Expert Sessions</span></li>
+                    <li><span class="text-black font-semibold">Industry Interaction</span></li>
+                    <li><span class="text-black font-semibold">Competitions & Showcases</span></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Card 04 -->
+              <div class="story-panel gc-card color-teal">
+                <div class="gc-top">
+                  <div class="gc-dot"></div>
+                  <div class="gc-massive-text">04</div>
+                </div>
+                <div class="gc-bottom">
+                  <h3 class="gc-title">SCHOOL PARTNERSHIP</h3>
+                  <ul class="sc-list mt-4">
+                    <li><span class="text-black font-semibold">Ecosystem Setup</span></li>
+                    <li><span class="text-black font-semibold">Training & Mentorship</span></li>
+                    <li><span class="text-black font-semibold">Coordination</span></li>
+                    <li><span class="text-black font-semibold">Assessment & Reviews</span></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          </div>
+
+          <!-- WAVY TIMELINE FUNNEL SECTION -->
+          <section class="wavy-funnel-section">
+            <div class="wavy-text-container">
+              <div class="wt-item wt-active" id="wt-1">
+                <div class="wt-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                </div>
+                <h2 class="wt-headline">2-Day Workshop</h2>
+                <p class="wt-desc">We offer an immersive 2-day workshop for free to get students ready and excited for engagement.</p>
+              </div>
+              <div class="wt-item" id="wt-2">
+                <div class="wt-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20V10"></path><path d="M18 20V4"></path><path d="M6 20v-4"></path></svg>
+                </div>
+                <h2 class="wt-headline">Feedback & Alignment</h2>
+                <p class="wt-desc">After the workshop, we collect comprehensive feedback to ensure the model fits your school's vision.</p>
+              </div>
+              <div class="wt-item" id="wt-3">
+                <div class="wt-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                </div>
+                <h2 class="wt-headline">Full Partnership</h2>
+                <p class="wt-desc">We continue to the school and establish the complete Scalora ecosystem structure.</p>
+              </div>
+            </div>
+
+            <div class="wavy-track-wrapper">
+              <div class="wavy-track">
+                <!-- A continuous cubic bezier wave path -->
+                <svg class="wave-svg" viewBox="0 0 4000 300" preserveAspectRatio="none">
+                  <path class="wave-path" d="M0,150 
+                           C 150,50 350,250 500,150 
+                           C 650,50 850,250 1000,150 
+                           C 1150,50 1350,250 1500,150 
+                           C 1650,50 1850,250 2000,150 
+                           C 2150,50 2350,250 2500,150 
+                           C 2650,50 2850,250 3000,150
+                           C 3150,50 3350,250 3500,150
+                           C 3650,50 3850,250 4000,150" fill="none" stroke="#e4e4e7" stroke-width="2"></path>
+                </svg>
+                <div class="wave-nodes">
+                  <!-- Nodes placed exactly at the inflection points (y=150) -->
+                  <!-- First Node: x=1000 -->
+                  <div class="wn-node" style="left: 1000px; top: 150px;">
+                    <div class="wn-line"></div><div class="wn-dot"></div>
+                  </div>
+                  <!-- Second Node: x=2000 -->
+                  <div class="wn-node" style="left: 2000px; top: 150px;">
+                    <div class="wn-line"></div><div class="wn-dot"></div>
+                  </div>
+                  <!-- Third Node: x=3000 -->
+                  <div class="wn-node" style="left: 3000px; top: 150px;">
+                    <div class="wn-line"></div><div class="wn-dot"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </section>
+
+
+          <!-- PARTNERSHIP MODELS (DARK ACCORDION) -->
+          <section class="dark-accordion-section">
+            <div class="da-container">
+              <!-- Split Header -->
+              <div class="da-header">
+                <div class="da-header-left">
+                  <div class="da-eyebrow">04 / HOW WE BUILD ON IT</div>
+                  <h2 class="da-headline">Our Partnership Models.</h2>
+                </div>
+                <div class="da-header-right">
+                  <div class="da-accent-line"></div>
+                  <p class="da-header-desc">We build upon our ecosystem foundation to customise frameworks for each of our schools. Choose the engagement structure that seamlessly fits your institution's vision and goals.</p>
+                </div>
+              </div>
+
+              <!-- Accordion Wrapper -->
+              <div class="da-accordion-wrapper">
+                <!-- Pill 1: Club-Based -->
+                <div class="da-pill">
+                  <button class="da-pill-trigger">
+                    <span class="da-num color-blue">01</span>
+                    <span class="da-title">Club-Based Model</span>
+                  </button>
+                  <div class="da-pill-content">
+                    <div class="da-pill-inner">
+                      <p class="da-subtitle">Our main, long-term ecosystem model.</p>
+                      <div class="da-duration"><strong>DURATION:</strong> 4-month IRDME cycle.</div>
+                      <ul class="da-timeline">
+                        <li><span class="da-month">Month 1</span><span class="da-event">Common Training + Problem / Project / Role Selection</span></li>
+                        <li><span class="da-month">Month 2</span><span class="da-event">Innovation &rarr; Research</span></li>
+                        <li><span class="da-month">Month 3</span><span class="da-event">Development &rarr; Management</span></li>
+                        <li><span class="da-month">Month 4</span><span class="da-event">Management + Entrepreneurship &rarr; Final Project Showcase</span></li>
+                      </ul>
+
+                      <div class="da-footer-note">
+                        <span class="da-metric">2 INDUSTRY VISITS / 4-MONTH CYCLE</span>
+                        <p>Structured industrial visits connected to Innovation/Research (Month 2) and Development/Management (Month 3).</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pill 2: Programme-Based -->
+                <div class="da-pill">
+                  <button class="da-pill-trigger">
+                    <span class="da-num color-orange">02</span>
+                    <span class="da-title">Programme-Based Model</span>
+                  </button>
+                  <div class="da-pill-content">
+                    <div class="da-pill-inner">
+                      <p class="da-subtitle">Our flexible, highly customisable model.</p>
+                      <div class="da-duration"><strong>DURATION:</strong> Flexible duration.</div>
+                      <p class="da-desc">Choose individual modules based on your school's requirements. The exact duration and scope are agreed directly with the school.</p>
+                      <div class="da-tags">
+                        <span>Seminars</span>
+                        <span>Workshops</span>
+                        <span>Bootcamps</span>
+                        <span>Innovation</span>
+                        <span>Research</span>
+                        <span>Entrepreneurship</span>
+                        <span>Industrial visits</span>
+                        <span>College visits</span>
+                        <span>Competitions</span>
+                        <span>Expert sessions</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pill 3: Feature Comparison -->
+                <div class="da-pill">
+                  <button class="da-pill-trigger">
+                    <span class="da-num color-green">03</span>
+                    <span class="da-title">Feature Comparison</span>
+                  </button>
+                  <div class="da-pill-content">
+                    <div class="da-pill-inner">
+                      <div class="da-table-wrapper">
+                        <table class="da-comparison-table">
+                          <thead>
+                            <tr>
+                              <th>Component</th>
+                              <th>Club-Based</th>
+                              <th>Programme-Based</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Permanent club</td>
+                              <td><span class="da-check"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline; margin-right:4px;"><polyline points="20 6 9 17 4 12"></polyline></svg> Yes</span></td>
+                              <td><span class="da-cross"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline; margin-right:4px;"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg> No</span></td>
+                            </tr>
+                            <tr>
+                              <td>IRDME</td>
+                              <td>Continuous framework &mdash; 4-month cycle</td>
+                              <td>Can be included; programme-specific</td>
+                            </tr>
+                            <tr>
+                              <td>Industrial visits</td>
+                              <td>2 per standard cycle</td>
+                              <td>Subject to agreement</td>
+                            </tr>
+                            <tr>
+                              <td>Student leadership</td>
+                              <td>Core component</td>
+                              <td>Limited / programme-dependent</td>
+                            </tr>
+                            <tr>
+                              <td>Projects</td>
+                              <td>Continuous cycles</td>
+                              <td>Depending on scope</td>
+                            </tr>
+                            <tr>
+                              <td>Cycle presentation</td>
+                              <td>Standard</td>
+                              <td>Depending on scope</td>
+                            </tr>
+                            <tr>
+                              <td>Formal showcase</td>
+                              <td>Customisable</td>
+                              <td>Customisable</td>
+                            </tr>
+                            <tr class="da-table-footer">
+                              <td>Best suited for</td>
+                              <td class="da-highlight">Long-term ecosystem</td>
+                              <td class="da-highlight">Flexible, shorter engagement</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+
+          <!-- SITE FOOTER -->
+          <footer class="giant-footer">
+            <div class="giant-footer-top">
+              <div class="gf-col gf-brand-col">
+                <div class="scalora-logo-lockup footer-size">
+                  <span class="logo-text-line">SCALORA</span>
+                  <span class="logo-text-line">SCHOOLS</span>
+                </div>
+                <p>Creating structured experiential-learning ecosystems where students move from problems to solutions.</p>
+              </div>
+              <div class="gf-col">
+                <div class="gf-heading">NAVIGATION</div>
+                <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About Scalora</a></li>
+                  <li><a href="#model">The Scalora Model</a></li>
+                  <li><a href="#irdme">IRDME Framework</a></li>
+                </ul>
+              </div>
+                            <div class="gf-col">
+                <div class="gf-heading">COMPANY</div>
+                <ul>
+                  <li><a href="terms.html">Terms of Service</a></li>
+                  <li><a href="privacy.html">Privacy Policy</a></li>
+                  <li><a href="cookies.html">Cookie Policy</a></li>
+                  <li><a href="security.html">Security & Safety</a></li>
+                </ul>
+              </div>
+              <div class="gf-col">
+                <div class="gf-heading">CONTACT</div>
+                <ul>
+                  <li><a href="mailto:scaloraschools@gmail.com" class="gf-mail-link" style="text-transform:none;">scaloraschools@gmail.com</a></li>
+                  <li class="gf-address">Scalora Academy Pvt Limited<br>D2-0401, Smart City Kingswood, Plot No. GH02,<br>Sector-4, Noida, Gautam Buddha Nagar,<br>Uttar Pradesh, India, 201301</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="giant-footer-middle">
+              <div class="giant-brand-text">#NoMoreOrdinary</div>
+            </div>
+
+            <div class="giant-footer-bottom">
+              <div class="gf-copyright">Copyright © 2026 Scalora Schools</div>
+              <button class="gf-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">BACK TO TOP &uarr;</button>
+            </div>
+          </footer>
+
+</main>
+      </div>
+    </div>
+
+    <!-- Floating Blue Chat / Contact Trigger (Matching bottom-right of screenshot) -->
+    <a href="#partner" class="icreon-floating-chat" aria-label="Connect with Scalora Advisor">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/>
+      </svg>
+    </a>
+
+    <!-- MAIN SCRIPT -->
+    <script type="module" src="/src/main.js"></script>
+  
+    <!-- COOKIE CONSENT BANNER -->
+    <div id="cookieBanner" class="cookie-banner" style="display: none;">
+      <div class="cookie-banner-content">
+        <div class="cookie-banner-text">
+          <h3>We use cookies</h3>
+          <p>We use necessary cookies to help our website function properly and securely. We may also use optional cookies to remember preferences and improve your experience.</p>
+          <p>By selecting "Accept All", you agree to the use of optional cookies. You can manage your preferences at any time. <a href="cookies.html" class="cookie-policy-link">Cookie Policy</a></p>
+        </div>
+        <div class="cookie-banner-actions">
+          <button id="btnAcceptAll" class="cookie-btn cookie-btn-primary">Accept All</button>
+          <button id="btnRejectOptional" class="cookie-btn cookie-btn-secondary">Reject Optional</button>
+          <button id="btnManagePreferences" class="cookie-btn cookie-btn-text">Manage Preferences</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- COOKIE PREFERENCES MODAL -->
+    <div id="cookieModal" class="cookie-modal-overlay" style="display: none;">
+      <div class="cookie-modal">
+        <div class="cookie-modal-header">
+          <h2>Cookie Preferences</h2>
+          <button id="cookieModalClose" class="cookie-close-btn">&times;</button>
+        </div>
+        <div class="cookie-modal-body">
+          <p class="cookie-modal-intro">You can choose which types of cookies you allow.</p>
+          
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Necessary Cookies</h3>
+                <span class="cookie-badge cookie-badge-required">Always Active</span>
+              </div>
+            </div>
+            <p class="cookie-category-desc">These cookies are required for the basic operation, security and functionality of the website.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Functional Cookies</h3>
+                <span class="cookie-badge cookie-badge-optional">Optional</span>
+              </div>
+              <label class="cookie-switch">
+                <input type="checkbox" id="chkFunctional">
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">These cookies may help remember your preferences and improve your browsing experience.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Analytics Cookies</h3>
+                <span class="cookie-badge cookie-badge-disabled">Currently Not Used</span>
+              </div>
+              <label class="cookie-switch cookie-switch-disabled">
+                <input type="checkbox" disabled>
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">Scalora Schools does not currently use Google Analytics, Google Tag Manager, Vercel Analytics or Vercel Speed Insights.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Marketing Cookies</h3>
+                <span class="cookie-badge cookie-badge-optional">Optional</span>
+              </div>
+              <label class="cookie-switch">
+                <input type="checkbox" id="chkMarketing">
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">These cookies may be used for advertising or marketing purposes if such technologies are introduced in the future.</p>
+          </div>
+        </div>
+        <div class="cookie-modal-footer">
+          <button id="btnSavePreferences" class="cookie-btn cookie-btn-primary cookie-btn-full">Save Preferences</button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
+

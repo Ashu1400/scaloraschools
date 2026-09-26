@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us — Scalora Schools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Melius font pairing: Editorial Serif + Ultra-clean Modern Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+    <style>
+      .contact-options-section {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 150px 5% 100px;
+        background-color: var(--color-bg);
+      }
+      .contact-options-container {
+        max-width: 1200px;
+        width: 100%;
+      }
+      .contact-options-header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+      .contact-options-header h1 {
+        font-family: var(--font-primary);
+        font-size: 4rem;
+        line-height: 1.1;
+        margin-bottom: 20px;
+      }
+      .contact-options-header p {
+        font-family: var(--font-secondary);
+        font-size: 1.25rem;
+        color: var(--color-text-muted);
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .contact-cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 30px;
+      }
+      .contact-card {
+        background-color: #fff;
+        border: 1px solid rgba(0,0,0,0.1);
+        border-radius: 12px;
+        padding: 40px;
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 350px;
+        text-decoration: none;
+        color: var(--color-text);
+      }
+      .contact-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+        border-color: var(--color-accent-blue);
+      }
+      .contact-card-icon {
+        font-size: 3rem;
+        margin-bottom: 30px;
+      }
+      .contact-card-content h2 {
+        font-family: var(--font-primary);
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+      }
+      .contact-card-content p {
+        font-family: var(--font-secondary);
+        font-size: 1.1rem;
+        color: var(--color-text-muted);
+        line-height: 1.6;
+        margin-bottom: 30px;
+      }
+      .contact-card-action {
+        display: inline-flex;
+        align-items: center;
+        font-family: var(--font-secondary);
+        font-weight: 500;
+        font-size: 1.1rem;
+        color: var(--color-accent-blue);
+        gap: 8px;
+        transition: gap 0.3s ease;
+      }
+      .contact-card:hover .contact-card-action {
+        gap: 15px;
+      }
+      @media (max-width: 768px) {
+        .contact-cards-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ICREON GRID-DIVIDED TOP NAVBAR -->
+    <header class="icreon-header">
+      <div class="icreon-nav-grid">
+        <!-- Logo Cell -->
+        <a href="index.html" class="icreon-logo-cell">
+          <div class="brand-name">
+            <span>SCALORA</span>
+            <span>SCHOOLS</span>
+          </div>
+        </a>
+        <!-- Middle Nav Cells -->
+        <div class="icreon-nav-links">
+          <a href="services.html" class="icreon-nav-cell">Programmes</a>
+          <a href="schools.html" class="icreon-nav-cell">For Schools</a>
+          <a href="industry.html" class="icreon-nav-cell">For Industry</a>
+          <div class="icreon-nav-dropdown-wrapper">
+            <a href="about.html" class="icreon-nav-cell">About</a>
+          </div>
+        </div>
+        <!-- Right Action Cells -->
+        <div class="icreon-nav-right">
+          <div class="icreon-cta-cell">
+            <a href="contact.html" class="btn-icreon-contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact-options-section">
+        <div class="contact-options-container">
+          <div class="contact-options-header">
+            <h1>Partner with Scalora</h1>
+            <p>Choose how you want to collaborate with us to bring real-world experiences to students.</p>
+          </div>
+          <div class="contact-cards-grid">
+            <a href="contact-industry.html" class="contact-card">
+              <div class="contact-card-icon">🏭</div>
+              <div class="contact-card-content">
+                <h2>Connect as Industry Partner</h2>
+                <p>Engage with future talent. Provide real-world problem statements, mentorship, and opportunities for students to build deployable value.</p>
+              </div>
+              <div class="contact-card-action">
+                <span>Partner with us</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </div>
+            </a>
+            <a href="contact-school.html" class="contact-card">
+              <div class="contact-card-icon">🏫</div>
+              <div class="contact-card-content">
+                <h2>Connect as School Principal</h2>
+                <p>Bring the IRDME ecosystem to your school. Integrate practical, project-based learning into your curriculum without disrupting academics.</p>
+              </div>
+              <div class="contact-card-action">
+                <span>Join our network</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- SITE FOOTER -->
+    <footer class="giant-footer">
+      <div class="giant-footer-top">
+        <div class="gf-col gf-brand-col">
+          <div class="scalora-logo-lockup footer-size">
+            <span class="logo-text-line">SCALORA</span>
+            <span class="logo-text-line">SCHOOLS</span>
+          </div>
+          <p>Creating structured experiential-learning ecosystems where students move from problems to solutions.</p>
+        </div>
+      </div>
+      <div class="giant-footer-bottom">
+        <div class="gf-copyright">Copyright © 2026 Scalora Schools</div>
+      </div>
+    </footer>
+  
+    <!-- COOKIE CONSENT BANNER -->
+    <div id="cookieBanner" class="cookie-banner" style="display: none;">
+      <div class="cookie-banner-content">
+        <div class="cookie-banner-text">
+          <h3>We use cookies</h3>
+          <p>We use necessary cookies to help our website function properly and securely. We may also use optional cookies to remember preferences and improve your experience.</p>
+          <p>By selecting "Accept All", you agree to the use of optional cookies. You can manage your preferences at any time. <a href="cookies.html" class="cookie-policy-link">Cookie Policy</a></p>
+        </div>
+        <div class="cookie-banner-actions">
+          <button id="btnAcceptAll" class="cookie-btn cookie-btn-primary">Accept All</button>
+          <button id="btnRejectOptional" class="cookie-btn cookie-btn-secondary">Reject Optional</button>
+          <button id="btnManagePreferences" class="cookie-btn cookie-btn-text">Manage Preferences</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- COOKIE PREFERENCES MODAL -->
+    <div id="cookieModal" class="cookie-modal-overlay" style="display: none;">
+      <div class="cookie-modal">
+        <div class="cookie-modal-header">
+          <h2>Cookie Preferences</h2>
+          <button id="cookieModalClose" class="cookie-close-btn">&times;</button>
+        </div>
+        <div class="cookie-modal-body">
+          <p class="cookie-modal-intro">You can choose which types of cookies you allow.</p>
+          
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Necessary Cookies</h3>
+                <span class="cookie-badge cookie-badge-required">Always Active</span>
+              </div>
+            </div>
+            <p class="cookie-category-desc">These cookies are required for the basic operation, security and functionality of the website.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Functional Cookies</h3>
+                <span class="cookie-badge cookie-badge-optional">Optional</span>
+              </div>
+              <label class="cookie-switch">
+                <input type="checkbox" id="chkFunctional">
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">These cookies may help remember your preferences and improve your browsing experience.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Analytics Cookies</h3>
+                <span class="cookie-badge cookie-badge-disabled">Currently Not Used</span>
+              </div>
+              <label class="cookie-switch cookie-switch-disabled">
+                <input type="checkbox" disabled>
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">Scalora Schools does not currently use Google Analytics, Google Tag Manager, Vercel Analytics or Vercel Speed Insights.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Marketing Cookies</h3>
+                <span class="cookie-badge cookie-badge-optional">Optional</span>
+              </div>
+              <label class="cookie-switch">
+                <input type="checkbox" id="chkMarketing">
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">These cookies may be used for advertising or marketing purposes if such technologies are introduced in the future.</p>
+          </div>
+        </div>
+        <div class="cookie-modal-footer">
+          <button id="btnSavePreferences" class="cookie-btn cookie-btn-primary cookie-btn-full">Save Preferences</button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

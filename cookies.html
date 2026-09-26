@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<!--
+  ____   ____    _    _     ___  ____      _    
+ / ___| / ___|  / \  | |   / _ \|  _ \    / \   
+ \___ \| |     / _ \ | |  | | | | |_) |  / _ \  
+  ___) | |___ / ___ \| |__| |_| |  _ <  / ___ \ 
+ |____/ \____/_/   \_\_____\___/|_| \_\/_/   \_\
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie Policy - Scalora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Melius font pairing: Editorial Serif + Ultra-clean Modern Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/ascii-hero.css">
+    <link rel="stylesheet" href="/src/reference-hero.css">
+  
+    <style>
+      .legal-page {
+        background-color: #fafafa;
+        color: #111827;
+        font-family: 'Inter', sans-serif;
+        padding: 180px 5% 100px 5%;
+        min-height: 100vh;
+      }
+      .legal-container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 80px;
+        border-radius: 24px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.03);
+        border: 1px solid #eaeaea;
+      }
+      .legal-container h1 {
+        font-family: 'Instrument Serif', serif;
+        font-size: clamp(3rem, 5vw, 4.5rem);
+        line-height: 1.1;
+        margin-bottom: 24px;
+        color: #0b132b;
+      }
+      .legal-container > p:first-of-type,
+      .legal-container > p:nth-of-type(2) {
+        font-size: 1.1rem;
+        color: #64748b;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #f1f5f9;
+        padding-bottom: 24px;
+      }
+      .legal-container h2 {
+        font-family: 'Outfit', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        color: #0f172a;
+        letter-spacing: -0.01em;
+      }
+      .legal-container h3 {
+        font-family: 'Outfit', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-top: 40px;
+        margin-bottom: 16px;
+        color: #334155;
+      }
+      .legal-container p {
+        font-size: 1.125rem;
+        line-height: 1.8;
+        color: #475569;
+        margin-bottom: 24px;
+      }
+      .legal-container ul, .legal-container ol {
+        margin-bottom: 24px;
+        padding-left: 24px;
+      }
+      .legal-container li {
+        font-size: 1.125rem;
+        line-height: 1.8;
+        color: #475569;
+        margin-bottom: 12px;
+      }
+      .legal-container strong {
+        color: #0f172a;
+        font-weight: 600;
+      }
+      .legal-badge {
+        display: inline-block;
+        padding: 6px 14px;
+        background: #e0e7ff;
+        color: #4338ca;
+        border-radius: 100px;
+        font-family: 'Outfit', sans-serif;
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      @media (max-width: 768px) {
+        .legal-page { padding: 140px 5% 60px 5%; }
+        .legal-container { padding: 40px 24px; border-radius: 16px; }
+      }
+    </style>
+</head>
+  <body class="reference-home">
+    <!-- ICREON GRID-DIVIDED TOP NAVBAR -->
+    <style>
+      .icreon-header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+      }
+      .ascii-home .icreon-header.header-scrolled {
+        background: #ffffff !important;
+        border-bottom: 1px solid #e2e2e6 !important;
+      }
+      .ascii-home .icreon-header.header-scrolled :is(.brand-name,.icreon-nav-cell,.icreon-search-cell) {
+        color: #1a1a1e !important;
+      }
+      .ascii-home .icreon-header.header-scrolled .btn-icreon-contact {
+        color: #1a1a1e !important;
+        border-color: #e2e2e6 !important;
+        background: transparent !important;
+      }
+      .ascii-home .icreon-header.header-scrolled :is(.icreon-nav-grid,.icreon-logo-cell,.icreon-nav-cell,.icreon-search-cell,.icreon-mobile-menu-cell) {
+        border-color: #e2e2e6 !important;
+      }
+      .ascii-home .icreon-header.header-scrolled :is(.icreon-logo-cell,.icreon-nav-cell,.icreon-search-cell):hover {
+        background-color: #f8f8fa !important;
+        color: #1a1a1e !important;
+      }
+      .ascii-home .icreon-header.header-scrolled .icreon-mobile-menu-cell span {
+        background: #1a1a1e !important;
+      }
+    </style>
+    <script>
+      window.addEventListener('scroll', () => {
+        const header = document.querySelector('.icreon-header');
+        if (window.scrollY > 50) {
+          header.classList.add('header-scrolled');
+        } else {
+          header.classList.remove('header-scrolled');
+        }
+      });
+    </script>
+    <header class="icreon-header">
+      <div class="icreon-nav-grid">
+        <!-- Logo Cell -->
+        <a href="index.html" class="icreon-logo-cell">
+          <div class="brand-name">
+            <span>SCALORA</span>
+            <span>SCHOOLS</span>
+          </div>
+        </a>
+
+        <!-- Middle Nav Cells with Thin Dividers -->
+        <div class="icreon-nav-links">
+          <a href="services.html" class="icreon-nav-cell">Programmes</a>
+          <a href="schools.html" class="icreon-nav-cell">For Schools</a>
+          <a href="industry.html" class="icreon-nav-cell">For Industry</a>
+                    <div class="icreon-nav-dropdown-wrapper">
+            <a href="about.html" class="icreon-nav-cell">About</a>
+            <div class="icreon-dropdown-menu">
+              <a href="about.html#about">Our Story</a>
+              <a href="about.html#insights">Insights</a>
+              <a href="about.html#leadership">Leadership</a>
+              <a href="about.html#careers">Careers</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Action Cells -->
+        <div class="icreon-nav-right">
+          <!-- Search Icon Cell -->
+          <button class="icreon-search-cell" id="icreonSearchBtn" aria-label="Search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+
+          <!-- Contact Us Pill Cell -->
+          <div class="icreon-cta-cell">
+            <a href="contact.html" class="btn-icreon-contact">Contact Us</a>
+          </div>
+
+          <!-- Mobile Hamburger Trigger Cell -->
+          
+        </div>
+      </div>
+    </header>
+
+    <!-- Full-screen / Slide Drawer Menu with Complete Navigation -->
+    
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="smooth-wrapper">
+
+
+      <div id="smooth-content">
+
+        <!-- Global Dynamic Connection Overlay -->
+        <svg id="global-connection-overlay" class="global-connection-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 15;">
+          <defs>
+            <mask id="draw-mask">
+              <path id="mask-path" fill="none" stroke="white" stroke-width="20" stroke-linecap="round" />
+            </mask>
+          </defs>
+          <!-- The actual visible dashed line, hidden by mask initially -->
+          <path id="dynamic-trail" fill="none" stroke="#175DD3" stroke-width="4" stroke-dasharray="10 10" stroke-linecap="round" mask="url(#draw-mask)" />
+        </svg>
+
+        <main>
+<section class="legal-page">
+<div class="legal-container">
+<div class="legal-badge">Cookie Policy</div>
+
+
+<h1>Cookie Policy</h1>
+<p><strong>Effective Date: 26 September 2026</strong><br><strong>Last Updated: 26 September 2026</strong></p>
+
+<h2>1. Introduction</h2>
+<p>This Cookie Policy explains how Scalora Schools ("Scalora Schools", "we", "us" or "our") uses cookies and similar technologies when you visit our website: <a href="https://scaloraschools.com/">https://scaloraschools.com/</a></p>
+<p>Our website is intended to provide information about our educational programs, initiatives, partnerships and services. We respect your privacy and aim to be transparent about how cookies may be used on our website.</p>
+
+<h2>2. What Are Cookies?</h2>
+<p>Cookies are small text files that are stored on your device when you visit a website. They help websites function properly, remember certain information and provide a better browsing experience. Cookies may be stored temporarily during your visit or remain on your device for a specified period.</p>
+
+<h2>3. How We Use Cookies</h2>
+<p>Scalora Schools may use cookies and similar technologies for purposes such as:</p>
+<ul>
+  <li>Maintaining essential website functionality</li>
+  <li>Improving website security</li>
+  <li>Remembering basic website preferences</li>
+  <li>Understanding how the website is being used, where applicable</li>
+  <li>Improving the overall user experience</li>
+</ul>
+<p>We do not intentionally use cookies to collect sensitive personal information.</p>
+
+<h2>4. Types of Cookies</h2>
+
+<h3>4.1 Strictly Necessary Cookies</h3>
+<p>These cookies may be required for the website to operate correctly and securely. They may support basic functions such as:</p>
+<ul>
+  <li>Website security</li>
+  <li>Session management</li>
+  <li>Basic functionality</li>
+  <li>Technical operation of the website</li>
+</ul>
+<p>These cookies generally cannot be disabled through a cookie preference tool because the website may not function properly without them.</p>
+
+<h3>4.2 Functional Cookies</h3>
+<p>Functional cookies may be used to remember certain preferences or settings selected by visitors. These cookies are used only where the relevant functionality is implemented on the website.</p>
+
+<h3>4.3 Analytics Cookies</h3>
+<p>At present, Scalora Schools does not intentionally use Google Analytics, Google Tag Manager, Vercel Analytics or Vercel Speed Insights on the website. If analytics services are introduced in the future, this Cookie Policy may be updated accordingly.</p>
+
+<h3>4.4 Marketing and Advertising Cookies</h3>
+<p>Scalora Schools does not intentionally use advertising cookies for targeted advertising on the current website. If marketing, advertising or tracking technologies such as Meta Pixel, LinkedIn Insight Tag or similar services are introduced, this policy will be updated and users will be provided with appropriate choices where required.</p>
+
+<h2>5. Third-Party Cookies</h2>
+<p>Some third-party technologies or services may potentially place cookies or use similar technologies when integrated into our website. We will review third-party services used on the website and update this Cookie Policy when such services are introduced.</p>
+
+<h2>6. Managing Cookies</h2>
+<p>Depending on the functionality available on the website, you may be able to manage cookies through your browser settings. Most web browsers allow you to:</p>
+<ul>
+  <li>View stored cookies</li>
+  <li>Delete cookies</li>
+  <li>Block cookies</li>
+  <li>Allow cookies from selected websites</li>
+  <li>Receive notifications before cookies are stored</li>
+</ul>
+<p>Please note that disabling certain cookies may affect the functionality or performance of some websites.</p>
+
+<h2>7. Children's Use of the Website</h2>
+<p>Our website may be accessed by students, including individuals under the age of 18. We do not intentionally use cookies to collect sensitive personal information from children. Where personal information is collected through future services or programs involving students, appropriate privacy and consent measures will be considered based on the nature of the service and applicable laws.</p>
+
+<h2>8. Changes to This Cookie Policy</h2>
+<p>We may update this Cookie Policy when our website, technologies, services or legal requirements change. Any updated version will be published on this page with a revised "Last Updated" date.</p>
+
+<h2>9. Contact Us</h2>
+<p>If you have any questions about this Cookie Policy or how cookies are used on our website, you can contact us at:</p>
+<p>
+  <strong>Scalora Schools</strong><br>
+  D2-0401, Smart City Kingswood, Plot No. GH02, Sector-4,<br>
+  Noida, Gautam Buddha Nagar, Uttar Pradesh, India, 201301<br>
+  <strong>Email:</strong> scaloraschools@gmail.com<br>
+  <strong>Website:</strong> scaloraschools.com
+</p>
+
+
+</div>
+</section>
+<footer class="giant-footer">
+            <div class="giant-footer-top">
+              <div class="gf-col gf-brand-col">
+                <div class="scalora-logo-lockup footer-size">
+                  <span class="logo-text-line">SCALORA</span>
+                  <span class="logo-text-line">SCHOOLS</span>
+                </div>
+                <p>Creating structured experiential-learning ecosystems where students move from problems to solutions.</p>
+              </div>
+              <div class="gf-col">
+                <div class="gf-heading">NAVIGATION</div>
+                <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About Scalora</a></li>
+                  <li><a href="#model">The Scalora Model</a></li>
+                  <li><a href="#irdme">IRDME Framework</a></li>
+                </ul>
+              </div>
+                            <div class="gf-col">
+                <div class="gf-heading">COMPANY</div>
+                <ul>
+                  <li><a href="terms.html">Terms of Service</a></li>
+                  <li><a href="privacy.html">Privacy Policy</a></li>
+                  <li><a href="cookies.html">Cookie Policy</a></li>
+                  <li><a href="security.html">Security & Safety</a></li>
+                </ul>
+              </div>
+              <div class="gf-col">
+                <div class="gf-heading">CONTACT</div>
+                <ul>
+                  <li><a href="mailto:scaloraschools@gmail.com" class="gf-mail-link" style="text-transform:none;">scaloraschools@gmail.com</a></li>
+                  <li class="gf-address">Scalora Academy Pvt Limited<br>D2-0401, Smart City Kingswood, Plot No. GH02,<br>Sector-4, Noida, Gautam Buddha Nagar,<br>Uttar Pradesh, India, 201301</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="giant-footer-middle">
+              <div class="giant-brand-text">#NoMoreOrdinary</div>
+            </div>
+
+            <div class="giant-footer-bottom">
+              <div class="gf-copyright">Copyright © 2026 Scalora Schools</div>
+              <button class="gf-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">BACK TO TOP &uarr;</button>
+            </div>
+          </footer>
+        </main>
+      </div>
+    </div>
+
+    <!-- Floating Blue Chat / Contact Trigger (Matching bottom-right of screenshot) -->
+    <a href="contact.html" class="icreon-floating-chat" aria-label="Connect with Scalora Advisor">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/>
+      </svg>
+    </a>
+
+    <!-- MAIN SCRIPT -->
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/reference-hero.js"></script>
+  
+    <!-- COOKIE CONSENT BANNER -->
+    <div id="cookieBanner" class="cookie-banner" style="display: none;">
+      <div class="cookie-banner-content">
+        <div class="cookie-banner-text">
+          <h3>We use cookies</h3>
+          <p>We use necessary cookies to help our website function properly and securely. We may also use optional cookies to remember preferences and improve your experience.</p>
+          <p>By selecting "Accept All", you agree to the use of optional cookies. You can manage your preferences at any time. <a href="cookies.html" class="cookie-policy-link">Cookie Policy</a></p>
+        </div>
+        <div class="cookie-banner-actions">
+          <button id="btnAcceptAll" class="cookie-btn cookie-btn-primary">Accept All</button>
+          <button id="btnRejectOptional" class="cookie-btn cookie-btn-secondary">Reject Optional</button>
+          <button id="btnManagePreferences" class="cookie-btn cookie-btn-text">Manage Preferences</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- COOKIE PREFERENCES MODAL -->
+    <div id="cookieModal" class="cookie-modal-overlay" style="display: none;">
+      <div class="cookie-modal">
+        <div class="cookie-modal-header">
+          <h2>Cookie Preferences</h2>
+          <button id="cookieModalClose" class="cookie-close-btn">&times;</button>
+        </div>
+        <div class="cookie-modal-body">
+          <p class="cookie-modal-intro">You can choose which types of cookies you allow.</p>
+          
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Necessary Cookies</h3>
+                <span class="cookie-badge cookie-badge-required">Always Active</span>
+              </div>
+            </div>
+            <p class="cookie-category-desc">These cookies are required for the basic operation, security and functionality of the website.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Functional Cookies</h3>
+                <span class="cookie-badge cookie-badge-optional">Optional</span>
+              </div>
+              <label class="cookie-switch">
+                <input type="checkbox" id="chkFunctional">
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">These cookies may help remember your preferences and improve your browsing experience.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Analytics Cookies</h3>
+                <span class="cookie-badge cookie-badge-disabled">Currently Not Used</span>
+              </div>
+              <label class="cookie-switch cookie-switch-disabled">
+                <input type="checkbox" disabled>
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">Scalora Schools does not currently use Google Analytics, Google Tag Manager, Vercel Analytics or Vercel Speed Insights.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Marketing Cookies</h3>
+                <span class="cookie-badge cookie-badge-optional">Optional</span>
+              </div>
+              <label class="cookie-switch">
+                <input type="checkbox" id="chkMarketing">
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">These cookies may be used for advertising or marketing purposes if such technologies are introduced in the future.</p>
+          </div>
+        </div>
+        <div class="cookie-modal-footer">
+          <button id="btnSavePreferences" class="cookie-btn cookie-btn-primary cookie-btn-full">Save Preferences</button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
+
+
+

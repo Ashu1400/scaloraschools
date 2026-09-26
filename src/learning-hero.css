@@ -1,0 +1,24 @@
+/* Open horizon — isolated from the rest of the site. */
+.horizon-hero{position:relative;isolation:isolate;overflow:hidden;min-height:880px;height:calc(100svh - 76px);max-height:1150px;background:#f9faf5;color:#18372c;font-family:'Inter',sans-serif}
+.horizon-meta{position:absolute;top:27px;left:5%;right:5%;display:flex;justify-content:space-between;gap:15px;font:8px 'Courier New',monospace;letter-spacing:1.2px;z-index:3;color:#617369}
+.horizon-meta i{display:inline-block;width:5px;height:5px;border-radius:50%;background:#2e6651;margin:0 8px 1px 0}
+#horizon-art{position:absolute;inset:0;width:100%;height:100%;z-index:0;touch-action:pan-y}
+.horizon-heading{position:relative;z-index:2;text-align:center;padding:94px 20px 0;pointer-events:none}
+.horizon-eyebrow{font:8px 'Courier New',monospace;letter-spacing:2px;color:#6c7f70;margin-bottom:22px}
+.horizon-heading h1{display:inline-block;position:relative;font-size:clamp(66px,7.9vw,135px);line-height:.94;font-weight:500;letter-spacing:-.07em;margin:0;color:#193a2e}
+.horizon-heading h1 em{font-family:'Instrument Serif',Georgia,serif;letter-spacing:-.045em;font-weight:400;color:#28634e;font-size:1.2em}
+.horizon-star{position:absolute;right:-.65em;top:.87em;font-size:.37em;font-weight:400;line-height:1;color:#d5ef62;transform:rotate(-12deg);text-shadow:1px 0 #6f8739,-1px 0 #6f8739,0 1px #6f8739,0 -1px #6f8739}
+.horizon-description{color:#65786b;font-size:13px;line-height:1.75;margin:25px 0 20px}
+.horizon-cta{display:inline-flex;align-items:center;gap:32px;padding:16px 22px;border-radius:3px;background:#d9ed91;color:#263e25;font-size:11px;font-weight:500;border:1px solid #c4d97c;pointer-events:auto;transition:transform .2s,background .2s}
+.horizon-cta:hover{transform:translateY(-3px);background:#c9e772}
+.horizon-coordinate{position:absolute;top:64%;z-index:2;font:9px/1.8 'Courier New',monospace;letter-spacing:1px;color:#476653;pointer-events:none}.horizon-coordinate span{font-size:7px;color:#8c9a8c}.coordinate-left{left:5%}.coordinate-right{right:5%;text-align:right}
+.horizon-controls{position:absolute;bottom:118px;left:5%;right:5%;display:flex;align-items:center;justify-content:center;gap:20px;z-index:3;font:8px 'Courier New',monospace;color:#708879;letter-spacing:.6px}
+.horizon-controls button{background:#f9faf5dd;border:1px solid #cddacb;border-radius:3px;padding:9px 12px;font:9px 'Courier New',monospace;color:#426551}
+.horizon-controls button:hover{background:#e8efd9}.horizon-controls button:disabled{opacity:.55;cursor:default}
+.horizon-bottom{position:absolute;bottom:0;left:5%;right:5%;display:flex;justify-content:space-between;align-items:center;gap:25px;border-top:1px solid #d2ddcc;padding:23px 0;z-index:3;background:#f9faf5}
+.horizon-bottom p{font-size:10px;line-height:1.9;color:#7c8b7d;margin:0}.horizon-bottom strong{font-weight:400;color:#385744}.horizon-bottom>a{font-size:10px;color:#375a45}.horizon-scroll{width:37px;height:37px;border-radius:50%;border:1px solid #bcccb8;display:grid;place-items:center;font-size:18px!important}
+.horizon-hero a:focus-visible,.horizon-hero button:focus-visible{outline:2px solid #175dd3;outline-offset:5px}
+@media(min-width:1600px){.horizon-heading{padding-top:100px}.horizon-description{font-size:15px}}
+@media(max-width:900px){.horizon-hero{height:auto;min-height:880px}.horizon-heading{padding-top:105px}.horizon-heading h1{font-size:9.7vw}.horizon-star{right:-.4em}.horizon-meta>span:last-child{display:none}}
+@media(max-width:600px){.horizon-hero{min-height:830px}.horizon-meta{font-size:7px;top:22px}.horizon-meta>span:nth-child(2){display:none}.horizon-heading{padding:88px 7% 0}.horizon-eyebrow{font-size:6px;letter-spacing:1px;margin-bottom:24px}.horizon-heading h1{font-size:11.5vw}.horizon-star{right:-.4em;top:.9em}.horizon-description{font-size:11px;margin-top:25px}.horizon-cta{font-size:10px;padding:14px 18px;gap:20px}.horizon-coordinate{top:60%;font-size:7px}.horizon-coordinate span{display:none}.horizon-controls{bottom:141px;gap:9px;flex-wrap:wrap}.horizon-controls>span{width:100%;text-align:center;font-size:7px}.horizon-controls button{font-size:8px}.horizon-bottom{gap:14px;flex-wrap:wrap;padding:17px 0}.horizon-bottom p{font-size:8px;width:100%}.horizon-bottom>a{font-size:9px}.horizon-scroll{position:absolute;right:0;top:22px}.horizon-bottom p{padding-right:45px}}
+@media(prefers-reduced-motion:reduce){.horizon-cta{transition:none}}

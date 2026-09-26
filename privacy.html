@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<!--
+  ____   ____    _    _     ___  ____      _    
+ / ___| / ___|  / \  | |   / _ \|  _ \    / \   
+ \___ \| |     / _ \ | |  | | | | |_) |  / _ \  
+  ___) | |___ / ___ \| |__| |_| |  _ <  / ___ \ 
+ |____/ \____/_/   \_\_____\___/|_| \_\/_/   \_\
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy - Scalora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Melius font pairing: Editorial Serif + Ultra-clean Modern Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/ascii-hero.css">
+    <link rel="stylesheet" href="/src/reference-hero.css">
+  
+    <style>
+      .legal-page {
+        background-color: #fafafa;
+        color: #111827;
+        font-family: 'Inter', sans-serif;
+        padding: 180px 5% 100px 5%;
+        min-height: 100vh;
+      }
+      .legal-container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 80px;
+        border-radius: 24px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.03);
+        border: 1px solid #eaeaea;
+      }
+      .legal-container h1 {
+        font-family: 'Instrument Serif', serif;
+        font-size: clamp(3rem, 5vw, 4.5rem);
+        line-height: 1.1;
+        margin-bottom: 24px;
+        color: #0b132b;
+      }
+      .legal-container > p:first-of-type,
+      .legal-container > p:nth-of-type(2) {
+        font-size: 1.1rem;
+        color: #64748b;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #f1f5f9;
+        padding-bottom: 24px;
+      }
+      .legal-container h2 {
+        font-family: 'Outfit', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        color: #0f172a;
+        letter-spacing: -0.01em;
+      }
+      .legal-container h3 {
+        font-family: 'Outfit', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-top: 40px;
+        margin-bottom: 16px;
+        color: #334155;
+      }
+      .legal-container p {
+        font-size: 1.125rem;
+        line-height: 1.8;
+        color: #475569;
+        margin-bottom: 24px;
+      }
+      .legal-container ul, .legal-container ol {
+        margin-bottom: 24px;
+        padding-left: 24px;
+      }
+      .legal-container li {
+        font-size: 1.125rem;
+        line-height: 1.8;
+        color: #475569;
+        margin-bottom: 12px;
+      }
+      .legal-container strong {
+        color: #0f172a;
+        font-weight: 600;
+      }
+      .legal-badge {
+        display: inline-block;
+        padding: 6px 14px;
+        background: #e0e7ff;
+        color: #4338ca;
+        border-radius: 100px;
+        font-family: 'Outfit', sans-serif;
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      @media (max-width: 768px) {
+        .legal-page { padding: 140px 5% 60px 5%; }
+        .legal-container { padding: 40px 24px; border-radius: 16px; }
+      }
+    </style>
+</head>
+  <body class="reference-home">
+    <!-- ICREON GRID-DIVIDED TOP NAVBAR -->
+    <style>
+      .icreon-header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+      }
+      .ascii-home .icreon-header.header-scrolled {
+        background: #ffffff !important;
+        border-bottom: 1px solid #e2e2e6 !important;
+      }
+      .ascii-home .icreon-header.header-scrolled :is(.brand-name,.icreon-nav-cell,.icreon-search-cell) {
+        color: #1a1a1e !important;
+      }
+      .ascii-home .icreon-header.header-scrolled .btn-icreon-contact {
+        color: #1a1a1e !important;
+        border-color: #e2e2e6 !important;
+        background: transparent !important;
+      }
+      .ascii-home .icreon-header.header-scrolled :is(.icreon-nav-grid,.icreon-logo-cell,.icreon-nav-cell,.icreon-search-cell,.icreon-mobile-menu-cell) {
+        border-color: #e2e2e6 !important;
+      }
+      .ascii-home .icreon-header.header-scrolled :is(.icreon-logo-cell,.icreon-nav-cell,.icreon-search-cell):hover {
+        background-color: #f8f8fa !important;
+        color: #1a1a1e !important;
+      }
+      .ascii-home .icreon-header.header-scrolled .icreon-mobile-menu-cell span {
+        background: #1a1a1e !important;
+      }
+    </style>
+    <script>
+      window.addEventListener('scroll', () => {
+        const header = document.querySelector('.icreon-header');
+        if (window.scrollY > 50) {
+          header.classList.add('header-scrolled');
+        } else {
+          header.classList.remove('header-scrolled');
+        }
+      });
+    </script>
+    <header class="icreon-header">
+      <div class="icreon-nav-grid">
+        <!-- Logo Cell -->
+        <a href="index.html" class="icreon-logo-cell">
+          <div class="brand-name">
+            <span>SCALORA</span>
+            <span>SCHOOLS</span>
+          </div>
+        </a>
+
+        <!-- Middle Nav Cells with Thin Dividers -->
+        <div class="icreon-nav-links">
+          <a href="services.html" class="icreon-nav-cell">Programmes</a>
+          <a href="schools.html" class="icreon-nav-cell">For Schools</a>
+          <a href="industry.html" class="icreon-nav-cell">For Industry</a>
+                    <div class="icreon-nav-dropdown-wrapper">
+            <a href="about.html" class="icreon-nav-cell">About</a>
+            <div class="icreon-dropdown-menu">
+              <a href="about.html#about">Our Story</a>
+              <a href="about.html#insights">Insights</a>
+              <a href="about.html#leadership">Leadership</a>
+              <a href="about.html#careers">Careers</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Action Cells -->
+        <div class="icreon-nav-right">
+          <!-- Search Icon Cell -->
+          <button class="icreon-search-cell" id="icreonSearchBtn" aria-label="Search">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+
+          <!-- Contact Us Pill Cell -->
+          <div class="icreon-cta-cell">
+            <a href="contact.html" class="btn-icreon-contact">Contact Us</a>
+          </div>
+
+          <!-- Mobile Hamburger Trigger Cell -->
+          
+        </div>
+      </div>
+    </header>
+
+    <!-- Full-screen / Slide Drawer Menu with Complete Navigation -->
+    
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="smooth-wrapper">
+
+
+      <div id="smooth-content">
+
+        <!-- Global Dynamic Connection Overlay -->
+        <svg id="global-connection-overlay" class="global-connection-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 15;">
+          <defs>
+            <mask id="draw-mask">
+              <path id="mask-path" fill="none" stroke="white" stroke-width="20" stroke-linecap="round" />
+            </mask>
+          </defs>
+          <!-- The actual visible dashed line, hidden by mask initially -->
+          <path id="dynamic-trail" fill="none" stroke="#175DD3" stroke-width="4" stroke-dasharray="10 10" stroke-linecap="round" mask="url(#draw-mask)" />
+        </svg>
+
+        <main>
+<section class="legal-page">
+<div class="legal-container">
+<div class="legal-badge">Privacy Policy</div>
+
+
+<h1>Scalora — Privacy Policy</h1>
+<p><strong>Last Updated: September 26, 2026</strong></p>
+
+<h2>1. Identity and Scope</h2>
+<ul>
+  <li>Legal name of Scalora / operating entity; website/domain covered; effective date; last-updated date.</li>
+  <li>Explain that the policy covers website visitors, professional enquiries, school relationships, industrial-partner relationships, and personal information processed in relevant institutional engagements.</li>
+  <li>State that the public website is primarily intended for school principals/representatives, educational institutions, industrial partners and other professional stakeholders.</li>
+</ul>
+
+<h2>2. Who Scalora Collects Information From</h2>
+<ul>
+  <li>Website visitors; school principals, coordinators, teachers and authorised representatives; industrial/company representatives; professional contacts; and students/other individuals only to the extent their information is actually processed in an institutional engagement.</li>
+</ul>
+
+<h2>3. Categories of Personal Information</h2>
+<ul>
+  <li>Name, designation/role, school/company/organisation, professional email, telephone, business address, partnership/enquiry details, correspondence, programme/administrative information, and any website/device information actually collected by the site's infrastructure.</li>
+  <li>Do not list technical fields, sensitive information or identifiers unless Scalora actually collects them.</li>
+</ul>
+
+<h2>4. Sources of Information</h2>
+<ul>
+  <li>Directly from individuals; from their organisation where authorised; from schools/institutions; from industrial partners; from communications/documents; and automatically through website operation where applicable.</li>
+</ul>
+
+<h2>5. Purposes of Processing</h2>
+<ul>
+  <li>Website operation; responding to enquiries; communicating with schools and industrial partners; evaluating/managing partnerships; programme and institutional coordination; industrial-visit/activity coordination where applicable; project/showcase/certification administration where applicable; professional relationship records; legal compliance; lawful requests; and establishing, exercising or defending legal claims.</li>
+</ul>
+
+<h2>6. Data Minimisation and Purpose Limitation</h2>
+<ul>
+  <li>State that Scalora seeks information reasonably necessary for a disclosed purpose and does not use personal information for unrelated purposes without an appropriate legal basis or notice.</li>
+</ul>
+
+<h2>7. Lawful Basis / Grounds</h2>
+<ul>
+  <li>Explain the lawful ground applicable to each major processing purpose under the Indian data-protection framework and other applicable law.</li>
+  <li>Do not copy a generic GDPR 'legitimate interests' clause unless it accurately describes the applicable processing.</li>
+</ul>
+
+<h2>8. Consent</h2>
+<ul>
+  <li>Explain when consent is requested, what it covers, how it is recorded, how it can be withdrawn where applicable, and what processing may continue on another lawful basis or because of a legal requirement.</li>
+</ul>
+
+<h2>9. Student and Children's Data</h2>
+<ul>
+  <li>State that the public website is primarily for professional/institutional stakeholders and is not designed as a direct student-registration or consumer-learning platform, if that remains true.</li>
+  <li>State that Scalora does not intentionally design the public website to solicit personal information directly from children, if true.</li>
+  <li>Explain how student information may be processed when provided through a school/institutional engagement.</li>
+  <li>Do not state that parental consent is categorically unnecessary. Under the DPDP Act, processing a child's personal data generally requires verifiable parental consent unless an applicable statutory exemption applies.</li>
+</ul>
+
+<h2>10. Student Data Uses and Restrictions</h2>
+<ul>
+  <li>List only the actual programme/administrative purposes for which student information may be processed, such as participation, project administration, evaluation, certification, showcase documentation, logistics or reporting.</li>
+  <li>State restrictions on unrelated commercial use. If true, state that Scalora does not sell student personal information and does not use it for targeted advertising.</li>
+</ul>
+
+<h2>11. School / Institutional Processing</h2>
+<ul>
+  <li>Explain that schools or educational institutions may provide information to Scalora for defined institutional purposes.</li>
+  <li>Describe the roles of the school and Scalora at a high level and explain that institutional agreements may contain more specific data-handling requirements.</li>
+</ul>
+
+<h2>12. Industrial Partner and Professional Contact Data</h2>
+<ul>
+  <li>Explain handling of professional contact details for partnership discussions, coordination, meetings, visits, projects and professional communications where applicable.</li>
+  <li>Distinguish personal-data privacy from confidential business information, which should be addressed in the relevant confidentiality/partner agreement.</li>
+</ul>
+
+<h2>13. Sharing and Disclosure</h2>
+<ul>
+  <li>Identify recipient categories actually used: service providers; schools/institutions; industrial partners where necessary; professional advisers; government/courts/law enforcement where legally required or permitted; and transaction counterparties where applicable.</li>
+  <li>For each category, state the purpose and keep disclosure limited to what is appropriate.</li>
+</ul>
+
+<h2>14. Third-Party Processors / Service Providers</h2>
+<ul>
+  <li>Identify categories of actual providers such as hosting, email, forms, CRM, cloud services or analytics, where applicable.</li>
+  <li>Explain that providers may process personal information for the relevant service/function and under applicable contractual or legal controls. Keep the vendor list accurate.</li>
+</ul>
+
+<h2>15. Sale / Commercialisation</h2>
+<ul>
+  <li>If true, clearly state that Scalora does not sell personal information. Do not make a broader claim about 'no sharing' if service providers process data.</li>
+</ul>
+
+<h2>16. Marketing and Professional Communications</h2>
+<ul>
+  <li>Describe optional marketing/professional communications, how people are added, how they can opt out, and the distinction between marketing and necessary relationship/transactional communications.</li>
+</ul>
+
+<h2>17. Retention</h2>
+<ul>
+  <li>Explain that information is retained only as long as necessary for the disclosed purpose, applicable institutional requirements, legal obligations, dispute resolution and legitimate recordkeeping needs.</li>
+  <li>Set actual internal retention periods for enquiries, school/partner records, programme information, communications and other categories. Student retention should align with the institutional arrangement and applicable law.</li>
+</ul>
+
+<h2>18. Deletion / Erasure</h2>
+<ul>
+  <li>Explain when information is deleted, how individuals can request erasure where applicable, lawful exceptions, and deletion/return procedures for information supplied by schools or institutions.</li>
+</ul>
+
+<h2>19. Data Principal / Privacy Rights</h2>
+<ul>
+  <li>Explain applicable rights, including access/information about processing, correction, erasure where applicable, withdrawal of consent where applicable, and grievance redressal.</li>
+  <li>Provide a practical method for exercising those rights.</li>
+</ul>
+
+<h2>20. Privacy Requests and Identity Verification</h2>
+<ul>
+  <li>Provide a privacy-request method; explain what a requester should provide; explain identity/authority verification; and provide a process for authorised school/company representatives.</li>
+</ul>
+
+<h2>21. Privacy Contact and Grievance</h2>
+<ul>
+  <li>Publish the business contact information of the person who can answer questions about processing and a Data Protection Officer where applicable.</li>
+  <li>Provide a privacy email/contact route, grievance process, and legally required response/escalation mechanism. Keep contact information current.</li>
+</ul>
+
+<h2>22. International Processing / Transfers</h2>
+<ul>
+  <li>State whether personal information may be processed outside India through actual providers or arrangements. Describe this accurately and do not claim all data is stored in India unless verified.</li>
+</ul>
+
+<h2>23. External Websites / Platforms</h2>
+<ul>
+  <li>Explain that external websites and third-party platforms linked from Scalora have their own privacy practices. Identify embedded/third-party services where appropriate.</li>
+</ul>
+
+<h2>24. Photography, Video and Media Personal Information</h2>
+<ul>
+  <li>Where photography/video actually occurs, explain the types of identifying material, purposes of use, possible publication channels and the applicable consent/authorisation process.</li>
+  <li>Coordinate this with actual school/event arrangements rather than using a blanket statement.</li>
+</ul>
+
+<h2>25. Intellectual Property / Project Materials — Privacy Boundary</h2>
+<ul>
+  <li>Briefly distinguish personal data from project/IP material. Ownership of student projects, company materials and other intellectual property belongs in the relevant institutional/partner agreement rather than being turned into a Privacy Policy.</li>
+</ul>
+
+<h2>26. Changes to the Privacy Policy</h2>
+<ul>
+  <li>Explain that the policy may be updated when processing activities, legal obligations or services change. Display effective and last-updated dates and explain how material changes will be communicated where required.</li>
+</ul>
+
+<h2>27. Contact Details</h2>
+<ul>
+  <li>Legal/business name: Scalora Academy Pvt Limited</li>
+  <li>Privacy email: scaloraschools@gmail.com</li>
+  <li>Business address: D2-0401, Smart City Kingswood, Plot No. GH02, Sector-4, Noida, Gautam Buddha Nagar, Uttar Pradesh, India, 201301</li>
+</ul>
+
+
+</div>
+</section>
+<footer class="giant-footer">
+            <div class="giant-footer-top">
+              <div class="gf-col gf-brand-col">
+                <div class="scalora-logo-lockup footer-size">
+                  <span class="logo-text-line">SCALORA</span>
+                  <span class="logo-text-line">SCHOOLS</span>
+                </div>
+                <p>Creating structured experiential-learning ecosystems where students move from problems to solutions.</p>
+              </div>
+              <div class="gf-col">
+                <div class="gf-heading">NAVIGATION</div>
+                <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About Scalora</a></li>
+                  <li><a href="#model">The Scalora Model</a></li>
+                  <li><a href="#irdme">IRDME Framework</a></li>
+                </ul>
+              </div>
+                            <div class="gf-col">
+                <div class="gf-heading">COMPANY</div>
+                <ul>
+                  <li><a href="terms.html">Terms of Service</a></li>
+                  <li><a href="privacy.html">Privacy Policy</a></li>
+                  <li><a href="cookies.html">Cookie Policy</a></li>
+                  <li><a href="security.html">Security & Safety</a></li>
+                </ul>
+              </div>
+              <div class="gf-col">
+                <div class="gf-heading">CONTACT</div>
+                <ul>
+                  <li><a href="mailto:scaloraschools@gmail.com" class="gf-mail-link" style="text-transform:none;">scaloraschools@gmail.com</a></li>
+                  <li class="gf-address">Scalora Academy Pvt Limited<br>D2-0401, Smart City Kingswood, Plot No. GH02,<br>Sector-4, Noida, Gautam Buddha Nagar,<br>Uttar Pradesh, India, 201301</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="giant-footer-middle">
+              <div class="giant-brand-text">#NoMoreOrdinary</div>
+            </div>
+
+            <div class="giant-footer-bottom">
+              <div class="gf-copyright">Copyright © 2026 Scalora Schools</div>
+              <button class="gf-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">BACK TO TOP &uarr;</button>
+            </div>
+          </footer>
+        </main>
+      </div>
+    </div>
+
+    <!-- Floating Blue Chat / Contact Trigger (Matching bottom-right of screenshot) -->
+    <a href="contact.html" class="icreon-floating-chat" aria-label="Connect with Scalora Advisor">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/>
+      </svg>
+    </a>
+
+    <!-- MAIN SCRIPT -->
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/reference-hero.js"></script>
+  
+    <!-- COOKIE CONSENT BANNER -->
+    <div id="cookieBanner" class="cookie-banner" style="display: none;">
+      <div class="cookie-banner-content">
+        <div class="cookie-banner-text">
+          <h3>We use cookies</h3>
+          <p>We use necessary cookies to help our website function properly and securely. We may also use optional cookies to remember preferences and improve your experience.</p>
+          <p>By selecting "Accept All", you agree to the use of optional cookies. You can manage your preferences at any time. <a href="cookies.html" class="cookie-policy-link">Cookie Policy</a></p>
+        </div>
+        <div class="cookie-banner-actions">
+          <button id="btnAcceptAll" class="cookie-btn cookie-btn-primary">Accept All</button>
+          <button id="btnRejectOptional" class="cookie-btn cookie-btn-secondary">Reject Optional</button>
+          <button id="btnManagePreferences" class="cookie-btn cookie-btn-text">Manage Preferences</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- COOKIE PREFERENCES MODAL -->
+    <div id="cookieModal" class="cookie-modal-overlay" style="display: none;">
+      <div class="cookie-modal">
+        <div class="cookie-modal-header">
+          <h2>Cookie Preferences</h2>
+          <button id="cookieModalClose" class="cookie-close-btn">&times;</button>
+        </div>
+        <div class="cookie-modal-body">
+          <p class="cookie-modal-intro">You can choose which types of cookies you allow.</p>
+          
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Necessary Cookies</h3>
+                <span class="cookie-badge cookie-badge-required">Always Active</span>
+              </div>
+            </div>
+            <p class="cookie-category-desc">These cookies are required for the basic operation, security and functionality of the website.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Functional Cookies</h3>
+                <span class="cookie-badge cookie-badge-optional">Optional</span>
+              </div>
+              <label class="cookie-switch">
+                <input type="checkbox" id="chkFunctional">
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">These cookies may help remember your preferences and improve your browsing experience.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Analytics Cookies</h3>
+                <span class="cookie-badge cookie-badge-disabled">Currently Not Used</span>
+              </div>
+              <label class="cookie-switch cookie-switch-disabled">
+                <input type="checkbox" disabled>
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">Scalora Schools does not currently use Google Analytics, Google Tag Manager, Vercel Analytics or Vercel Speed Insights.</p>
+          </div>
+
+          <div class="cookie-category">
+            <div class="cookie-category-header">
+              <div class="cookie-category-title">
+                <h3>Marketing Cookies</h3>
+                <span class="cookie-badge cookie-badge-optional">Optional</span>
+              </div>
+              <label class="cookie-switch">
+                <input type="checkbox" id="chkMarketing">
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+            <p class="cookie-category-desc">These cookies may be used for advertising or marketing purposes if such technologies are introduced in the future.</p>
+          </div>
+        </div>
+        <div class="cookie-modal-footer">
+          <button id="btnSavePreferences" class="cookie-btn cookie-btn-primary cookie-btn-full">Save Preferences</button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
+
+
+
