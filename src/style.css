@@ -1242,6 +1242,7 @@ button {
 
 @media (max-width: 880px) {
   .icreon-nav-grid {
+    display: grid;
     grid-template-columns: 1fr auto;
     grid-template-rows: auto auto;
   }
