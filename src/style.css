@@ -47,10 +47,14 @@
 }
 
 html {
+  overflow-x: hidden !important;
+  max-width: 100vw;
   scroll-behavior: smooth;
 }
 
 body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
   font-family: var(--font-sans);
   background-color: var(--bg-light);
   color: var(--text-dark);
@@ -334,6 +338,8 @@ button {
 }
 
 .drawer-body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 40px;
@@ -1033,6 +1039,8 @@ button {
 }
 
 .who-body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
   font-family: var(--font-sans);
   font-size: 1.25rem;
   line-height: 1.6;
@@ -1245,6 +1253,9 @@ button {
   }
   .icreon-nav-links {
     grid-column: 1 / 3;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
     display: flex !important;
     overflow-x: auto;
     overflow-y: hidden;
@@ -1277,7 +1288,7 @@ button {
     height: 60vh;
   }
 }
-
+@media (max-width: 880px) {
   .icreon-cta-cell {
     display: none;
   }
@@ -1867,6 +1878,8 @@ button {
   }
 
   .drawer-body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
     grid-template-columns: 1fr;
     gap: 30px;
   }
@@ -2007,6 +2020,8 @@ button {
 }
 
 .gap-body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
   font-family: var(--font-sans);
   font-size: 0.85rem;
   line-height: 1.6;
@@ -2019,6 +2034,8 @@ button {
 }
 
 .highlight-body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
   color: #e4e4e7; /* Brighter white for emphasis on the final sentence */
 }
 
@@ -2061,6 +2078,8 @@ button {
   }
 
   .drawer-body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
     grid-template-columns: 1fr;
     gap: 30px;
   }
@@ -2201,6 +2220,8 @@ button {
 }
 
 .gap-body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
   font-family: var(--font-sans);
   font-size: 0.85rem;
   line-height: 1.6;
@@ -2213,6 +2234,8 @@ button {
 }
 
 .highlight-body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
   color: #e4e4e7; /* Brighter white for emphasis on the final sentence */
 }
 
@@ -2304,6 +2327,8 @@ button {
 }
 
 .response-body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
   font-family: var(--font-sans);
   font-size: 1.1rem;
   line-height: 1.6;
@@ -4521,6 +4546,8 @@ button {
 }
 
 .hwt-body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
   font-size: 1.1rem;
   line-height: 1.6;
   color: #d4d4d8;
@@ -4619,6 +4646,8 @@ button {
 }
 
 .ic-body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
   font-size: 1.05rem;
   line-height: 1.6;
   color: #52525b;
@@ -4671,6 +4700,8 @@ button {
 }
 
 .irdme-intro-body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
   font-size: 1.1rem;
   line-height: 1.6;
   color: #3f3f46;
@@ -4765,6 +4796,8 @@ button {
 }
 
 .founders-body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
   font-family: var(--font-sans);
   font-size: 1.15rem;
   line-height: 1.7;
@@ -5287,6 +5320,8 @@ button {
 }
 
 .pane-body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
   padding: 40px;
 }
 
@@ -5373,6 +5408,8 @@ button {
 
 /* Enterprise Dashboard Elements */
 .enterprise-body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
   padding: 32px;
 }
 
@@ -5821,6 +5858,8 @@ button {
 }
 
 .cookie-modal-body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
   padding: 24px;
   overflow-y: auto;
 }
