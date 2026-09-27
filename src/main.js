@@ -168,6 +168,21 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
+// Mobile Drawer logic
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const mobileDrawer = document.getElementById('mobileDrawer');
+const closeDrawerBtn = document.getElementById('closeDrawerBtn');
+
+if (mobileMenuBtn && mobileDrawer) {
+  mobileMenuBtn.addEventListener('click', () => {
+    mobileDrawer.classList.add('open');
+  });
+}
+if (closeDrawerBtn && mobileDrawer) {
+  closeDrawerBtn.addEventListener('click', () => {
+    mobileDrawer.classList.remove('open');
+  });
+}
 // Sticky header border shadow on scroll
 const icreonHeader = document.querySelector('.icreon-header');
 if (icreonHeader) {
