@@ -793,9 +793,9 @@ button {
 
 /* Motion Grid Scroll Section (2nd Page) */
 .grid-scroll-section {
-  min-height: 240vh; /* Extra height for scroll space */
+  min-height: 120vh; /* Reduced height to remove huge gap */
   position: relative;
-  background-color: transparent; /* Changed from #F4F4F0 so the line shows through from the background */
+  background-color: transparent; 
 }
 
 .content {
